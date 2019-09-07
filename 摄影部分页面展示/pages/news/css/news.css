@@ -1,0 +1,117 @@
+.container-news{
+    height: 830px;
+    width: 100%;
+    color:white;
+}
+.container-news .news{
+    width: 100%;
+    height: 100%;
+}
+.container-news .news>li{
+    float:left;
+}
+.container-news li.news-title{
+    position: relative;
+    width:20%;
+    height:100%;
+    animation: left 1s ease;
+}
+.container-news .news-title .en-title{
+    display: block;
+    position: absolute;
+    top: 70px;
+    left: 42px;
+    font-size: 48px;
+    transform: rotate(90deg);
+    transform-origin: 0 100%;
+}
+.container-news .news-title .cn-title{
+    display: block;
+    position: absolute;
+    top: 125px;
+    left: 100px;
+    font-size: 16px;
+    width: 10px;
+}
+.container-news .news-title .year{
+    position: absolute;
+    bottom: 100px;
+    left: 55px;
+    width: 180px;
+    height: 70px;
+}
+.container-news .news-title .year>li:nth-child(even){
+    margin:0 10px;
+}
+.container-news .news .year>li{
+    float:left;
+    font-size: 12px;
+    height: 30px;
+    color: #969696;
+}
+.container-news .news .year a{
+    color: inherit;
+}
+.container-news .year .active a{
+    color:#fff;
+}
+.container-news .year>li:hover a{
+    color:white;
+}
+.container-news .news .woman{
+    position:relative;
+    width:45%;
+    height: 100%;
+    animation: down 1s ease;
+}
+.container-news .news .woman img{
+    width: 100%;
+    height: 100%;
+}
+.container-news .news .woman p{
+    position:absolute;
+    left:25px;
+    bottom: 20px;
+    font-size: 12px;
+}
+.container-news .news .introduce{
+    position: relative;
+    width: 35%;
+    height: 100%;
+}
+.container-news .news .introduce .news-ul{
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+}
+.container-news .news .introduce .news-ul>li{
+    display:none;
+    height: 25%;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    transition: all .4s ease; 
+}
+.news .introduce .news-ul>li.opo{
+    display:block;
+    animation: right 1s ease;
+}
+.container-news .news .introduce .news-ul>li.active{
+    border:red 1px solid;
+    background-color: #1f1f1f;
+}
+.news .introduce .news-ul .news-list-text{
+    margin-top: 50px;
+    font-size: 14px;
+    line-height: 30px;
+}
+.container-news .news .introduce .news-ul>li:hover{
+    border:red 1px solid;
+    background-color: #1f1f1f;
+}
+.news .introduce .news-ul .news-list-text .text-small{
+    font-size: 12px;
+}
+

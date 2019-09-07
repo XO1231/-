@@ -1,0 +1,6 @@
+.footer{
+    animation: up 1s ease;
+}
+#mobile .footer{
+    margin-top:50px;
+}

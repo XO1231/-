@@ -1,0 +1,36 @@
+#dowebok .container-film.one{
+    margin-bottom:40px;
+}
+#dowebok .container-film .projects{
+    width: 100%;
+}
+#dowebok .container-film .projects>li{
+    width: 20%;
+}
+.container-film.one .projects>li:nth-child(2){
+    background: url(../imgs/projects1.jpg);
+}
+.container-film.one .projects>li:nth-child(3){
+    background: url(../imgs/projects2.jpg);
+}
+.container-film.one .projects>li:nth-child(4){
+    background: url(../imgs/projects3.jpg);
+}
+.container-film.one .projects>li:nth-child(5){
+    background: url(../imgs/projects4.jpg);
+}
+.container-film.two .projects>li:nth-child(2){
+    background: url(../imgs/projects5.jpg);
+}
+.container-film.two .projects>li:nth-child(3){
+    background: url(../imgs/projects6.jpg);
+}
+.container-film.two .projects>li:nth-child(4){
+    background: url(../imgs/projects7.jpg);
+}
+.container-film.two .projects>li:nth-child(5){
+    background: url(../imgs/projects8.jpg);
+}
+#mobile{
+    margin-top:50px;
+}
