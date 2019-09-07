@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>关于我们</title>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=0" />
+		<link rel="stylesheet" href="css/public/pub.css" />
+		<link rel="stylesheet" href="css/xiangMuDetail.css" />
+		<link rel="stylesheet" href="css/bannerTop.css" />
+		<link rel="stylesheet" href="css/about.css" />
+		<script type="text/javascript" src="js/public/jquery.min.js"></script>
+		<script type="text/javascript" src="js/public/vue.min.js"></script>
+		<script type="text/javascript" src="js/public/pub.js"></script>
+		<script type="text/javascript" src="components/mainModule.js"></script>
+		<script type="text/javascript" src="components/loginModule.js"></script>
+		<script type="text/javascript" src="components/bannerModule.js"></script>
+		<script type="text/javascript" src="components/navModule.js"></script>
+		<script type="text/javascript">
+			var NAVINDEX = 6;
+		</script>
+		
+	</head>
+
+	<body>
+		<div class="page" id="page">
+			<div class="public" id="publicTop">
+				<header-top :header-top='headerTop' v-model='headerTop.searchValues' @url='url($event)'></header-top>
+				<!--mainModule_headerTop-->
+				<header-bottom :nav-index='navIndex' @url='url($event)'></header-bottom>
+				<!--mainModule_headerBottom-->
+			</div>
+			<!--publicTop-->
+			<div id="mainBody" class="br-250">
+				<div id="banModule">
+					<banner-top :src='bannerSrc'>
+						<nav-title :nav-title='navTitle'></nav-title>
+						<div id="banTop" data-about class=" relative clear br-f">
+							<div class="absCtA abs cr-f">
+								<div class="node-c c-a">关于我们</div>
+								<div class="node-c c-b">
+									<span class="br-f"></span>
+								</div>
+								<div class="node-c c-c">About Us</div>
+							</div>
+						</div>
+					</banner-top>
+				</div>
+				<!--banner-top module-->
+				<div id="xmMain">
+					<div class="wrap">
+						<div id="xmCa"  data-ab  class="br-f border-box relative ">
+							<div class="wrapInt clear">
+								<div class="logo fl">
+									<img src="images/logo-big.png" class="block" />
+								</div>
+								<div class="slideCtn fr">
+									<h2 class="node-h2 ft30 weight cr-m1 mb20">江苏良友亿家医药科技有限公司</h2>
+									<p class="node-p cr-666 mb20">
+										<span class="cr-333 weight">江苏良友亿家医药科技有限公司</span>成立于2003年6月，历经数次的改版及系统完善，随着这8年的发展，目前已成为行业内极具影响力的网络社区，网站聚集了大批深爱此行业的网友，目前注册人数已达到60000多人，而且每天仍以数十人的速度在增加。访问本站的人群99％都是与临床研究和注册相关的人员，会员朋友可以在其中找到自己需要的资源，得到问题的解答，提高自己的业务水平，也可以结交业内的朋友，扩大社交圈，其中很多版主和热心活跃的会员得到业内的一致认可，扩大了自己的知名度。
+									</p>
+									<div class="icon-box clear">
+										<div class="node-icon br-m2 cr-f fl">临床试验招募</div>
+										<div class="node-icon br-m2 cr-f ml10 fl">受试者维系库</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--xmCa-->
+						<div id="xmCb"  data-ab  class="br-f border-box relative mt20">
+							<div class="wrapInt clear">
+								<p class="node-p cr-666">
+								目前已有依格斯、精诚泰和，迪美斯，中大医药发展中心，杰成CRO等多家企业通过网站提升了公司的品牌知名度，招聘到了所需的专业人才。
+
+							    本着服务于临床研究行业的，提高中国临床试验水平的目的，目前药物临床试验网开展的业务包括：
+							    1、临床试验的门户网站：包括专业知识，业内资讯，政策法规，专家支持，业内会议等，只要您是从事这个行业的人士，就可以在这里找到您所需要的。
+							    2、临床试验论坛：注册会员多达60000多人，且每天数十人的速度增长。论坛网络了大批从事本行业的专业人士，成为从事临床试验行业人士的必备平台。
+							    3、项目管理：网站利用其优势资源，联合国内众多CRO公司，对项目进行统一管理，以最大可能性保证临床研究操作一致性和质量。
+							    4、临床研究相关人才服务：国内第一家临床试验相关领域的人才服务系统，提供招聘求职信息和列头服务，方便大家寻找千里马和伯乐。目前已经有多家企业通过本平台找到了其所需要的专业人才。
+							    5、临床研究领域相关培训：本网站提供全方位，立体的培训体系。包括校园培训，初级人员培训，进级培训，高级培训。可以全方位提供您的业务水平和实战经验。目前本站已经成功举行过4次培训。
+							    6、受试者数据库服务：国内第一家普及药物临床试验知识的平台，兼顾专业性和科普性，让人民大众更多的了解临床试验，更早的加入到临床试验中来。本系统拥有最多最全的优质数据资源，可以有效的加快受试者入组，加快试验速度。目前已经成功输送约20位受试者。
+							    7、临床研究机构数据库以及评价系统服务：国内规模最大、信息最全的临床试验机构详细信息，更可以获得临床试验机构的评价信息，为您筛选试验基地提供便利帮助。
+							    8、CRO数据库以及评价系统服务：国内规模最大、信息最全的CRO公司详细信息，更可以获得CRO的评价信息，为您选择CRO进行临床试验提供实时支持。
+							    9、临床研究相关咨询及技术服务：提供方案、总结报告、申报资料审查、文献翻译、项目评估、CRO推荐及评估、机构的筛选推荐、项目风险控制、区域项目监查等相关服务。
+							 
+							     加盟本网站，您的获益在于：
+							    1、获得公司品牌知名度的提高，扩大在业内的影响力
+							    2、获得公司必须的专业人才以及人才的业务能力迅速提高。
+							    3、获得受试者信息
+							    4、获得临床研究机构的实时信息，获得临床研究机构的筛选、评估和推荐。
+							    5、获得CRO公司的实时信息，获得CRO的筛选、评估和推荐。
+							    6、获得公司业务质量和速度的提升。
+								7、获得实时资讯和专业知识。
+								</p>
+							</div>
+						</div>
+						<!--xmCb-->
+						
+					</div>
+				</div>
+			
+			</div>
+			<!--mainMid-->
+			<div class="public" id="publicBtm">
+				<bottom-top @url='url($event)'></bottom-top>
+				<!--mainModule_BottomTop-->
+				<login-bottom></login-bottom>
+				<!--bottomModule-->
+				<slide-bar></slide-bar>
+				<!--slidebarmodule-->
+			</div>
+			<!--publicBtm-->
+		</div>
+		<!--page-->
+
+	</body>
+	
+	<script type="text/javascript" src="js/module.js"></script>
+	<script type="text/javascript">
+		var NAVTITLE_PRO = {
+				color: '#fff',
+				text:  '关于我们',
+				url: ''
+			};
+	</script>
+	<script type="text/javascript" src="js/xiangMuDetail.js"></script>
+
+</html>

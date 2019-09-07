@@ -1,0 +1,65 @@
+@import url("formMain.css");
+#mainBody[data-baoming] {
+	padding-top: 80px;
+}
+
+#mainBody {
+	padding-bottom: 100px;
+}
+
+#mainBody .mainBodyWrap {
+	height: 760px;
+	background: rgba(255, 255, 255, 1);
+	box-shadow: 0px 2px 30px 0px rgba(0, 0, 0, 0.1);
+}
+
+#bmLeft,
+#bmRight {
+	padding: 60px;
+}
+
+#bmLeft {
+	width: 460px;
+	background: rgba(247, 247, 247, 1);
+}
+
+#bmLeft .ul-xa {
+	margin-bottom: 100px;
+}
+
+#bmLeft .ul-xa .node-li img {
+	display: block;
+	width: 40px;
+	margin: 0 auto;
+}
+
+#bmLeft .ul-xa .node-icon {
+	height: 40px;
+	display: flex;
+	align-items: center;
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+#bmLeft .ul-xa .node-icon img {
+	width: 16px;
+}
+
+#bmLeft .node-phone {
+	width: calc( 100% - 60*2px);
+	text-align: center;
+	bottom: 70px;
+}
+
+#bmRight {
+	width: calc(100% - 460px);
+}
+
+#formXa[data-baoming] .node-area {
+	width: 620px;
+}
+
+#formXa[data-baoming] .submitHandle {
+	position: absolute;
+	bottom: 60px;
+}

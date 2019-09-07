@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>发布临床实验</title>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=0" />
+		<link rel="stylesheet" href="css/public/pub.css" />
+		<link rel="stylesheet" href="css/faBuShiYan.css" />
+	
+		<script type="text/javascript" src="js/public/vue.min.js"></script>
+		<script type="text/javascript" src="js/public/jquery.min.js"></script>
+		<script type="text/javascript" src="js/public/pub.js"></script>
+		<script type="text/javascript" src="components/mainModule.js"></script>
+		<script type="text/javascript" src="components/loginModule.js"></script>
+		<script type="text/javascript">
+			var NAVINDEX = 5;
+		</script>
+	</head>
+	<body>
+		<div class="page" id="page">
+			<div class="public" id="publicTop">
+				<header-top 
+					:header-top='headerTop' 
+					v-model='headerTop.searchValues'
+					@url='url($event)'
+				></header-top>
+				<!--mainModule_headerTop-->
+				<header-bottom 
+					:nav-index='navIndex'
+					@url='url($event)'	
+				></header-bottom>
+				<!--mainModule_headerBottom-->
+			</div>
+			<!--publicTop-->
+			<div id="mainBody" data-baoming = "" class="br-250">
+				<div class="wrap">
+					<div id="navH1" class="clear mb20">
+						<h2 class="node-h2 cr-333 ft20 weight fl ml20">受试者信息查询</h2>
+						<div class="node-btn fr br-m1 cr-f ft16 text-center point" data-url = "baoMing">发布临床项目</div>
+					</div>
+					<form id="formXa" data-shiyan class="node-from formXa clear border-box br-f">
+						<h2 class="node-h2 fl ft13 cr-999">受试者：</h2>
+						<div class="node-li clear  fl">
+							<label class="node-select fl  w180 h36">
+								<select class="" tabindex="-1" v-model.lazy="">
+									<option value="" disabled selected class="hide">受试者类型</option>
+									<option value="男">男</option>
+									<option value="女">女</option>
+								</select>
+							</label>
+						</div>
+						<div class="node-li clear  fl">
+							<label class="node-select fl  w180 h36">
+								<select class="" tabindex="-1" v-model.lazy="">
+									<option value="" disabled selected class="hide">性别</option>
+									<option value="男">男</option>
+									<option value="女">女</option>
+								</select>
+							</label>
+						</div>
+						<div class="node-li clear  fl">
+							<label class="node-select fl  w180 h36">
+								<select class="" tabindex="-1" v-model.lazy="">
+									<option value="" disabled selected class="hide">婚姻</option>
+									<option value="未婚">未婚</option>
+									<option value="已婚">已婚</option>
+								</select>
+							</label>
+						</div>
+						<div class="node-li clear  fl">
+							<label class="node-select fl  w180 h36">
+								<select class="" tabindex="-1" v-model.lazy="">
+									<option value="" disabled selected class="hide">年龄段</option>
+									<option value="男">男</option>
+									<option value="女">女</option>
+								</select>
+							</label>
+						</div>
+						<div class="node-li clear  fl">
+							<label class="node-select fl  w180 h36">
+								<select class="" tabindex="-1" v-model.lazy="">
+									<option value="" disabled selected class="hide">所在地区</option>
+									<option value="男">男</option>
+									<option value="女">女</option>
+								</select>
+							</label>
+						</div>
+					</form>
+					<div id="mTable" data-shiyan>
+						<div class="tb-cap wrapZ20">共匹配到160个项目</div>
+						<table class="tb width">
+							<thead class="tb-hd cr-999 ft12">
+								<tr>
+									<td class="td">受试者姓名</td>
+									<td class="td">年龄</td>
+									<td class="td">性别</td>
+									<td class="td">婚姻</td>
+									<td class="td">受试者类型</td>
+									<td class="td">报名疾病</td>
+									<td class="td">所在地区</td>
+									
+								</tr>
+							</thead>
+							<tbody class="tb-bd cr-666 ft13 br-f">
+								<tr>
+									<td class="td">叶先生</td>
+									<td class="td">35岁</td>
+									<td class="td">男性</td>
+									<td class="td">已婚</td>
+									<td class="td">健康志愿者</td>
+									<td class="td">艾滋病</td>
+									<td class="td">黑龙江哈尔滨</td>
+									
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<!--mainMid-->
+			<div class="public" id="publicBtm">
+				<bottom-top @url='url($event)'></bottom-top>
+				<!--mainModule_BottomTop-->
+				<login-bottom></login-bottom>
+				<!--bottomModule-->
+				<slide-bar></slide-bar>
+				<!--slidebarmodule-->
+			</div>
+			<!--publicBtm-->
+		</div>
+		<!--page-->
+		
+		
+	</body>
+	<script type="text/javascript" src="js/module.js"></script>
+	<script type="text/javascript" src="layui.layer/layer.js" ></script>
+	
+</html>

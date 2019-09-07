@@ -1,0 +1,179 @@
+@import url("bannerTop.css");
+#syA {
+	padding: 50px 100px;
+	margin-top: -60px;
+	position: relative;
+	z-index: 50;
+}
+
+#syA .mc1 {
+	line-height: 30px;
+}
+
+#syA .mc2 .node-li {
+	width: 475px;
+}
+
+#syA .mc2 .node-li .node-h2 {
+	height: 50px;
+	line-height: 50px;
+	padding: 0 30px;
+}
+
+#syA .mc2 .node-li .node-c {
+	line-height: 26px;
+}
+
+#syA .mc2 .node-li .node-c:nth-of-type(n+2) {
+	margin-top: 15px;
+}
+
+#syB .node-h2 span::before,
+#syB .node-h2 span::after {
+	display: block;
+	content: "";
+	width: 200px;
+	height: 1px;
+	background: rgba(204, 204, 204, 1);
+	position: absolute;
+	top: 50%;
+}
+
+#syB .node-h2 span::before {
+	left: -220px;
+}
+
+#syB .node-h2 span::after {
+	right: -220px;
+}
+
+#syB .node-ul .node-li {
+	width: 260px;
+}
+
+#syB .node-ul .node-li img {
+	width: 180px;
+}
+
+#syB .node-ul .node-li:nth-of-type(n+2) {
+	margin-left: 40px;
+}
+
+#syB .node-ul .node-li p {
+	line-height: 24px;
+}
+
+#syC {
+	padding-bottom: 100px;
+}
+
+#syC .mct .node-li:nth-of-type(n+2){
+	margin-top: 20px;
+}
+#syC .mct .node-li .wrapZ {
+	width: calc(100% - 60px);
+	width: -webkit-calc(100% - 60px);
+	
+}
+
+#syC .mct .node-li .node-h2 {
+	background-size: 50px auto;
+	background-position: 30px center;
+	background-repeat: no-repeat;
+	border:1px solid rgba(238,238,238,1);
+	background-color: #fff;
+}
+#syC .mct .node-li .node-h2:hover{
+	box-shadow:0px 0px 16px 0px rgba(0,103,58,0.4);
+	border:1px solid rgba(0,103,58,1);
+}
+#syC .mct .node-li.cur .node-h2:hover{
+	box-shadow:none;
+	border:1px solid rgba(238,238,238,1);
+}
+
+#syC .mct .node-li .node-h2 .wrapZ {
+	text-indent: 70px;
+	height: 80px;
+	line-height: 80px;
+	background: url('../images/syv10 (18).png') no-repeat right center;
+	background-size: 30px auto;
+}
+#syC .mct .node-li .node-h2 .iconHandle{
+	width: 30px;
+	padding-left: 30px;
+}
+
+#syC .mct .node-li.cur .node-h2 {
+	background-color: rgba(0, 103, 58, 1);
+	
+}
+#syC .mct .node-li.cur .node-h2 .node-text{
+	color: #fff;
+}
+#syC .mct .node-li.cur .node-h2 .wrapZ {
+	background-image: url('../images/syv10 (20).png');
+}
+
+#syC .mct .node-li .node-ctn {
+	display: none;
+	overflow: hidden;
+}
+#syC .mct .node-li .node-ctn h3,
+#syC .mct .node-li .node-ctn p{
+	line-height: 26px;
+}
+#syC .mct .node-li .node-ctn .node-i:nth-of-type(n+2){
+	margin-top: 25px;
+}
+#syC .mct .node-li.cur .node-ctn {
+	padding: 30px;
+}
+
+#syC .mct .li-a .node-h2 {
+	background-image: url("../images/syv10 (4).png");
+}
+
+#syC .mct .li-a.cur .node-h2 {
+	background-image: url("../images/syv10 (23).png");
+}
+
+#syC .mct .li-b .node-h2 {
+	background-image: url("../images/syv10 (24).png");
+}
+
+#syC .mct .li-b.cur .node-h2 {
+	background-image: url("../images/syv10 (5).png");
+}
+
+#syC .mct .li-c .node-h2 {
+	background-image: url("../images/syv10 (25).png");
+}
+
+#syC .mct .li-c.cur .node-h2 {
+	background-image: url("../images/syv10 (6).png");
+}
+
+#syC .mct .li-d .node-h2 {
+	background-image: url("../images/syv10 (26).png");
+}
+
+#syC .mct .li-d.cur .node-h2 {
+	background-image: url("../images/syv10 (7).png");
+}
+
+#syC .mct .li-e .node-h2 {
+	background-image: url("../images/syv10 (27).png");
+}
+
+#syC .mct .li-e.cur .node-h2 {
+	background-image: url("../images/syv10 (9).png");
+}
+
+#syC .mct .li-f .node-h2 {
+	background-image: url("../images/syv10 (28).png");
+}
+
+#syC .mct .li-f.cur .node-h2 {
+	background-image: url("../images/syv10 (10).png");
+}

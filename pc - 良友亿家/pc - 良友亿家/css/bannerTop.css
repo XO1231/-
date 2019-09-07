@@ -1,0 +1,29 @@
+#banTop .abs {
+	position: absolute;
+	width: 100%;
+	left: 0;
+}
+
+#banTop[data-index] .absCtA {
+	top: 78px;
+}
+
+#banTop .absCtA .node-c {
+	text-align: center;
+}
+
+#banTop .absCtA .node-c.c-a {
+	font-size: 42px;
+}
+
+#banTop .absCtA .c-b span {
+	display: inline-block;
+	width: 50px;
+	height: 4px;
+	border-radius: 2px;
+	margin: 20px 0;
+}
+
+#banTop .absCtA .node-c.c-c {
+	font-size: 20px;
+}

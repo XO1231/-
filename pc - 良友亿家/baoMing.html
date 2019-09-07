@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>我要报名</title>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=0" />
+		<link rel="stylesheet" href="css/public/pub.css" />
+		<link rel="stylesheet" href="css/baoMing.css" />
+		<script type="text/javascript" src="js/public/vue.min.js"></script>
+		<script type="text/javascript" src="js/public/jquery.min.js"></script>
+		<script type="text/javascript" src="js/public/pub.js"></script>
+		<script type="text/javascript" src="components/mainModule.js"></script>
+		<script type="text/javascript" src="components/loginModule.js"></script>
+		<script type="text/javascript">
+			var NAVINDEX = 4;
+		</script>
+	</head>
+	<body>
+		<div class="page" id="page">
+			<div class="public" id="publicTop">
+				<header-top 
+					:header-top='headerTop' 
+					v-model='headerTop.searchValues'
+					@url='url($event)'
+				></header-top>
+				<!--mainModule_headerTop-->
+				<header-bottom 
+					:nav-index='navIndex'
+					@url='url($event)'	
+				></header-bottom>
+				<!--mainModule_headerBottom-->
+			</div>
+			<!--publicTop-->
+			<div id="mainBody" data-baoming  class="br-250">
+				<div class="wrap clear mainBodyWrap" >
+					<div id="bmLeft" class="fl border-box height relative">
+						<h1 class="node-h1 text-center ft20 mb60">招募报名表</h1>
+						<div class="node-ul ul-xa flex flex-center">
+							<div class="node-li li-a text-center">
+								<img src="images/bm421 (2).png" />
+								<p class="ft16 mt10">提交信息</p>
+							</div>
+							<div class="node-icon">
+								<img src="images/bm421 (4).png" />
+							</div>
+							<div class="node-li li-a text-center">
+								<img src="images/bm421 (3).png"  />
+								<p class="ft16 mt10">电话回访</p>
+							</div>
+							<div class="node-icon">
+								<img src="images/bm421 (4).png" />
+							</div>
+							<div class="node-li li-a text-center">
+								<img src="images/bm421 (1).png" />
+								<p class="ft16 mt10">匹配项目</p>
+							</div>
+						</div>
+						<div class="node-ul ul-xb">
+							<div class="node-li mb40 cr-333">
+								<h3 class="ft14 mb15">健康志愿者——</h3>
+								<p class="ft16">参与临床试验，推动世界医学进步。</p>
+							</div>
+							<div class="node-li  cr-333">
+								<h3 class="ft14 mb15">患者—</h3>
+								<p class="ft16">尝试新药物或新疗法，获得改善疾病的机会。</p>
+							</div>
+						</div>
+						<div class="node-phone text-center ft18 absolute ">服务电话：400-0000-0000</div>
+					</div>
+					<div id="bmRight" class="fr border-box height relative">
+						<div class="navTitle clear mb30" id="temNav">
+							<button type="button" class="node-btn fl" :class="{ 'cur': peopleType==0 }"
+								@click="selPeoType(0)"	
+							>我是健康志愿者</button>
+							<button type="button" class="node-btn fl ml30" :class="{ 'cur': peopleType==1 }"
+								@click="selPeoType(1)"		
+							>我是患者</button>
+						</div>
+						<form class="node-from formXa" id="formXa">
+							<div class="node-li clear mb10">
+								<label class="node-label flex flex-middle fl must w300 h40 node-input">
+									<input type="text" placeholder="受试者姓名" id="" class="" v-model.lazy.trim="name" />
+								</label>
+								<label class="node-label flex flex-middle fr must w300 h40 node-input">
+									<input type="text" placeholder="年龄" id="" class="" v-model.lazy.trim="age"/>
+								</label>
+							</div>
+							<div class="node-li clear mb10">
+								<label class="node-select fl must w300 h40">
+									<select class="" tabindex="-1" v-model.lazy="sex">
+										<option value="" disabled selected class="hide">性别</option>
+										<option value="男">男</option>
+										<option value="女">女</option>
+									</select>
+								</label>
+								<label class="node-select fr must w300 h40">
+									<select class="" tabindex="-1" v-model.lazy="marr">
+										<option value="" disabled selected class="hide">婚姻</option>
+										<option value="已婚">已婚</option>
+										<option value="未婚">未婚</option>
+									</select>
+								</label>
+							</div>
+							<div class="node-li clear mb10">
+								<label class="node-label flex flex-middle fl must w300 h40 node-input">
+									<input type="text" placeholder="手机号" id="" class="" v-model.lazy.trim="phone" />
+								</label>
+								<label class="node-label flex flex-middle fr  w300 h40 node-input">
+									<input type="text" placeholder="报名疾病名称" id="" class="" v-model.lazy.trim="illness" />
+								</label>
+							</div>
+							<h3 class="node-h3 cr-999">所在地区</h3>
+							<div class="node-li clear mb10" id="citySle">
+								<label class="node-select flex flex-middle fl  w300 h40">
+									<select class="prov" tabindex="-1" value="">
+										<option value=""  selected class="" >请选择</option>
+									</select>
+								</label>
+								<label class="node-select flex flex-middle fr  w300 h40 ">
+									<select class="city" tabindex="-1" value="">
+										<option value=""  selected class="hide" >请选择</option>
+									</select>
+								</label>
+							</div>
+							<h3 class="node-h3 cr-999">报名招募项目</h3>
+							<div class="node-li clear mb10">
+								<label class="node-select flex flex-middle fl  width h40">
+									<select class="" tabindex="-1" v-model.lazy="project">
+										<option value="" disabled selected class="hide">请选择</option>
+										<option value="0">已婚</option>
+										<option value="1">未婚</option>
+									</select>
+								</label>
+							</div>
+							<h3 class="node-h3 cr-999">个人情况</h3>
+							<div class="node-li">
+								<textarea class="block width node-area border-box" placeholder="请简单描述您的身体情况及生活习惯情况…"
+									v-model.lazy.trim="info"
+								></textarea>
+							</div>
+							<button type="button" class="node-btn br-m1 cr-f text-center mt30 submitHandle" 
+								@click="submit"	
+							>我要报名</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<!--mainMid-->
+			<div class="public" id="publicBtm">
+				<bottom-top @url='url($event)'></bottom-top>
+				<!--mainModule_BottomTop-->
+				<login-bottom></login-bottom>
+				<!--bottomModule-->
+				<slide-bar></slide-bar>
+				<!--slidebarmodule-->
+			</div>
+			<!--publicBtm-->
+		</div>
+		<!--page-->
+		
+		
+	</body>
+	
+	
+	<script type="text/javascript" src="js/module.js"></script>
+	<script type="text/javascript" src="js/public/city.min.js"></script>
+	<script type="text/javascript" src="js/public/jquery.cityselect.js"></script>
+	<script type="text/javascript" src="js/baoMing.js"></script>
+	<script type="text/javascript" src="layui.layer/layer.js" ></script>
+</html>
