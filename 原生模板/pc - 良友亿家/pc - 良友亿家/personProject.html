@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>个人主页-报名项目</title>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=0" />
+		<link rel="stylesheet" href="css/public/pub.css" />
+		<link rel="stylesheet" href="css/personMain.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<script type="text/javascript" src="js/public/vue.min.js"></script>
+		<script type="text/javascript" src="js/public/jquery.min.js"></script>
+		<script type="text/javascript" src="js/public/pub.js"></script>
+		<script type="text/javascript" src="components/mainModule.js"></script>
+		<script type="text/javascript" src="components/loginModule.js"></script>
+		<script type="text/javascript" src="components/personModule.js"></script>
+		<script type="text/javascript">
+			var NAVINDEX = -1;
+			var SLIDEINDEX = 1;
+		</script>
+	</head>
+	<body>
+		<div class="page" id="page">
+			<div class="public" id="publicTop">
+				<header-top 
+					:header-top='headerTop' 
+					v-model='headerTop.searchValues'
+					@url='url($event)'
+				></header-top>
+				<!--mainModule_headerTop-->
+				<header-bottom 
+					:nav-index='navIndex'
+					@url='url($event)'	
+				></header-bottom>
+				<!--mainModule_headerBottom-->
+			</div>
+			<!--publicTop-->
+			<div id="mainBody" data-person  class="br-250">
+				<div class="wrap clear " >
+					<div id="slideModule" class="fl">
+						<person-slide :slide-index='slideIndex'></person-slide>
+					</div>
+					<div id="psRight"   data-project  class="formRight fr br-f border-box">
+						<h1 class="node-h1  ft24 mb20">报名项目</h1>
+						<ul class="node-ul clear" id="bmUl" data-project = "">
+							<li class="node-li fl">
+								<div class="node-c c-a">
+									<div class="node-g g-a width text-cut cr-333 ft18">【高血压A005】微孔灌注肾动脉消融导</div>
+									<div class="node-g g-b ">
+										<span class="liner cr-f point ft12">招募中</span>
+									</div>
+									<div class="node-g g-c cr-666">适应症：原发性高血压</div>
+									<div class="node-g g-d cr-999 ft12 text-cut-more ft12">【高血压A005】微孔灌注肾动脉消融导管用于治疗原发性高血压一、临床试验项目名称  微孔灌注肾动脉消融导管用于治疗原发性</div>
+								</div>
+								<div class="node-c c-b flex flex-middle flex-between ft12">
+									<div class="node-g g-a cr-999">治疗阶段：II 期</div>
+									<div class="node-g g-b cr-m1">报名申请中</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					
+				</div>
+			</div>
+			<!--mainMid-->
+			<div class="public" id="publicBtm">
+				<bottom-top @url='url($event)'></bottom-top>
+				<!--mainModule_BottomTop-->
+				<login-bottom></login-bottom>
+				<!--bottomModule-->
+				<slide-bar></slide-bar>
+				<!--slidebarmodule-->
+			</div>
+			<!--publicBtm-->
+		</div>
+		<!--page-->
+		
+		
+	</body>
+	
+	<script type="text/javascript" src="js/module.js"></script>
+	<script type="text/javascript" src="js/personSlide.js"></script>
+	<script type="text/javascript" src="js/public/city.min.js"></script>
+	<script type="text/javascript" src="layui.layer/layer.js" ></script>
+	
+	
+</html>

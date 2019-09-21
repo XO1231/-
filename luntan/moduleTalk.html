@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<head>
+	<title></title>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=0" />
+	<link rel="stylesheet" href="css/public/pub.css" />
+	<script type="text/javascript" src="js/public/pub.reset.js"></script>
+	<script type="text/javascript" src="js/public/pub.layer.min.js"></script>
+	<link rel="stylesheet" href="css/public/module.css" />
+</head>
+<body>
+	<div id="modutleTalk">
+		<div class="info1 wrap30">
+			<div class="info-left" class="wrap30">
+				<div class="info-avatar"></div>
+				<div class="info-wrapper">
+					<h1 class="title">懒猫直通车</h1>
+					<div class="text">
+						<img src="./imgs/top.png" alt="">
+						<p class="text-title">本地头条</p>
+						<p class="text-time">刚刚</p>
+					</div>
+				</div>
+			</div>
+			<p class="inform">举报</p>
+		</div>
+		<p class="wrap30 content-detail">
+			真正的懒猫家务通，是一个帮你解决生活中几乎所有的问题！真正的懒猫家务通，是一个帮你解决生活中几乎所有的问题！真正的懒猫家务通，是一个帮你解决生活中几乎所有的问题！真正的懒猫家务通…</p>
+		<ul id="show" class="wrap30">
+			<li><img src="./imgs/bg1.png"></li>
+			<li><img src="./imgs/bg1.png"></li>
+			<li><img src="./imgs/bg1.png"></li>
+		</ul>
+		<div class="address wrap30"><img src="./imgs/address.png" alt="">
+			<p class="address-title">新沂市大学生电子商务产业园</p>
+			<p class="seenum">浏览量</p>
+		</div>
+		<ul class="icon-lists wrap30">
+			<li><div id="zan"></div><span id="zaNum">2438</span></li>
+			<li><img src='./imgs/discuss.png'><span>2438</span></li>
+			<li><img src='./imgs/share.png'><span>2438</span></li>
+			<li><img src='./imgs/money.png'><span>243元</span></li>
+		</ul>
+	</div>
+	<script src="./js/public/vue.min.js"></script>
+	<script src="./js/public/jquery.min.js"></script>
+	<script src="./js/public/swiper.min.js"></script>
+	<script type="text/javascript" src="js/public/pub.js"></script>
+	<script>
+		//点赞加1
+		$(function(){
+          $('#zan').on('click',function(e){
+			e.stopPropagation()
+			  var zanBgc = $('.icon-lists #zan')
+			  zanBgc.css({'background-image':"url('./imgs/zan-2.png')"})
+			 var numadd = Number($('#zaNum').text() )+1;
+			 $('#zaNum').text(numadd)
+			  setTimeout(function(){
+				zanBgc.css({'background-image':"url('./imgs/zan.png')"})
+			  },500)
+		  })
+		})
+	</script>
+</body>
+
+</html>

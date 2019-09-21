@@ -1,0 +1,102 @@
+
+@import url("formMain.css");
+#mainBody{
+	padding-bottom: 100px;
+}
+#formXa[data-xiangmu]{
+	padding-left: 200px;
+	padding-right: 200px;
+	padding-bottom: 60px;
+}
+#formXa[data-xiangmu] .node-h2 span::before,
+#formXa[data-xiangmu] .node-h2 span::after {
+	display: block;
+	content: "";
+	width: 200px;
+	height: 1px;
+	background: rgba(204, 204, 204, 1);
+	position: absolute;
+	top: 50%;
+}
+
+#formXa[data-xiangmu] .node-h2 span::before {
+	left: -220px;
+}
+
+#formXa[data-xiangmu] .node-h2 span::after {
+	right: -220px;
+}
+
+#formXa[data-xiangmu] .w160{
+	width: 160px;
+}
+#formXa[data-xiangmu] .w196{
+	width: 196px;
+}
+#formXa[data-xiangmu] .w286{
+	width: 286px;
+}
+#formXa[data-xiangmu] .w308{
+	width: 308px;
+}
+#formXa[data-xiangmu] .w360{
+	width: 360px;
+}
+#formXa[data-xiangmu] .form-h3{
+	position: relative;
+	line-height: 40px;
+	padding-left: 10px;
+}
+#formXa[data-xiangmu] .form-h3::before{
+	display: block;
+	content: "";
+	width: 3px;
+	height: 20px;
+	position: absolute;
+	top: 10px;
+	left: 0;
+	background-color: rgba(0,103,58,1);
+}
+#formXa[data-xiangmu] .form-ctn{
+	width:643px;
+}
+
+#formXa[data-xiangmu] .form-h4{
+	/*line-height: 40px;*/
+}
+#formXa[data-xiangmu] .form-h4.must::before{
+	left: -11px;
+}
+#formXa[data-xiangmu] .h140{
+	height: 140px;
+}
+
+#formXa[data-xiangmu] .plugin:hover{
+	border-color: rgba(0,103,58,1);
+}
+
+#formXa[data-xiangmu] .form-submit{
+	width:200px;
+	height:50px;
+	line-height: 50px;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

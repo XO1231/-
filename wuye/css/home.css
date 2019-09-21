@@ -1,0 +1,420 @@
+/* tab栏 */
+
+#info {
+    height: calc(100%-420px);
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.flex-c {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.flex-a {
+    justify-content: space-around;
+}
+
+#infoTab {
+    width: 240px;
+    margin-right: 16px;
+    background: rgba(255, 255, 255, 1);
+    text-align: center;
+    padding: 0 10px;
+}
+
+.person {
+    width: 220px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-bottom: 1px solid #51327F;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(81, 50, 127, 1);
+}
+
+section {
+    width: 944px;
+    height: 578px;
+    background: rgba(255, 255, 255, 1);
+}
+
+#infoTab li {
+    width: 220px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 14px;
+    font-family: PingFang-SC;
+    font-weight: bold;
+    color: rgba(81, 50, 127, 1);
+}
+
+#infoTab .active {
+    background-color: rgba(81, 50, 127, 1);
+    color: #fff;
+}
+
+/* 个人信息 */
+
+.info-content {
+    width: 944px;
+    height: 578px;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.info-content h2 {
+    align-self: flex-start;
+    width: 80px;
+    height: 28px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(51, 51, 51, 1);
+    line-height: 28px;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+.info-content form {
+    color: #999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 108px;
+}
+
+.info-content form label {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.save {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 30px;
+}
+
+.info-content form input {
+    width: 300px;
+    height: 40px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 2px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.web-name input {
+    border: 1px solid rgba(153, 153, 153, 1);
+}
+
+.info-content .btn {
+    border-radius: 2px;
+    border: 1px solid rgba(153, 153, 153, 1);
+}
+
+.changet {
+    width: 120px;
+    height: 40px;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.info-content form img {
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    border-radius: 100px;
+    display: block;
+    margin-right: 30px;
+}
+
+.info-content .changep {
+    width: 120px;
+    height: 40px;
+    margin: 0 auto;
+    display: block;
+    margin-left: 381px;
+    margin-top: 50px;
+    color: #999999;
+}
+
+/* section公用样式 */
+
+.main {
+    display: none;
+}
+
+.selected {
+    display: block;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.changeTel {
+    border: 1px solid rgba(238, 238, 238, 1);
+}
+
+#back {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-self: flex-start;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+#back img {
+    width: 14px;
+    height: 14px;
+}
+
+#back p {
+    width: 28px;
+    height: 20px;
+    font-size: 14px;
+    font-family: PingFang-SC;
+    font-weight: 500;
+    color: rgba(51, 51, 51, 1);
+    line-height: 20px;
+}
+
+/* 会员中心 */
+
+.info-member #memCen {
+    width: 80px;
+    height: 28px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(51, 51, 51, 1);
+    line-height: 28px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    align-self: flex-start;
+    margin-left: 100px;
+}
+
+.bg {
+    width: 744px;
+    height: 130px;
+    background: rgba(255, 197, 51, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bg .membg-info {
+    margin-left: 20px;
+}
+
+.bg h3 {
+    /* width: 96px; */
+    height: 31px;
+    font-size: 24px;
+    font-family: MicrosoftYaHei;
+    font-weight: bold;
+    color: rgba(51, 51, 51, 1);
+    line-height: 31px;
+    margin-bottom: 20px;
+}
+
+.bg p {
+    width: 234px;
+    height: 24px;
+    font-size: 18px;
+    font-family: MicrosoftYaHei;
+    color: rgba(51, 51, 51, 1);
+    line-height: 24px;
+}
+
+.bg img {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin-right: 30px;
+}
+
+.money-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 744px;
+    height: 130px;
+}
+
+.money-wrap li {
+    border: 1px solid #ccc;
+    width: 160px;
+    height: 60px;
+    border-radius: 2px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.money-wrap button {
+    width: 160px;
+    height: 60px;
+    border-radius: 2px;
+    line-height: 60px;
+    text-align: center;
+    display: block;
+}
+
+.money-wrap span {
+    color: red;
+}
+
+.money-wrap .mac {
+    border: 1px solid red;
+    background-image: url(.././images/choose2.png);
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+.buy {
+    width: 204px;
+    background: rgba(81, 50, 127, 1);
+    color: #fff;
+}
+
+.buy-record {
+    width: 744px;
+    height: 40px;
+    line-height: 40px;
+    box-sizing: border-box;
+    background-color: #EEEEEE;
+}
+
+.layui-table {
+    width: 744px;
+    box-sizing: border-box;
+    color: rgba(102, 102, 102, 1);
+    border: 1px solid #ccc;
+}
+
+.layui-table tr {
+    border: 1px solid #ccc;
+    height: 50px;
+    line-height: 50px;
+}
+
+.layui-table tr td {
+    padding-left: 20px;
+}
+
+/* 充值服务币 */
+
+#coins {
+    width: 100px;
+    height: 28px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(51, 51, 51, 1);
+    line-height: 28px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    align-self: flex-start;
+    margin-left: 100px;
+}
+
+.coin h3 {
+    width: 130px;
+}
+
+.coin p {
+    width: 450px;
+}
+
+/* 支付页面 */
+
+#zf {
+    width: 100%;
+    margin-top: 91px;
+
+}
+
+#zf .zf-title {
+    font-size: 16px;
+    margin-left: 100px;
+    font-family: PingFang-SC;
+    font-weight: bold;
+    color: rgba(51, 51, 51, 1);
+}
+#zf h4{
+    font-family: PingFang-SC;
+    font-weight: bold;
+    color: rgba(51, 51, 51, 1); 
+    font-size: 16px;
+}
+#zf .hr {
+    width: calc(100% - 200px);
+    height: 1px;
+    background: rgba(238, 238, 238, 1);
+    margin-top: 20px;
+    text-align: center;
+}
+
+.zf-wrapper {
+    margin-top: 25px;
+}
+
+.zf1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left:-28px;
+    /* margin-left:50px; */
+}
+.zf2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left:30px;
+}
+
+ .zf-cirle {
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/circle.png);
+    background-size: contain;
+}
+#zf .zactive{
+    background-image: url(../images/choose.png);
+}
+.zfb {
+    width: 40px;
+    height: 40px;
+    margin-left: 8px;
+    display: block;
+}
+
+.wx {
+    width: 40px;
+    height: 40px;
+    margin-left: 8px;
+    display: block;
+   
+}
+
+#zf button {
+    width: 180px;
+    height: 50px;
+    background: rgba(81, 50, 127, 1);
+    border-radius: 2px;
+    color: #fff;
+    display: block;
+    text-align: center;
+    /* margin-left:230px; */
+}

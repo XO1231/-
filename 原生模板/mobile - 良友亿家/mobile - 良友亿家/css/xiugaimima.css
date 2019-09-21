@@ -1,0 +1,12 @@
+body{
+	background: #F5F5F5;
+}
+.s_nav{
+	height: 0.8rem;
+	display: flex;
+	color: #666;
+	line-height: 0.8rem;
+}
+.s_nav a{
+	color: #666;
+}

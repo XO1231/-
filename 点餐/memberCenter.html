@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>会员中心</title>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=0" />
+		<link rel="stylesheet" href="css/public/pub.css" />
+		<link rel="stylesheet" href="css/person.css" />
+		<link rel="stylesheet" href="css/dineNum.css" />
+		<link rel="stylesheet" href="css/public/swiper.min.css" />
+		<script type="text/javascript" src="js/public/pub.reset.js"></script>
+		<script type="text/javascript" src="js/public/pub.layer.min.js"></script>
+	</head>
+
+	<body>
+		<script type="text/javascript" src="js/public/pub.loading.js"></script>
+		<div id="App" class="App" data-np = "">
+			<nav id="navHeader">
+				<div class="wrap30">
+					<div class="back" onclick="back()">
+						<img src="images/icon-back.png" />
+					</div>
+					<h1 class="h1">会员中心</h1>
+				</div>
+			</nav>
+			<!--nav-header-->
+			<div id="mainApp" class="clear">
+				<div id="mcA">
+					<div class="swiper-container" id="swiperCa">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide li-a">
+								<img class="block width" src="images/mc (4).png" />
+								<div class="slot">
+									<div class="node-c c-a">
+										<img class="node-g g-a" src="images/dn (3).png" />
+										<span class="node-g g-b ft30">鑫花溪会员</span>
+									</div>
+									<div class="node-c c-b">
+										<span class="node-g g-a ft36">一级会员</span>
+										<button class="node-g g-b ft28 cr-fff">立即开通</button>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide li-b">
+								<img class="block width" src="images/mc (5).png" />
+								<div class="slot">
+									<div class="node-c c-a">
+										<img class="node-g g-a" src="images/dn (3).png" />
+										<span class="node-g g-b ft30">鑫花溪会员</span>
+									</div>
+									<div class="node-c c-b">
+										<span class="node-g g-a ft36">二级会员</span>
+										<button class="node-g g-b ft28 cr-fff">立即开通</button>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide li-c">
+								<img class="block width" src="images/mc (6).png" />
+								<div class="slot">
+									<div class="node-c c-a">
+										<img class="node-g g-a" src="images/dn (3).png" />
+										<span class="node-g g-b ft30">鑫花溪会员</span>
+									</div>
+									<div class="node-c c-b">
+										<span class="node-g g-a ft36">三级会员</span>
+										<button class="node-g g-b ft28 cr-fff">立即开通</button>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+				<!--mcA-->
+				<div class="wrap30">
+					<ul id="mcB">
+						<li class="node-li li-a cr-fff">
+							<div class="node-w w-a">
+								<span class="node-c c-a">特权1</span>
+								<span class="node-c c-b">消费享折扣</span>
+							</div>
+							<div class="slot">
+								<span class="node-c c-a ft40">88<em class="ft28">折</em></span>
+								<span class="node-c c-b ft32">旗下所有门店消费享95折</span>
+							</div>
+						</li>
+						<li class="node-li li-a cr-fff">
+							<div class="node-w w-a">
+								<span class="node-c c-a">特权2</span>
+								<span class="node-c c-b">生日送菜</span>
+							</div>
+							<div class="slot">
+								<span class="node-c c-a ft40"></span>
+								<span class="node-c c-b ft32">生日当天送长寿面一份</span>
+							</div>
+						</li>
+						<li class="node-li li-b cr-fff">
+							<div class="node-w w-a">
+								<span class="node-c c-a">特权3</span>
+								<span class="node-c c-b">每月送红包</span>
+							</div>
+							<div class="slot">
+								<p class="node-g g-a cr-333">
+									<span class="cr-r">
+										<em class="f-a ft28">¥</em>
+										<i class="f-b ft60 weight">10</i>
+									</span>
+									<span class="f-c ft24">无门槛</span>
+									<em class="f-d ft36 cr-m2">×</em>
+									<i class="f-e ft40 cr-m2">8</i>
+									<span class="f-f ft24">张</span>
+								</p>
+								<p class="node-g g-b ft32 cr-fff">店铺红包</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+			<!--mainApp-->
+		</div>
+		<!--App-->
+	</body>
+	<script type="text/javascript" src="js/public/jquery.min.js"></script>
+	<script type="text/javascript" src="js/public/swiper.min.js"></script>
+	<script type="text/javascript" src="js/public/pub.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			// init swiper
+			initSwiper('#swiperCa',{
+				slidesPerView: 'auto',
+				centeredSlides: true,
+				loop: true
+			});
+			
+		});
+	</script>
+
+</html>

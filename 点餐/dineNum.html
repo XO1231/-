@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>就餐人数</title>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=0" />
+		<link rel="stylesheet" href="css/public/pub.css" />
+		<link rel="stylesheet" href="css/dineNum.css" />
+		<script type="text/javascript" src="js/public/pub.reset.js"></script>
+		<script type="text/javascript" src="js/public/pub.layer.min.js"></script>
+	</head>
+	<body>
+		<script type="text/javascript" src="js/public/pub.loading.js"></script>
+		<div id="App" class="App">
+			<nav id="navHeader" >
+				<div class="wrap30">
+					<div class="back"  onclick="back()">
+						<img src="images/icon-back.png" />
+					</div>
+					<h1 class="h1">就餐人数</h1>
+				</div>
+			</nav>	
+			<!--nav-header-->
+			<div id="mainApp" class="clear" >
+				<div id="dnA" class="flex flex-center">
+					<div class="number relative ft40 weight">
+						<img src="images/dine.png" class="block"/>
+						<h2 class="absolute top left width height flex flex-middle flex-center">A101</h2>
+					</div>
+				</div>
+				<div id="dnB">
+					<div class="node-li">
+						<div class="title weight cr-30">成人</div>
+						<div class="scrollNode">
+							<ul class="table">
+								<li class="table-cell cur">
+									<div class="cell-box">1</div>
+								</li>
+								<li class="table-cell">
+									<div class="cell-box">2</div>
+								</li>
+								<li class="table-cell">
+									<div class="cell-box">3</div>
+								</li>
+								<li class="table-cell">
+									<div class="cell-box">4</div>
+								</li>
+								<li class="table-cell">
+									<div class="cell-box">5</div>
+								</li>
+								<li class="table-cell">
+									<div class="cell-box">6</div>
+								</li>
+								<li class="table-cell">
+									<div class="cell-box">7</div>
+								</li>
+								<li class="table-cell">
+									<div class="cell-box">8</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="node-li li-b" id="switchWrap">
+						<div class="title weight cr-30">
+							<span>儿童</span>
+							<div class="switch clear" id="switchNode">
+								<div class="icon"></div>
+							</div>
+						</div>
+						<div class="scrollNode ">
+							<ul class="table">
+								<li class="table-cell cur">
+									<div class="cell-box">1</div>
+								</li>
+								<li class="table-cell">
+									<div class="cell-box">2</div>
+								</li>
+								<li class="table-cell">
+									<div class="cell-box">3</div>
+								</li>
+								<li class="table-cell">
+									<div class="cell-box">4</div>
+								</li>
+								<li class="table-cell">
+									<div class="cell-box">5</div>
+								</li>
+								<li class="table-cell">
+									<div class="cell-box">6</div>
+								</li>
+								<li class="table-cell">
+									<div class="cell-box">7</div>
+								</li>
+								<li class="table-cell">
+									<div class="cell-box">8</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					
+				</div>
+				<div id="submitPos" class="width">
+					<button id="submitBtn" class="wrap30">确定</button>
+				</div>
+			</div>
+			<!--mainApp-->
+		</div> <!--App-->
+	</body>
+	<script type="text/javascript" src="js/public/jquery.min.js"></script>
+	<script type="text/javascript" src="js/public/iscroll.min.js"></script>
+	<script type="text/javascript" src="js/public/pub.js"></script>
+	<script type="text/javascript" src="js/dineNum.js"></script>
+</html>

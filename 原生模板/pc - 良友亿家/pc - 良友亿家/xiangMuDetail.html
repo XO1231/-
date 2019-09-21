@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>项目详情</title>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=0" />
+		<link rel="stylesheet" href="css/public/pub.css" />
+		<link rel="stylesheet" href="css/xiangMuDetail.css" />
+		<script type="text/javascript" src="js/public/jquery.min.js"></script>
+		<script type="text/javascript" src="js/public/vue.min.js"></script>
+		<script type="text/javascript" src="js/public/pub.js"></script>
+		<script type="text/javascript" src="components/mainModule.js"></script>
+		<script type="text/javascript" src="components/loginModule.js"></script>
+		<script type="text/javascript" src="components/bannerModule.js"></script>
+		<script type="text/javascript" src="components/navModule.js"></script>
+		<script type="text/javascript">
+			var NAVINDEX = 2;
+		</script>
+		
+	</head>
+
+	<body>
+		<div class="page" id="page">
+			<div class="public" id="publicTop">
+				<header-top :header-top='headerTop' v-model='headerTop.searchValues' @url='url($event)'></header-top>
+				<!--mainModule_headerTop-->
+				<header-bottom :nav-index='navIndex' @url='url($event)'></header-bottom>
+				<!--mainModule_headerBottom-->
+			</div>
+			<!--publicTop-->
+			<div id="mainBody" class="br-250">
+				<div id="banModule">
+					<banner-top :src='bannerSrc'>
+						<nav-title :nav-title='navTitle'></nav-title>
+						<div id="bn-slot">
+							<div class="slot-h1 mt30 ft30">湖北省人类精子库招募捐精志愿者</div>
+							<div class="slot-sub mt10 flex flex-middle">
+								<button type="button" class="btn-zm cr-m1 ft12 br-f">招募中</button>
+								<span class="inline-block ml15">166天后截止报名</span>
+							</div>
+						</div>
+					</banner-top>
+				</div>
+				<!--banner-top module-->
+				<div id="xmMain">
+					<div class="wrap">
+						<div id="xmCa" data-xm  class="br-f border-box relative">
+							<div class="caTop clear">
+								<div class="node-li li-a fl">
+									<div class="node-cd">
+										<div class="node-h2 mb10 ft12 cr-m1 relative">受试者信息</div>
+										<div class="node-sub border-box">
+											<div class="node-h3 flex flex-middle">
+												<h4 class="ft16 cr-333 weight">健康志愿者</h4>
+												<button type="button" class="btn-icon ft12 br-m1 cr-f">性别不限</button>
+												<button type="button" class="btn-icon ft12 br-m2 cr-f">已婚</button>
+											</div>
+											<div class="node-t2 clear mt10">
+												<div class="node-c c-a fl">
+													<span class="cr-666">招募人数：</span>
+													<span class="cr-333">2000</span>
+												</div>
+												<div class="node-c c-a fl ml20">
+													<span class="cr-666">补偿金：</span>
+													<span class="cr-333">¥20000</span>
+												</div>
+											</div>
+										</div>
+
+									</div>
+									<button type="button" class="br-m1 cr-f text-center btn-submit mt20">我要报名</button>
+								</div>
+								<div class="node-li li-b fl">
+									<div class="node-cd">
+										<div class="node-h2 mb10 ft12 cr-m1 relative">治疗阶段</div>
+										<div class="node-sub border-box">
+											<p class="node-p">I 期（初治）</p>
+										</div>
+									</div>
+									<div class="node-cd mt20">
+										<div class="node-h2 mb10 ft12 cr-m1 relative">项目起止时间</div>
+										<div class="node-sub border-box">
+											<p class="node-p">2019/07/24-2010/12/24</p>
+										</div>
+									</div>
+								</div>
+								<div class="node-li li-c fl">
+									<div class="node-cd">
+										<div class="node-h2 mb10 ft12 cr-m1 relative">适应专业</div>
+										<div class="node-sub border-box">
+											<h5 class="node-h5 ">中医</h5>
+											<p class="node-p">中医风湿免疫（中医风湿、中医免疫、中医类风湿）</p>
+										</div>
+									</div>
+									<div class="node-cd mt20">
+										<div class="node-h2 mb10 ft12 cr-m1 relative">药物适应症</div>
+										<div class="node-sub border-box">
+											<p class="node-p">原发性高胆固醇血症或或混合性血脂异常症</p>
+										</div>
+									</div>
+									<div class="node-cd mt20">
+										<div class="node-h2 mb10 ft12 cr-m1 relative">药物名称</div>
+										<div class="node-sub border-box">
+											<p class="node-p">原发性高胆固醇血症或或混合性血脂异常症</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="node-li li-d fl">
+									<div class="node-cd">
+										<div class="node-h2 mb10 ft12 cr-m1 relative">项目开展机构</div>
+										<div class="node-sub border-box">
+											<h5 class="node-h5 ">项目开展机构</h5>
+											<p class="node-p">湖北省人类精子库</p>
+											<p class="node-p">湖北省人民医院</p>
+										</div>
+									</div>
+									<div class="node-cd mt20">
+										<!--<div class="node-h2 mb10 ft12 cr-m1 relative">江苏苏州</div>-->
+										<div class="node-sub border-box">
+											<h5 class="node-h5 ">江苏苏州</h5>
+											<p class="node-p">常州市人民医院</p>
+											<p class="node-p">苏州市肿瘤医院</p>
+										</div>
+									</div>
+
+								</div>
+
+							</div>
+							<div class="caBtm flex flex-middle cr-666">
+								<p class="node-p">联系人：王医生</p>
+								<p class="node-p ml50">手机号：14312451234</p>
+								<p class="node-p ml50">座机号：0512-23456789</p>
+							</div>
+						</div>
+						<!--xmCa-->
+						<div id="xmCb" class="clear mt20">
+							<div id="xmCbL" class="fl br-f border-box">
+								<div class="navBox clear">
+									<div class="node-li fl cur point">项目详情</div>
+									<div class="node-li fl ml10 point">受试标准</div>
+								</div>
+								<div class="ctnBox" >
+									<div class="node-c c-a ">
+										<p class="node-p cr-666">目前在浙江医院开展：年龄对中国健康受试者口服海泽麦布（HS-25）片药代动力学影响的研究 (批件号：2014L00799)。海泽麦布（HS-25）是一种新型作用机制的调血脂药物，用于治疗原发性高胆固醇血症，目前已完成国内外Ⅰ、Ⅱ期临床研究，结果显示人体口服0-30mg海泽麦布安全性及耐受性良好，进入Ⅲ期阶段，未出现药物相关不良事件，安全性较好。经我院伦理委员会批准，现向社会招募受试者。计划男性受试者26人，其中老年（≥65岁）14人，年轻（18-45岁）12人，试验周期18天（有11晚需在浙江医院Ⅰ期临床试验中心过夜），给药剂量20mg（一天一次），共采血量123ml。</p>
+										<p class="node-p cr-666">医院提供免费住宿、全套体检及丰厚报酬，我们承诺对所有参与者的个人信息保密，并保证在整个过程中遵循GCP相关法律法规。</p>
+										<p class="node-p cr-666">联系人：李力、黄越 电话：0571-81595229 （办公时间） </p>
+										<p class="node-p cr-666">手机：13567173270（李），15068713667（黄）</p>
+									</div>
+									<div class="node-c c-b hide">
+										<div class="node-i">
+											<h3 class="node-h3 cr-333 mb20">入选标准</h3>
+											<p class="node-p cr-666"> 18 至40岁的健康受试者、体重至少50 kg。体重指数在18~26范围内</p>
+										</div>
+										<div class="node-i mt30 ">
+											<h3 class="node-h3 cr-333 mb20">排除标准</h3>
+											<p class="node-p cr-666">在服用研究用药前3个月服用过研究药品，或参加了药物临床试验</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="xmCbR" class="fr br-f border-box point">
+								<h2 class="node-h2 cr-999 border-box border-btm">其他相关临床项目</h2>
+								<ul class="node-ul border-box cr-333">
+									<li class="node-li">• 瑞舒伐他汀钙分散片人体生物等效性试验</li>
+									<li class="node-li">• 年龄对中国健康受试者口服海泽麦布片药代动</li>
+									<li class="node-li">• 单次剂量递增人体耐受性及药代动力学研究</li>
+								</ul>
+							</div>
+						</div>
+						<!--xmcb-->
+					</div>
+				</div>
+			
+			</div>
+			<!--mainMid-->
+			<div class="public" id="publicBtm">
+				<bottom-top @url='url($event)'></bottom-top>
+				<!--mainModule_BottomTop-->
+				<login-bottom></login-bottom>
+				<!--bottomModule-->
+				<slide-bar></slide-bar>
+				<!--slidebarmodule-->
+			</div>
+			<!--publicBtm-->
+		</div>
+		<!--page-->
+
+	</body>
+	
+	<script type="text/javascript" src="js/module.js"></script>
+	<script type="text/javascript">
+		var NAVTITLE_PRO = {
+				color: '#fff',
+				text:  '健康志愿者',
+				url: ''
+			}
+	</script>
+	<script type="text/javascript" src="js/xiangMuDetail.js"></script>
+
+</html>

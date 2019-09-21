@@ -1,0 +1,31 @@
+#bmA{
+	padding: .4rem .6rem;
+	margin-top: -.8rem;
+	box-shadow: 0px 0.04rem 0.16rem -0.04rem rgba(0,0,0,0.16);
+	border-radius: 0.2rem;
+}
+#bmA .li-text img{
+	width: .6rem;
+}
+#bmA .li-icon{
+	width: .24rem;
+	padding-top: .18rem;
+}
+#fromWrap{
+	padding: .3rem 0 .6rem;
+}
+#fromWrap .nav{
+	margin-bottom: .2rem;
+}
+#fromWrap .nav button{
+	width:3.3rem;
+	height:0.72rem;
+	line-height: .72rem;
+	text-align: center;
+	background:rgba(255,255,255,1);
+	border: 0.02rem solid rgba(0,103,58,1);
+}
+#fromWrap .nav button.cur{
+	background:rgba(0,103,58,1);
+	color: #FFFFFF;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>项目详情</title>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=0" />
+		<meta name="format-detection" content="telephone=yes"/>
+		<link rel="stylesheet" href="css/public/pub.css" />
+		<link rel="stylesheet" href="css/xiangmuxiangqing.css" />
+		<script type="text/javascript" src="js/public/pub.reset.js"></script>
+		<script type="text/javascript" src="js/public/pub.layer.min.js"></script>
+	</head>
+
+	<body>
+		<script type="text/javascript" src="js/public/pub.loading.js"></script>
+		<div id="App" class="App">
+			<div id="moduleTop">
+				<public-header :user="userInfo"></public-header>
+			</div>
+			<div id="mainApp" class="mainApp">
+				<div class="wrap15 s_nav">
+					<a href="#">首页</a><span>&nbsp;>&nbsp;</span>
+					<a href="#">健康志愿者</a><span>&nbsp;>&nbsp;</span>
+				</div>
+				<div class="wrap15 top" v-pre>
+					<p class="top_title">湖北省人类精子库招募捐精志愿者</p>
+					<div class="top_next"><span>招募中</span>&nbsp;&nbsp;166天后截止报名</div>
+					<a href="#" class="signUp">我要报名</a>
+					<div class="top_foot">
+						<div class="top_name">王医生</div>
+						<div class="call">
+							<div class="mobile"><img src="images/mobile.png" />14312451234</div>
+							<div class="tel"><img src="images/tel.png" />0512-23456789</div>
+						</div>
+					</div>
+				</div>
+				<div class="wrap15 info" v-pre>
+					<div class="wrap35 info_title">受试者信息</div>
+					<div class="wrap40 info_title_theme"><span class="info_s1">健康志愿者</span><span class="info_label info_labelg">性别不限</span><span class="info_label info_labelb">已婚</span></div>
+					<div class="wrap40 info_title_num"><span class="info_title_c">招募人数：</span>2000&nbsp;&nbsp;&nbsp;&nbsp;<span class="info_title_c">招募人数：</span>2000</div>
+					<div class="wrap35 info_title">治疗阶段</div>
+					<div class="wrap40 info_sh">I 期（初治）</div>
+					<div class="wrap35 info_title">项目起止时间</div>
+					<div class="wrap40 info_sh">2019/07/24-2010/12/24</div>
+					<div class="wrap35 info_title">适应专业</div>
+					<div class="wrap40 info_h">中医</div>
+					<div class="wrap40 info_sh">中医风湿免疫（中医风湿、中医免疫、中医类风湿）</div>
+					<div class="wrap35 info_title">药物适应症</div>
+					<div class="wrap40 info_h">原发性高胆固醇血症或或混合性血脂异常症</div>
+					<div class="wrap35 info_title">药物名称</div>
+					<div class="wrap40 info_h">原发性高胆固醇血症或或混合性血脂异常症</div>
+					<div class="wrap35 info_title">项目开展机构</div>
+					<div class="wrap40 info_h">湖北武汉</div>
+					<div class="wrap40 info_sh">湖北省人类精子库</div>
+					<div class="wrap40 info_sh">湖北省人民医院</div>
+					<div class="wrap40 info_h" style="margin-top:0.2rem">江苏苏州</div>
+					<div class="wrap40 info_sh">常州市人民医院</div>
+					<div class="wrap40 info_sh">苏州市肿瘤医院</div>
+				</div>
+				<div class="wrap15 project_detail">
+					<div class="detail_title clear">
+						<!--<img :src="baseSrc+'910@2x.png'" />-->
+						<div class="navBtn fl point" :class="{ cur: !navIndex }" @click='switchTab(0)'>项目详情</div>
+						<div class="navBtn fr point" :class="{ cur: navIndex }" @click='switchTab(1)'>受试标准</div>
+					</div>
+					<div class="detail_detail">
+						<div class="wrap35 fc-0" v-show='!navIndex'>
+							<p>目前在浙江医院开展：年龄对中国健康受试者口服海泽麦布（HS-25）片药代动力学影响的研究 (批件号：2014L00799)。海泽麦布（HS-25）是一种新型作用机制的调血脂药物，用于治疗原发性高胆固醇血症，目前已完成国内外Ⅰ、Ⅱ期临床研究，结果显示人体口服0-30mg海泽麦布安全性及耐受性良好，进入Ⅲ期阶段，未出现药物相关不良事件，安全性较好。经我院伦理委员会批准，现向社会招募受试者。计划男性受试者26人，其中老年（≥65岁）14人，年轻（18-45岁）12人，试验周期18天（有11晚需在浙江医院Ⅰ期临床试验中心过夜），给药剂量20mg（一天一次），共采血量123ml。 </p>
+							<p>医院提供免费住宿、全套体检及丰厚报酬，我们承诺对所有参与者的个人信息保密，并保证在整个过程中遵循GCP相关法律法规。</p>
+							<p> 联系人：李力、黄越 电话：0571-81595229 （办公时间）</p>
+							<p>手机：13567173270（李），15068713667（黄）</p>
+						</div>
+						<div class="fc-1" v-show='navIndex'>
+							<div class="wrap35 info_titleg">入选标准</div>
+							<div class="wrap40 info_h">18至40岁的健康受试者、体重至少50 kg。体重指数在18~26范围内</div>
+							<div class="wrap35 info_titleg">排除标准</div>
+							<div class="wrap40 info_h">在服用研究用药前3个月服用过研究药品，或参加了药物临床试验</div>
+						</div>
+					</div>
+				</div>
+				<div class="wrap15 other" v-pre="">
+					<div class="other_title">其他相关临床项目</div>
+					<div class="other_list">
+						<a href="#">•&nbsp;瑞舒伐他汀钙分散片人体生物等效性试验</a>
+					</div>
+					<div class="other_list">
+						<a href="#">•&nbsp;年龄对中国健康受试者口服海泽麦布片药代动</a>
+					</div>
+					<div class="other_list">
+						<a href="#">•&nbsp;单次剂量递增人体耐受性及药代动力学研究</a>
+					</div>
+					<div class="other_list">
+						<a href="#">•&nbsp;紧急避孕药醋酸优力司特片临床研究</a>
+					</div>
+					<div class="other_list">
+						<a href="#">•&nbsp;注射用福沙匹坦双葡甲胺健康人体药代动力学</a>
+					</div>
+					<div class="other_list">
+						<a href="#">•&nbsp;瑞舒伐他汀钙分散片人体生物等效性试验</a>
+					</div>
+				</div>
+			</div>
+			<div id="moduleBtm">
+				<public-bta ></public-bta>
+				<!--public-bta-->
+				<public-btb ></public-btb>
+				<!--public-btb-->
+			</div>
+			</div>
+		<!--App-->
+	</body>
+	<script type="text/javascript" src="js/public/vue.min.js"></script>
+	<script type="text/javascript" src="js/public/pub.js"></script>
+	<script type="text/javascript" src="components/public.js"></script>
+	<script type="text/javascript" src="components/publicSlot.js"></script>
+	<script type="text/javascript" src="js/module.js"></script>
+	
+	<script type="text/javascript" src="js/xiangmuxiangqing.js"></script>
+
+</html>

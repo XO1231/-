@@ -1,0 +1,28 @@
+.banCenter {
+	margin-top: 0.6rem;
+}
+
+.banCenter .node-h1 {
+	font-family: PingFang-SC-Bold;
+}
+
+.banCenter .space {
+	width: 0.6rem;
+	height: 0.04rem;
+	border-radius: 0.04rem;
+	margin: 0.26rem 0 .2rem;
+}
+
+.banCenter .node-h2 {
+	font-family: PingFang-SC-Medium;
+}
+
+.banCenter .btn {
+	width: 2.82rem;
+	height: 0.72rem;
+	text-align: center;
+	line-height: .72rem;
+	background: rgba(255, 255, 255, 0.2);
+	border: 2px solid rgba(255, 255, 255, 1);
+	margin: .4rem auto 0;
+}

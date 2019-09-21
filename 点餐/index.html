@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>码上点餐</title>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=0" />
+		<link rel="stylesheet" href="css/public/pub.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<script type="text/javascript" src="js/public/pub.reset.js"></script>
+		<script type="text/javascript" src="js/public/pub.layer.min.js"></script>
+	</head>
+
+	<body>
+		<script type="text/javascript" src="js/public/pub.loading.js"></script>
+		<div id="App" class="App" data-tabbar = "">
+			<nav id="navHeader">
+				<div class="wrap30">
+					<div class="back" onclick="back()">
+						<img src="images/icon-back.png" />
+					</div>
+					<h1 class="h1">码上点餐</h1>
+				</div>
+			</nav>
+			<!--nav-header-->
+			<div id="mainApp" class="clear">
+				<div id="banner">
+					<img src="images/dn.png" class="block" />
+				</div>
+				<!--banner-->
+				<div id="shopCen" class="wrap30 br-fff border-box">
+					<div class="logoWrap relative clear">
+						<div class="logo fl">
+							<img src="images/dn (3).png" class="block" />
+						</div>
+						<div class="shopInfo fl">
+							<div class="shopName flex flex-middle">
+								<p class=" ft30 weight">鑫花溪(高新广场店)</p>
+								<img src="images/dn (8).png" />
+							</div>
+							<p class="shopNic ft22 cr-666">公告：欢迎光临本店！</p>
+						</div>
+					</div>
+					<div id="noticWrap" class="">
+						<div class="node-nic nic-a relative">
+							<button type="button" class="nic-cid cid-icon">满减</button>
+							<p class="nic-cid cid-text ft22 cr-666">60减10 | 100减20 | 150减40</p>
+							<div type="button" id="slideHan" class="nic-cid cid-handle">
+								<img src="images/dn (7).png" class="block" />
+							</div>
+						</div>
+						<div id="noticSlide" class="hide">
+							<div class="node-nic nic-a">
+								<button type="button" class="nic-cid cid-icon">新客</button>
+								<p class="nic-cid cid-text ft22 cr-666">新客立减10</p>
+							</div>
+							<div class="node-nic nic-a">
+								<button type="button" class="nic-cid cid-icon">红包</button>
+								<p class="nic-cid cid-text ft22 cr-666"></p>
+							</div>
+							<div id="monAge" class="monAge flex flex-between">
+								<div class="node">
+									<div class="node-c c-a">
+										<p class="node-g g-a cr-m2 ft36">
+											<em class="ft24">¥</em>5
+										</p>
+										<p class="node-g g-b ft24 cr-333">无门槛</p>
+									</div>
+									<p class="node-c c-b ft22 cr-999">有效期至2019-08-21</p>
+									<button type="button" class="node-c c-c cr-m3 ft28">立即领取</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--shopCen-->
+				<div id="recom">
+					<h2 class="node-h2 wrap30 ft30">商家推荐</h2>
+					<div class="scrollNode goodsModule" id="scrollA" >
+						<ul class="table">
+							<li class="table-cell node-goodCell" data-gid = "10">
+								<div class="table-cell-box">
+									<img class="goodsBanner block width" src="images/dn (3).png" />
+									<div class="li-ctn border-box">
+										<h3 class="goodsTitle weight node-h3 ft28">樱桃小肉圆</h3>
+										<div class="arNode">
+											<div class="priceNode">
+												<span><em class="icon">¥</em><i class="goodsPrice">32.5</i></span>
+											</div>
+											<div class="handleNode">
+												<img class="removeNode hide" src="images/dn (2).png" />
+												<i class="number hide">0</i>
+												<img class="addNode" src="images/dn (1).png" />
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="table-cell node-goodCell" data-gid = "11">
+								<div class="table-cell-box">
+									<img class="goodsBanner block width" src="images/dn (3).png" />
+									<div class="li-ctn border-box">
+										<h3 class="goodsTitle weight node-h3 ft28">樱桃小肉圆</h3>
+										<div class="arNode">
+											<div class="priceNode">
+												<span><em class="icon">¥</em><i class="goodsPrice">50</i></span>
+											</div>
+											<div class="handleNode">
+												<img class="removeNode hide" src="images/dn (2).png" />
+												<i class="number hide">0</i>
+												<img class="addNode" src="images/dn (1).png" />
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="wrap30">
+					<div id="search" class="mt20 flex flex-middle">
+						<img src="images/dn (10).png" />
+						<input class="ml20 ft28" type="text" placeholder="搜你喜欢" />
+					</div>
+					<div id="navScroll" class="scrollNode">
+						<ul class="table ft28">
+							<li class="table-cell cur">
+								<div class="table-cell-box ">特色米粉</div>
+							</li>
+							<li class="table-cell">
+								<div class="table-cell-box">特色米粉</div>
+							</li>
+							<li class="table-cell">
+								<div class="table-cell-box">特色米粉</div>
+							</li>
+							<li class="table-cell">
+								<div class="table-cell-box">特色米粉</div>
+							</li>
+							<li class="table-cell">
+								<div class="table-cell-box">特色米粉</div>
+							</li>
+							<li class="table-cell">
+								<div class="table-cell-box">特色米粉</div>
+							</li>
+							<li class="table-cell">
+								<div class="table-cell-box">特色米粉</div>
+							</li>
+
+						</ul>
+					</div>
+					<ul id="dnLa" class="goodsModule">
+						<li class="node-li">
+							<div class="node-i node-goodCell" data-gid = "56">
+								<img class="block goodsBanner" src="images/dn (3).png" />
+								<div class="mct">
+									<h3 class="goodsText goodsTitle node-h3 ft32 weight">水煮辣椒</h3>
+									<div class="arNode">
+										<div class="priceNode">
+											<span><em class="icon">¥</em><i class="goodsPrice">32.5</i></span>
+										</div>
+										<div class="handleNode">
+											<img class="removeNode hide" src="images/dn (2).png" />
+												<i class="goodsNum number hide">0</i>
+											<img class="addNode" src="images/dn (1).png" />
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="node-i node-goodCell" data-gid = "57">
+								<img class="block goodsBanner" src="images/dn (3).png" />
+								<div class="mct">
+									<h3 class="goodsText goodsTitle node-h3 ft32 weight">樱桃小肉圆</h3>
+									<div class="arNode">
+										<div class="priceNode">
+											<span><em class="icon">¥</em><i class="goodsPrice">32.5</i></span>
+										</div>
+										<div class="handleNode">
+											<img class="removeNode hide" src="images/dn (2).png" />
+												<i class="goodsNum number hide">0</i>
+											<img class="addNode" src="images/dn (1).png" />
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="node-li">
+							<div class="node-i node-goodCell" data-gid = "58">
+								<img class="block goodsBanner" src="images/dn (3).png" />
+								<div class="mct">
+									<h3 class="goodsText goodsTitle node-h3 ft32 weight">樱桃小肉圆</h3>
+									<div class="arNode">
+										<div class="priceNode">
+											<span><em class="icon">¥</em><i class="goodsPrice">32.5</i></span>
+										</div>
+										<div class="handleNode">
+											<img class="removeNode hide" src="images/dn (2).png" />
+												<i class="goodsNum number hide">0</i>
+											<img class="addNode" src="images/dn (1).png" />
+										</div>
+									</div>
+								</div>
+							</div>
+							</div>
+						</li>
+					</ul>
+
+				</div>
+				<div id="dnCart" class="wrap30 br-fff border-box flex flex-between flex-middle">
+					<div class="caLeft">
+						<div id="cartLog" class="cartLog relative flex flex-middle">
+							<img src="images/dn (11).png" />
+							<i class="cartNumber hide">0</i>
+						</div>
+						<p class="cartMoney cr-m2 flex flex-middle">
+							<em class="ft22">¥<span class="ft40" id="cartPriceEle">0.0</span></em>
+						</p>
+					</div>
+					<button class="caRight">提交订单</button>
+
+				</div>
+				<div id="cartFixed" class="wrap30 hide">
+					<div class="navTop flex flex-middle flex-between mb20">
+						<h3 class="node-h3 ft32">A101</h3>
+						<div class="bRi flex flex-middle">
+							<img id="clearCart" src="images/dn (5).png" />
+							<img id="slideGood" src="images/dn (6).png" />
+						</div>
+					</div>
+					<div id="cartCB">
+						<div class="node-ai">
+							<ul class="node-ul" id="cartUl">
+								
+							</ul>
+						</div>
+					</div>
+					<!--cartCA-->
+				</div>
+				<!--cartFixed-->
+				<div id="goodsFixed" style="display: none;">
+					<div id="maskGoods" class="mask "></div>
+					<div class="static wrap30 br-fff">
+						<div id="gCa" class="">
+							<div class="wrapX relative">
+								<div id="closeGoods">
+									<img src="images/dn (4).png" />
+								</div>
+								<div class="sImg">
+									<img src="images/dn (3).png" class="block" />
+									<h3 class="goodsText node-h3 ft32 text-center weight">樱桃小肉圆</h3>
+								</div>
+								<ul id="skuA">
+									<li class="node-ai">
+										<h4 class="node-h4">规格</h4>
+										<ul class="node-ul flex flex-between">
+											<li class="node-bi cur" data-iterprice = "">小份</li>
+											<li class="node-bi" data-iterprice = "10">中份</li>
+											<li class="node-bi" data-iterprice = "30">大份</li>
+										</ul>
+									</li>
+									<li class="node-ai">
+										<h4 class="node-h4">味道</h4>
+										<ul class="node-ul flex flex-between">
+											<li class="node-bi cur" data-iterprice = "">微辣</li>
+											<li class="node-bi" data-iterprice = "10">中辣</li>
+											<li class="node-bi" data-iterprice = "15">特辣</li>
+										</ul>
+									</li>
+								</ul>
+								<div id="vCb" class="ft24">
+									<h5 class="node-h5 ">商品描述</h5>
+									<p class="cr-666">肉圆子是一道菜品，主料是猪肉（带点肥肉哈），辅料是鸡蛋、油条、葱、姜、生粉、盐、生抽、老抽、料酒。</p>
+								</div>
+							</div>
+						</div>
+						<div id="gCb" class="">
+							<div class="wrapX">
+								<div class="arNode">
+									<div class="priceNode">
+										<span><em class="icon">¥</em><i class="goodsPrice">32.5</i></span>
+									</div>
+									<div class="handleNode">
+										<img class="removeNode" src="images/dn (2).png" />
+										<i class="number">1</i>
+										<img class="addNode" src="images/dn (1).png" />
+									</div>
+								</div>
+								<p class="iterText node-p ft24 cr-999">小份 | 微辣</p>
+								<button type="button" id="goodsSub" class="br-m1 cr-fff text-center ft32 weight">加入购物车</button>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div id="maskCart" class="mask hide"></div>
+			</div>
+			<!--mainApp-->
+			<ul id="tabbar">
+				<li class="node-li cur" onclick="url('index')"></li>
+				<li class="node-li" onclick="url('')"></li>
+				<li class="node-li" onclick="url('')"></li>
+			</ul>
+			<!--tabbar-->
+
+		</div>
+		<!--App-->
+	</body>
+	<script type="text/javascript" src="js/public/jquery.min.js"></script>
+	<script type="text/javascript" src="js/public/axios.min.js"></script>
+	<script type="text/javascript" src="js/public/iscroll.min.js"></script>
+	<script type="text/javascript" src="js/public/pub.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+
+</html>

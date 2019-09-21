@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="Generator" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0, minimal-ui, viewport-fit=cover">
+		<title>懒猫家务通--搜索</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="./layer/mobile/need/layer.css" />
+		<link rel="stylesheet" href="css/index_search.css" />
+	</head>
+	<body>
+		<div class="search">
+			<input type="text" placeholder="请输入关键字" data-url="./index_searchlist.html"/>
+			<img src="images/i_search.png" class="search_img"/>
+			<img src="images/close.png" class="delect"/>
+		</div>
+		<div class="title">
+			<div class="title_left">最近搜索</div>
+			<div class="title_right"><img src="images/delect.png"/></div>
+		</div>
+		<div class="search_list" data-url="./index_searchlist.html">
+			<a href="#">开锁换锁</a>
+			<a href="#">电饭煲维修</a>
+			<a href="#">干洗店</a>
+			<a href="#">饭店</a>
+			<a href="#">宠物注射疫苗</a>
+			<a href="#">三轮车维修补胎</a>
+		</div>
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js" ></script>
+		<script src="./layer/mobile/layer.js"></script>
+		<script type="text/javascript" src="js/public/pub.js"></script>
+		<script>
+			$('.delect').click(function(){
+				$('.search input').val('')
+				
+			})
+			$('.title_right img').click(function() {
+					var othis = $(this);
+					layer.open({
+						content: '您确认取消认购？',
+						btn: ['确认', '取消'],
+						shadeClose: false,
+						yes: function() {
+							layer.open({
+								content: '删除成功',
+								time: 1
+							});
+							$('.search_list a').remove()
+						}
+					});
+				})
+		</script>
+	</body>
+</html>

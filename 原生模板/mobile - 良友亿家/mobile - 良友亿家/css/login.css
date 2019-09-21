@@ -1,0 +1,151 @@
+.page{
+	background: #f5f5f5;
+}
+.main{
+	width: 90%;
+	margin: 0.2rem auto;
+	background: #fff;
+	padding-bottom: 0.2rem;
+}
+#mainModule{
+	min-height: calc(100vh - 80px - 40px);
+}
+#mainForm {
+	box-sizing: border-box;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0.3rem;
+}
+
+#mainForm .formTitle {
+	text-align: center;
+	font-size: 0.24rem;
+	font-family: MicrosoftYaHei;
+	color: rgba(51, 51, 51, 1);
+	margin: 0.4rem 0 0.6rem;
+}
+
+#mainForm .formNav {
+	margin-bottom: 0.4rem;
+}
+
+#mainForm .formNav .navBtn {
+	box-sizing: border-box;
+	width: 50%;
+	height: 0.4rem;
+	line-height: 0.5rem;
+	text-align: center;
+	font-size: 0.16rem;
+	color: rgba(153, 153, 153, 1);
+	border: 1px solid rgba(238, 238, 238, 1);
+}
+
+#mainForm .formNav .navBtn.navMax {
+	width: 100%;
+}
+
+#mainForm .formNav .navBtn:nth-of-type(n+2) {
+	border-left-color: transparent;
+}
+
+#mainForm .formNav .navBtn.cur {
+	color: rgba(138, 189, 68, 1);
+	border-color: rgba(138, 189, 68, 1);
+}
+.formCtn .formLabel{
+	box-sizing: border-box;
+	padding: 0 0.15rem;
+	height: 0.8rem;
+	line-height: .80rem;
+	background: rgba(255, 255, 255, 1);
+	border-radius: 0.05rem;
+	border: 1px solid rgba(238, 238, 238, 1);
+}
+.formCtn .formLabel input{
+	width: 65%;
+}
+.formCtn .formLabel input::-webkit-input-placeholder {
+	color: rgba(153, 153, 153, 1);
+}
+
+.formCtn .formLabel:hover {
+	border-color: rgba(138, 189, 68, 1);
+}
+
+.formCtn .formLabel:nth-of-type(n+2) {
+	margin-top: 0.2rem;
+}
+.formCtn .formLabel.inset{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.formCtn .formLabel .sendYzmBtn{
+	padding-left: 0.15rem;
+	border-left: 1px solid rgba(0,103,58,1);
+	font-size:0.14rem;
+	font-family:MicrosoftYaHei;
+	color:rgba(0,103,58,1);
+}
+
+#mainForm .formUrl {
+	font-size: 0.14rem;
+	font-family: MicrosoftYaHei;
+	color: rgba(102, 102, 102, 1);
+	margin-top: 0.1rem;
+}
+
+.formSubmit {
+	margin-top: 0.4rem;
+	font-size: 0.28rem;
+	line-height: 0.8rem;
+	text-align: center;
+	background: rgba(0, 103, 58, 1);
+	color: #fff;
+}
+
+
+.formNav{
+	width: 100%;
+	height: 0.8rem;
+	display: flex;
+	margin: 0.3rem auto;
+}
+.navBtn{
+	border: 1px solid #eee;
+	width: 50%;
+	text-align: center;
+	line-height: 0.8rem;
+	color: #999;
+}
+
+.cur{
+	color: #8ABD44;
+	border-color: #8ABD44;
+}
+.cr-m1{
+	height: 0.8rem;
+	line-height: 0.8rem;
+}
+
+.forget_head{
+	width: 100%;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	display: flex;
+}
+.forget_head_th{
+	width: 30%;
+	height: 0.02rem;
+	background: #8ABD44;
+	display: block;
+	margin-top: 0.39rem;
+}
+.forget_head_title{
+	width: 40%;
+	text-align: center;
+	color: #8ABD44;
+	display: block;
+	font-size: 0.28rem;
+}

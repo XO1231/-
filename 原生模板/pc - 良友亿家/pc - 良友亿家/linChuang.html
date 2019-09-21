@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>临床试验</title>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=0" />
+		<link rel="stylesheet" href="css/public/pub.css" />
+		<link rel="stylesheet" href="css/linChuang.css" />
+		<script type="text/javascript" src="js/public/vue.min.js"></script>
+		<script type="text/javascript" src="js/public/jquery.min.js"></script>
+		<script type="text/javascript" src="js/public/pub.js"></script>
+		<script type="text/javascript" src="components/mainModule.js"></script>
+		<script type="text/javascript" src="components/loginModule.js"></script>
+		<script type="text/javascript">
+			var NAVINDEX = 1;
+		</script>
+	</head>
+	<body>
+		<div class="page" id="page">
+			<div class="public" id="publicTop">
+				<header-top 
+					:header-top='headerTop' 
+					v-model='headerTop.searchValues'
+					@url='url($event)'
+				></header-top>
+				<!--mainModule_headerTop-->
+				<header-bottom 
+					:nav-index='navIndex'
+					@url='url($event)'	
+				></header-bottom>
+				<!--mainModule_headerBottom-->
+			</div>
+			<!--publicTop-->
+			<div id="mainBody" class="br-250">
+				<div id="banTop" class=" relative clear br-f" data-index = "">
+					<div class="banBox clear">
+						<img src="images/syv10 (21).png" class="block" />
+					</div>
+					<div class="absCtA abs cr-f">
+						<div class="node-c c-a">关于临床试验</div>
+						<div class="node-c c-b">
+							<span class="br-f"></span>
+						</div>
+						<div class="node-c c-c">About Clinical Trail</div>
+					</div>
+				</div>
+				<!--banTop-->
+				<div class="syA wrap border-box br-f" id="syA">
+					<div class="mt1 cr-m1 ft24 mb30 weight">什么是临床试验？</div>
+					<div class="mc1 mb30">临床试验是一项医学研究，目的是确定一种新药或一项治疗方法的疗效与安全性以及存在的副作用，是为帮助医生找到改善、控制、治疗疾病最佳方法所进行的研究性工作。每个试验都尝试找到更好的方法来预防，诊断和治疗疾病。临床试验是长期细致的研究过程中的最后阶段，设计执行良好的临床试验是发现能够提高人类健康的最快和最安全的方法。</div>
+					<div class="clear mc2">
+						<div class="node-li fl">
+							<h2 class="node-h2 br-m2 cr-f ft20 mb30 border-box">国内临床试验分为两类</h2>
+							<p class="node-c c-b">1、与全球同步进行的临床试验，试验药品为新药，在国内外均未上市，在全球多国同时进行临床试验研究。</p>
+							<p class="node-c c-b">2、国外已上市药品，为进入国内市场，应国家《食品药品监督管理法》要求而在国内开展临床试验，这类试验的试验药品在国外已经广泛用于疾病治疗。</p>
+						</div>
+						<div class="node-li fr">
+							<h2 class="node-h2 br-m1 cr-f ft20 mb30 border-box">临床试验的重要性</h2>
+							<p class="node-c c-b">1、研究者通过临床试验获得更新更好的治疗方法。</p>
+							<p class="node-c c-b">2、新药物或疗法在普及前，必须被验证是安全、有效的。</p>
+							<p class="node-c c-b">3、设计缜密的临床试验是找到有效新疗法的最快途径。</p>
+						
+						</div>
+					</div>
+				</div>
+				<!--syA-->
+				<div class="mt60 wrap" id="syB">
+					<h1 class="node-h1 ft30 text-center">#什么是临床试验分期#</h1>
+					<h2 class="node-h2 mt10 mb30 text-center">
+						<span class="ft20 cr-666 relative inline-block">临床试验分为I、II、III、IV期</span>
+					</h2>
+					<ul class="node-ul flex flex-center">
+						<li class="node-li text-center">
+							<img src="images/syv10 (3).png" />
+							<p class="mt30 cr-666 text-left">初步的临床药理学及人体安全性评价试验。观察人体对于新药的耐受程度和药代动力学，为制定给药方案提供依据。</p>
+						</li>
+						<li class="node-li text-center">
+							<img src="images/syv10 (1).png" />
+							<p class="mt30 cr-666 text-left">治疗作用初步评价阶段。其目的是初步评价药物对目标适应症患者的治疗作用和安全性，也包括为III期临床试验研究设计和给药剂量方案的确定提供依据。</p>
+						</li>
+						<li class="node-li text-center">
+							<img src="images/syv10 (30).png" />
+							<p class="mt30 cr-666 text-left">治疗作用确证阶段。其目的是进一步验证药物对目标适应症患者的治疗作用和安全性，评价利益与风险关系，最终为药物注册申请的审查提供充分的依据。</p>
+						</li>
+						<li class="node-li text-center">
+							<img src="images/syv10 (2).png" />
+							<p class="mt30 cr-666 text-left">新药上市后应用研究阶段。其目的是考察在广泛使用条件下的药物的疗效和不良反应，评价在普通或者特殊人群中使用的利益与风险关系以及改进给药剂量等。</p>
+						</li>
+					</ul>
+				</div>
+				<!--syB-->
+				<div class="mt60 wrap" id="syC">
+					<h1 class="node-h1 ft30 text-center mb40">#其他临床试验问题##</h1>
+					<ul class="node-ul mct" id="syCA">
+						<li class="node-li li-a border-box">
+							<h2 class="node-h2  border-box clear">
+								<div class="wrapZ cr-333 ft20 clear point">
+									<p class="fl node-text">为什么要参加临床试验？</p>
+									<!--<div class="fr iconHandle height point"></div>-->
+								</div>
+							</h2>
+							<div class="node-ctn border-box br-f">
+								<div class="node-i">
+									<h3 class="node-h3 cr-333 weight">以往参加临床试验的患者常见于以下几种原因：</h3>
+									<p class="node-p cr-666">1. 乐于参加到能为子孙后代谋福利的事情中；</p>
+									<p class="node-p cr-666">2. 病情严重，现行疗法效果不佳或者无力承担费用，参加临床试验免费尝试新的治疗方法；</p>
+									<p class="node-p cr-666">3. 正在进行临床试验的药物，将来如果获得药物许可，可能会让自己或家人直接受益；</p>
+									<p class="node-p cr-666">4. 患者受到家人或朋友推荐参加试验；</p>
+									<p class="node-p cr-666">5. 有些患者是因为可以得到一笔补偿而参加试验。</p>
+								</div>
+								<div class="node-i">
+									<h3 class="node-h3 cr-333 weight">参加临床试验帮助医生找到新的治疗方法</h3>
+									<p class="node-p cr-666">1. 临床试验通过潜在有益的治疗方案，帮助已经患有或未来会患有特殊疾病的人们。</p>
+									<p class="node-p cr-666">2. 如果新药通过了临床试验并获得国家监管部门批准销售，千千万万患有此病的人们将受益。</p>
+								</div>
+								<div class="node-i">
+									<h3 class="node-h3 cr-333 weight">参加临床试验获得上市前新治疗方法的使用机会</h3>
+									<p class="node-p cr-666">1. 参加临床试验有机会接受上市前的治疗方法,可以改善疾病状况，帮助恢复健康。</p>
+									<p class="node-p cr-666">2. 参加临床试验并不能保证试验的治疗方法对受试者有益，甚至可能被分配到对照组并不接受正在进行研究的治疗方法，但是如果治疗方法是有效的，受试者将是第一批受益者。</p>
+								</div>
+							</div>
+						</li>
+						<li class="node-li li-b border-box">
+							<h2 class="node-h2  border-box clear">
+								<div class="wrapZ cr-333 ft20 clear point">
+									<p class="fl node-text">所有患者都可以参加临床试验么？</p>
+									<!--<div class="fr iconHandle height point"></div>-->
+								</div>
+							</h2>
+							<div class="node-ctn border-box br-f">
+								<div class="node-i">
+									<h3 class="node-h3 cr-333 weight">以往参加临床试验的患者常见于以下几种原因：</h3>
+									<p class="node-p cr-666">1. 乐于参加到能为子孙后代谋福利的事情中；</p>
+									<p class="node-p cr-666">2. 病情严重，现行疗法效果不佳或者无力承担费用，参加临床试验免费尝试新的治疗方法；</p>
+									<p class="node-p cr-666">3. 正在进行临床试验的药物，将来如果获得药物许可，可能会让自己或家人直接受益；</p>
+									<p class="node-p cr-666">4. 患者受到家人或朋友推荐参加试验；</p>
+									<p class="node-p cr-666">5. 有些患者是因为可以得到一笔补偿而参加试验。</p>
+								</div>
+								<div class="node-i">
+									<h3 class="node-h3 cr-333 weight">参加临床试验帮助医生找到新的治疗方法</h3>
+									<p class="node-p cr-666">1. 临床试验通过潜在有益的治疗方案，帮助已经患有或未来会患有特殊疾病的人们。</p>
+									<p class="node-p cr-666">2. 如果新药通过了临床试验并获得国家监管部门批准销售，千千万万患有此病的人们将受益。</p>
+								</div>
+								<div class="node-i">
+									<h3 class="node-h3 cr-333 weight">参加临床试验获得上市前新治疗方法的使用机会</h3>
+									<p class="node-p cr-666">1. 参加临床试验有机会接受上市前的治疗方法,可以改善疾病状况，帮助恢复健康。</p>
+									<p class="node-p cr-666">2. 参加临床试验并不能保证试验的治疗方法对受试者有益，甚至可能被分配到对照组并不接受正在进行研究的治疗方法，但是如果治疗方法是有效的，受试者将是第一批受益者。</p>
+								</div>
+							</div>
+						</li>
+						<li class="node-li li-c border-box">
+								<h2 class="node-h2  border-box clear">
+									<div class="wrapZ cr-333 ft20 clear point">
+										<p class="fl node-text">参加临床试验有什么利益和风险？</p>
+										<!--<div class="fr iconHandle height point"></div>-->
+									</div>
+								</h2>
+								<div class="node-ctn border-box br-f">
+									<div class="node-i">
+										<h3 class="node-h3 cr-333 weight">以往参加临床试验的患者常见于以下几种原因：</h3>
+										<p class="node-p cr-666">1. 乐于参加到能为子孙后代谋福利的事情中；</p>
+										<p class="node-p cr-666">2. 病情严重，现行疗法效果不佳或者无力承担费用，参加临床试验免费尝试新的治疗方法；</p>
+										<p class="node-p cr-666">3. 正在进行临床试验的药物，将来如果获得药物许可，可能会让自己或家人直接受益；</p>
+										<p class="node-p cr-666">4. 患者受到家人或朋友推荐参加试验；</p>
+										<p class="node-p cr-666">5. 有些患者是因为可以得到一笔补偿而参加试验。</p>
+									</div>
+									<div class="node-i">
+										<h3 class="node-h3 cr-333 weight">参加临床试验帮助医生找到新的治疗方法</h3>
+										<p class="node-p cr-666">1. 临床试验通过潜在有益的治疗方案，帮助已经患有或未来会患有特殊疾病的人们。</p>
+										<p class="node-p cr-666">2. 如果新药通过了临床试验并获得国家监管部门批准销售，千千万万患有此病的人们将受益。</p>
+									</div>
+									<div class="node-i">
+										<h3 class="node-h3 cr-333 weight">参加临床试验获得上市前新治疗方法的使用机会</h3>
+										<p class="node-p cr-666">1. 参加临床试验有机会接受上市前的治疗方法,可以改善疾病状况，帮助恢复健康。</p>
+										<p class="node-p cr-666">2. 参加临床试验并不能保证试验的治疗方法对受试者有益，甚至可能被分配到对照组并不接受正在进行研究的治疗方法，但是如果治疗方法是有效的，受试者将是第一批受益者。</p>
+									</div>
+								</div>
+							</li>
+							<li class="node-li li-d border-box">
+								<h2 class="node-h2  border-box clear">
+									<div class="wrapZ cr-333 ft20 clear point">
+										<p class="fl node-text">参加临床试验都做什么？</p>
+										<!--<div class="fr iconHandle height point"></div>-->
+									</div>
+								</h2>
+								<div class="node-ctn border-box br-f">
+									<div class="node-i">
+										<h3 class="node-h3 cr-333 weight">以往参加临床试验的患者常见于以下几种原因：</h3>
+										<p class="node-p cr-666">1. 乐于参加到能为子孙后代谋福利的事情中；</p>
+										<p class="node-p cr-666">2. 病情严重，现行疗法效果不佳或者无力承担费用，参加临床试验免费尝试新的治疗方法；</p>
+										<p class="node-p cr-666">3. 正在进行临床试验的药物，将来如果获得药物许可，可能会让自己或家人直接受益；</p>
+										<p class="node-p cr-666">4. 患者受到家人或朋友推荐参加试验；</p>
+										<p class="node-p cr-666">5. 有些患者是因为可以得到一笔补偿而参加试验。</p>
+									</div>
+									<div class="node-i">
+										<h3 class="node-h3 cr-333 weight">参加临床试验帮助医生找到新的治疗方法</h3>
+										<p class="node-p cr-666">1. 临床试验通过潜在有益的治疗方案，帮助已经患有或未来会患有特殊疾病的人们。</p>
+										<p class="node-p cr-666">2. 如果新药通过了临床试验并获得国家监管部门批准销售，千千万万患有此病的人们将受益。</p>
+									</div>
+									<div class="node-i">
+										<h3 class="node-h3 cr-333 weight">参加临床试验获得上市前新治疗方法的使用机会</h3>
+										<p class="node-p cr-666">1. 参加临床试验有机会接受上市前的治疗方法,可以改善疾病状况，帮助恢复健康。</p>
+										<p class="node-p cr-666">2. 参加临床试验并不能保证试验的治疗方法对受试者有益，甚至可能被分配到对照组并不接受正在进行研究的治疗方法，但是如果治疗方法是有效的，受试者将是第一批受益者。</p>
+									</div>
+								</div>
+							</li>
+							<li class="node-li li-e border-box">
+								<h2 class="node-h2  border-box clear">
+									<div class="wrapZ cr-333 ft20 clear point">
+										<p class="fl node-text">参加临床试验的个人信息是保密的么？</p>
+										<!--<div class="fr iconHandle height point"></div>-->
+									</div>
+								</h2>
+								<div class="node-ctn border-box br-f">
+									<div class="node-i">
+										<h3 class="node-h3 cr-333 weight">以往参加临床试验的患者常见于以下几种原因：</h3>
+										<p class="node-p cr-666">1. 乐于参加到能为子孙后代谋福利的事情中；</p>
+										<p class="node-p cr-666">2. 病情严重，现行疗法效果不佳或者无力承担费用，参加临床试验免费尝试新的治疗方法；</p>
+										<p class="node-p cr-666">3. 正在进行临床试验的药物，将来如果获得药物许可，可能会让自己或家人直接受益；</p>
+										<p class="node-p cr-666">4. 患者受到家人或朋友推荐参加试验；</p>
+										<p class="node-p cr-666">5. 有些患者是因为可以得到一笔补偿而参加试验。</p>
+									</div>
+									<div class="node-i">
+										<h3 class="node-h3 cr-333 weight">参加临床试验帮助医生找到新的治疗方法</h3>
+										<p class="node-p cr-666">1. 临床试验通过潜在有益的治疗方案，帮助已经患有或未来会患有特殊疾病的人们。</p>
+										<p class="node-p cr-666">2. 如果新药通过了临床试验并获得国家监管部门批准销售，千千万万患有此病的人们将受益。</p>
+									</div>
+									<div class="node-i">
+										<h3 class="node-h3 cr-333 weight">参加临床试验获得上市前新治疗方法的使用机会</h3>
+										<p class="node-p cr-666">1. 参加临床试验有机会接受上市前的治疗方法,可以改善疾病状况，帮助恢复健康。</p>
+										<p class="node-p cr-666">2. 参加临床试验并不能保证试验的治疗方法对受试者有益，甚至可能被分配到对照组并不接受正在进行研究的治疗方法，但是如果治疗方法是有效的，受试者将是第一批受益者。</p>
+									</div>
+								</div>
+							</li>
+							<li class="node-li li-f border-box">
+								<h2 class="node-h2  border-box clear">
+									<div class="wrapZ cr-333 ft20 clear point">
+										<p class="fl node-text">如何参加临床试验？</p>
+										<!--<div class="fr iconHandle height point"></div>-->
+									</div>
+								</h2>
+								<div class="node-ctn border-box br-f">
+									<div class="node-i">
+										<h3 class="node-h3 cr-333 weight">以往参加临床试验的患者常见于以下几种原因：</h3>
+										<p class="node-p cr-666">1. 乐于参加到能为子孙后代谋福利的事情中；</p>
+										<p class="node-p cr-666">2. 病情严重，现行疗法效果不佳或者无力承担费用，参加临床试验免费尝试新的治疗方法；</p>
+										<p class="node-p cr-666">3. 正在进行临床试验的药物，将来如果获得药物许可，可能会让自己或家人直接受益；</p>
+										<p class="node-p cr-666">4. 患者受到家人或朋友推荐参加试验；</p>
+										<p class="node-p cr-666">5. 有些患者是因为可以得到一笔补偿而参加试验。</p>
+									</div>
+									<div class="node-i">
+										<h3 class="node-h3 cr-333 weight">参加临床试验帮助医生找到新的治疗方法</h3>
+										<p class="node-p cr-666">1. 临床试验通过潜在有益的治疗方案，帮助已经患有或未来会患有特殊疾病的人们。</p>
+										<p class="node-p cr-666">2. 如果新药通过了临床试验并获得国家监管部门批准销售，千千万万患有此病的人们将受益。</p>
+									</div>
+									<div class="node-i">
+										<h3 class="node-h3 cr-333 weight">参加临床试验获得上市前新治疗方法的使用机会</h3>
+										<p class="node-p cr-666">1. 参加临床试验有机会接受上市前的治疗方法,可以改善疾病状况，帮助恢复健康。</p>
+										<p class="node-p cr-666">2. 参加临床试验并不能保证试验的治疗方法对受试者有益，甚至可能被分配到对照组并不接受正在进行研究的治疗方法，但是如果治疗方法是有效的，受试者将是第一批受益者。</p>
+									</div>
+								</div>
+							</li>
+					
+					</ul>
+				</div>
+				<!--syC-->
+			</div>
+			<!--mainMid-->
+			<div class="public" id="publicBtm">
+				<bottom-top @url='url($event)'></bottom-top>
+				<!--mainModule_BottomTop-->
+				<login-bottom></login-bottom>
+				<!--bottomModule-->
+				<slide-bar></slide-bar>
+				<!--slidebarmodule-->
+			</div>
+			<!--publicBtm-->
+		</div>
+		<!--page-->
+		
+		
+	</body>
+	
+	<script type="text/javascript" src="js/module.js"></script>
+	<script type="text/javascript" src="js/linChuang.js"></script>
+	<script type="text/javascript" src="layui.layer/layer.js" defer="defer" async="async"></script>
+</html>

@@ -1,0 +1,80 @@
+.header{
+	margin: 0.2rem auto;
+	display: flex;
+}
+.tx{
+	display: block;
+	width: 1.2rem;
+	height: 1.2rem;
+	border-radius: 50%;
+}
+.header_detail{
+	width: 70%;
+	height: 1rem;
+	margin-top: 0.1rem;
+	margin-left: 2%;
+}
+.head_name{
+	width: 100%;
+	height: 0.5rem;
+	color: #333;
+	font-size: 0.3rem;
+}
+.head_name span{
+	color: #666;
+	font-size: 0.24rem;
+}
+.head_detail{
+	width: 100%;
+	height: 0.5rem;
+	line-height: 0.5rem;
+	display: flex;
+	color: #333;
+	font-size: 0.24rem;
+}
+.sex_img{
+	display: block;
+	width: 0.32rem;
+	height: 0.32rem;
+	margin-top: 0.09rem;
+}
+.head_list{
+	margin: 0.4rem auto 0 auto;
+	display: flex;
+}
+.head_hz{
+	color: #333;
+	font-size: 0.3rem;
+}
+.head_hz span{
+	color: #666;
+	font-size: 0.22rem;
+}
+
+.title_chose{
+	width: 100%;
+	height: 0.9rem;
+	border-bottom: 1px solid #F8F8F8;
+	line-height: 0.9rem;
+	display: flex;
+	justify-content: center;
+	color: #333;
+	font-size: 0.3rem;
+	margin-top: 0.2rem;
+}
+.title_chose span{
+	margin-left: 20%;
+}
+.title_chose span:first-child{
+	margin-left: 0 !important;
+}
+.choose{
+	color: #EF9C38;
+	border-bottom: 2px solid #EF9C38;
+}
+.dashang{
+	display: none;
+}
+.zanguo{
+	display: none;
+}

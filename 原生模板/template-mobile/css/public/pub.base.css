@@ -1,0 +1,64 @@
+.clear:before,.clear:after {content: "."; display: block; height:0;  visibility: hidden;}
+.clear:after {clear:both;}
+.fl{ float: left; }
+.fr{ float: right; }
+.hide{display: none;}
+.ihide{display: none !important;}
+.hidden{visibility:hidden;}
+.width{width: 100%;}
+.height{height: 100%;}
+.relative{position: relative;}
+.wrap,.wrap10,.wrap15,.wrap20,.wrap25,.wrap30,.wrapX{margin-left: auto;margin-right: auto;}
+.wrap10{width:97.33%;}
+.wrap15{width:96%;}
+.wrap20{width:94.66%;}
+.wrap25{width: 93.33%}
+.wrap30{width: 92%;}
+.weight{font-weight: bold;}
+.pre-line{ white-space: pre-line;}
+.text-center{ text-align: center; }
+.text-left{ text-align: left; }
+.text-right{ text-align: right; }
+.text-cut,.text-cut-more{overflow: hidden;text-overflow: ellipsis;}
+.text-cut{white-space: nowrap;}
+.text-cut-more{display: -webkit-box;/* -webkit-line-clamp: 2; */-webkit-box-orient: vertical;}
+.box-cut{width: 100%;min-height: 100%;border-radius: 50%;overflow: hidden;}
+.width{width: 100%;}
+.height{height: 100%;}
+.relative{position: relative;}
+.absolute{position: absolute;}
+.fixed{position: fixed;}
+.top{ top: 0; }
+.left{ left: 0; }
+.right{ right: 0; }
+.bottom{ bottom: 0; }
+.border-box{ box-sizing: border-box; }
+.block{ display: block; }
+.inline-block{display: inline-block;}
+.table{ display: table; }
+.table-cell{ display: table-cell; }
+.flex{ display: -webkit-flex; display: flex; }
+.inline-flex{ display: inline-flex; display: -webkit-inline-flex; }
+.flex-middle{ align-items: center; }
+.flex-center{ justify-content: center; }
+.flex-start{ justify-content: flex-start; }
+.flex-end{ justify-content: flex-end; }
+.flex-between{ justify-content: space-between; }
+.flex-around{ justify-content: space-around; }
+.flex-wrap{flex-wrap: wrap;}
+.mt12{ margin-top: 0.12rem; }
+.ml12{ margin-left: 0.12rem; }
+.mb12{ margin-bottom: 0.12rem; }
+.mr12{ margin-right: 0.12rem; }
+.mt20{ margin-top: 0.2rem; }
+.ml20{ margin-left: 0.2rem; }
+.mb20{ margin-bottom: 0.2rem; }
+.mr20{ margin-right: 0.2rem; }
+.mt22{ margin-top: 0.22rem; }
+.ml22{ margin-left: 0.22rem; }
+.mb22{ margin-bottom: 0.22rem; }
+.mr22{ margin-right: 0.22rem; }
+.mt24{ margin-top: 0.24rem; }
+.ml24{ margin-left: 0.24rem; }
+.mb24{ margin-bottom: 0.24rem; }
+.mr24{ margin-right: 0.24rem; }

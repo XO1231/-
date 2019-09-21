@@ -1,0 +1,54 @@
+.cr-p{
+	color: transparent;
+}
+.br-p{
+	background-color: transparent;
+}
+.cr-000{
+	color: #000;
+}
+.br-000{
+	background-color: #000;
+}
+.cr-fff{
+	color: #fff;
+}
+.br-fff{
+	background-color: #fff;
+}
+.cr-f3{
+	color: #f3f3f3;
+}
+.cr-f3{
+	background-color: #f3f3f3;
+}
+.cr-333{
+	color: #333;
+}
+.cr-666{
+	color: #666;
+}
+.cr-999{
+	color: #999;
+}
+.cr-eee{
+	color: #EEEEEE;
+}
+.cr-m1{
+	color:rgba(71,170,77,1);
+}
+.br-m1{
+	background-color:rgba(71,170,77,1);
+}
+.cr-m2{
+	color:#FA8816
+}
+.br-m2{
+	background-color:#FA8816
+}
+.cr-m3{
+	color:#FA4747
+}
+.br-m3{
+	background-color:#FA4747
+}

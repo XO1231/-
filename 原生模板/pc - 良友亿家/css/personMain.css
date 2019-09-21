@@ -1,0 +1,100 @@
+@import url("formMain.css");
+#mainBody[data-person] {
+	padding-top: 30px;
+	padding-bottom: 100px;
+}
+
+#psRight {
+	width: 940px;
+	min-height: 640px;
+	padding-bottom: 60px;
+}
+#psRight[data-person],
+#psRight[data-project]{
+	padding-top: 30px;
+}
+#psRight[data-account]{
+	padding-top: 0;
+}
+#psRight[data-person] {
+	width: calc(100% - 240px - 20px);
+}
+
+#psRight[data-person] .node-h1 {
+	padding-left: 70px;
+	line-height: 31px;
+}
+
+#psRight[data-person] #formXa {
+	padding: 0 150px;
+}
+
+[data-type=zy] .nic {
+	color: #7F8CFF;
+	padding: 15px 0;
+}
+
+
+/*project*/
+
+#psRight[data-project] {
+	padding-top: 30px;
+	padding-bottom: 100px;
+}
+
+#psRight[data-project],
+#psRight[data-account] #accA {
+	padding-left: 73px;
+	padding-right: 73px;
+}
+
+#bmUl[data-project] .node-li:nth-of-type(2n+1) {
+	margin-left: 0;
+}
+
+#bmUl[data-project] .node-li:hover {
+	box-shadow: 0px 4px 16px -4px rgba(0, 0, 0, 0.1);
+	border-color: transparent;
+}
+
+#bmUl[data-project] .node-li:hover .c-a .g-a {
+	color: rgba(0, 103, 58, 1);
+}
+#accA{
+	padding-top: 30px;
+}
+#accA .mcA {
+	width: 260px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#accA .node-p .c-a {
+	min-width: 60px;
+}
+
+#accA .btnWrap button {
+	width: 120px;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 2px;
+	border: 1px solid rgba(0, 103, 58, 1);
+}
+
+#accB{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+#accB .navTit{
+	height:60px;
+	line-height: 60px;
+}
+#accB .navTit button{
+	padding-right: 30px;
+}
+#accForm{
+	width: 360px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 35px;
+}

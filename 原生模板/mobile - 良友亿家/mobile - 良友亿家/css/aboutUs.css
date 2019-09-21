@@ -1,0 +1,112 @@
+body{
+	background:#F5F5F5
+}
+.top{
+	width: 100%;
+	/*height: 100%;
+	position: relative;*/
+	/*min-height: 9rem;*/
+}
+.banner{
+	width: 100%;
+	height: 2.7rem;
+	background: url(../images/about_banner.png) no-repeat;
+	background-size:100% 100%;
+	text-align: center;
+	overflow: hidden;
+	color: #FFFFFF;
+}
+.banner_title{
+	width: 100%;
+	height: 0.5rem;
+	line-height: 0.5rem;
+	color: #fff;
+	font-size: 0.4rem;
+	margin-top: 0.5rem;
+}
+.banner span{
+	display: block;
+	width: 10%;
+	height: 4px;
+	background: #fff;
+	border-radius: 20px;
+	margin: 0.2rem auto;
+}
+.title{
+	background: #fff;
+	border-radius: 0.1rem;
+	height: auto;
+	position: relative;
+	margin-top: -0.6rem;
+	overflow: hidden;
+	z-index: 150;
+	box-shadow:0px 4px 16px -4px rgba(0,0,0,0.16);
+}
+.company_name{
+	width: 95%;
+	display: flex;
+	margin: 0.2rem auto;
+}
+.company_name_right{
+	margin-left: 4%;
+	width: 76%;
+}
+.name_detail{
+	color: #00673A;
+	font-size: 0.32rem;
+	font-weight: bold;
+	height: 0.6rem;
+	line-height: 0.6rem;
+	width: 100%;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+.label_detail{
+	height: 0.4rem;
+	line-height: 0.4rem;
+	display: inline-block;
+	background: #8ABD44;
+	color: #fff;
+	padding: 0 0.1rem;
+}
+.company_name_left{
+	width: 20%;
+}
+.company_name_left img{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.title_detail{
+	width:95%;
+	line-height: 0.5rem;
+	color: #666;
+	margin: 0.2rem auto;
+	/*font-size: 0.24rem;*/
+	text-align: justify;
+}
+.title_detail span{
+	color: #666;
+	font-weight: bold;
+}
+.second{
+	height: auto;
+	margin: 0 auto;
+	background: #fff;
+	padding: 0.2rem 0;
+	margin-top: 0.2rem;
+}
+.second p{
+	width: 95%;
+	margin: 0 auto;
+	line-height: 0.5rem;
+	text-align: justify;
+	text-indent: 0.3rem;
+}
+.second p:first-child{
+	text-indent: 0 !important;
+}
+.mar{
+	margin-top: 0.3rem !important;
+}

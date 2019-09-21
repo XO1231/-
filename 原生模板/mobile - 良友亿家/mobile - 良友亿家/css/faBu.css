@@ -1,0 +1,43 @@
+#fbA {
+	border-bottom: 0.02rem solid #EEEEEE;
+}
+#fbA .wrap30{
+	height: 1rem;
+	
+}
+#fbA button{
+	height: 0.6rem;
+	padding: 0 .34rem;
+	color:rgba(0,103,58,1);
+	border:0.02rem solid rgba(0,103,58,1);
+}
+#fbA button.cur{
+	color: #FFFFFF;
+	background:rgba(0,103,58,1);
+}
+#fbA .space{
+	width:0.02rem;
+	height:0.6rem;
+	background-color: #EEEEEE;
+}
+
+#fbB .node-li{
+	padding: 0 .20rem;
+}
+#fbB .node-li .c-a,
+#fbB .node-li .c-a button{
+	height: .44rem;
+	line-height: .44rem;
+}
+#fbB .node-li .c-a button{
+	min-width: .72rem;
+	padding: 0 .12rem;
+}
+
+#fbB .node-li .node-c{
+	margin-top: .3rem;
+}
+#fbB .node-li .c-c{
+	height: .8rem;
+	border-top: 0.02rem solid #EEEEEE;
+}

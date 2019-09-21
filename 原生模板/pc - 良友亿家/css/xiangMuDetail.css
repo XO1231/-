@@ -1,0 +1,152 @@
+#mainBody {
+	padding-bottom: 100px;
+}
+
+#bn-slot .btn-zm {
+	width: 56px;
+	height: 20px;
+	text-align: center;
+	line-height: 20px;
+}
+
+#xmCa {
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-top: -60px;
+	box-shadow: 0px 10px 20px -6px rgba(0, 0, 0, 0.1);
+	z-index: 150;
+}
+
+#xmCa .caTop {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+#xmCa .node-li .node-h2 {
+	box-sizing: border-box;
+	padding-left: 10px;
+	line-height: 16px;
+	border-left: 2px solid rgba(0, 103, 58, 1);
+}
+
+#xmCa[data-xm] .node-li.li-a {
+	padding-right: 35px;
+}
+
+#xmCa .node-li.li-a {
+	border-right: 1px solid rgba(238, 238, 238, 1);
+}
+
+#xmCa .node-li.li-a .node-sub .node-h3 {
+	padding-top: 10px;
+}
+
+#xmCa .node-li.li-a .node-sub .node-h3 .btn-icon {
+	min-width: 36px;
+	height: 20px;
+	display: inline-block;
+	padding: 0 6px;
+	margin-left: 7px;
+}
+
+#xmCa .node-li.li-a .btn-submit {
+	width: 194px;
+	height: 36px;
+}
+
+#xmCa[data-xm] .node-li.li-b {
+	width: 275px;
+	padding-left: 35px;
+}
+
+#xmCa[data-xm] .node-li.li-c {
+	width: 350px;
+}
+#xmCa .node-li .node-cd .node-sub{
+	box-sizing: border-box;
+	padding-left: 10px;
+}
+#xmCa .node-li .node-cd .node-p {
+	color: rgba(102, 102, 102, 1);
+	line-height: 20px;
+	max-width: 100%;
+	/*white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;*/
+}
+
+#xmCa .node-li .node-cd .node-h5 {
+	color: rgba(51, 51, 51, 1);
+	font-size: 12px;
+}
+
+#xmCa .caBtm {
+	height: 40px;
+	border-top: 1px solid #EEEEEE;
+}
+
+#xmCbL {
+	width: 780px;
+	min-height: 410px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+#xmCbL .navBox {
+	line-height: 50px;
+	border-bottom: 1px solid #EEEEEE;
+}
+
+#xmCbL .navBox .node-li {
+	box-sizing: border-box;
+	padding: 0 20px;
+}
+
+#xmCbL .navBox .node-li.cur {
+	color: rgba(0, 103, 58, 1);
+	border-bottom: 2px solid rgba(0, 103, 58, 1);
+}
+
+#xmCbL .ctnBox {
+	padding: 30px 0;
+}
+
+#xmCbL .ctnBox .node-c .node-p {
+	line-height: 26px;
+}
+
+#xmCbL .ctnBox .c-a .node-p:nth-of-type(n+2) {
+	margin-top: 20px;
+}
+
+#xmCbL .ctnBox .c-b .node-i:nth-of-type(n+2) {
+	margin-top: 30px;
+}
+
+#xmCbL .ctnBox .c-b .node-i .node-h3 {
+	box-sizing: border-box;
+	padding-left: 10px;
+	line-height: 18px;
+	border-left: 3px solid #CCCCCC;
+}
+
+#xmCbR {
+	width: 400px;
+}
+
+#xmCbR .node-h2,
+#xmCbR .node-ul {
+	padding: 0 10px;
+}
+
+#xmCbR .node-h2 {
+	line-height: 50px;
+}
+
+#xmCbR .node-ul .node-li {
+	line-height: 60px;
+}
+
+#xmCbR .node-ul .node-li:nth-of-type(n+2) {
+	border-top: 1px solid #EEEEEE;
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>发布临床项目</title>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=0" />
+		<meta name="format-detection" content="telephone=yes"/>
+		<link rel="stylesheet" href="css/public/pub.css" />
+		<link rel="stylesheet" href="css/banner.css" />
+		<link rel="stylesheet" href="css/faBuLinChuang.css" />
+		<link rel="stylesheet" href="css/from.css" />
+		<script type="text/javascript" src="js/public/pub.reset.js"></script>
+		<script type="text/javascript" src="js/public/pub.layer.min.js"></script>
+	</head>
+	<body>
+		<script type="text/javascript" src="js/public/pub.loading.js"></script>
+		<div id="App" class="App">
+			<public-header :user="userInfo"></public-header>
+			<!--public-header-->
+			<div id="mainApp" class="mainApp fm-yh pad100">
+				<h1 id="pubH1" class="node-h1 cr-666 ft24 wrap30" v-pre="">首页>发布临床项目></h1>
+				<div id="fromWrap" class="br-fff clear">
+					<div class="wrap30">
+						<h2 class="node-h2 text-center" v-pre="">
+							<span class="ft30 relative inline-block">发布临床项目</span>
+						</h2>
+						<form id="fromApp">
+							<ul class="from-ul">
+								<li class="li-hight">项目信息</li>
+								<li class="from-li">
+									<label class="from-label label-input must">
+										<input type="text" placeholder="项目名称" v-model.lazy.trim="projectName"  />
+									</label>
+								</li>
+								<li class="from-li">
+									<label class="from-label label-input must">
+										<input type="text" placeholder="所属公司" v-model.lazy.trim="company" />
+									</label>
+								</li>
+								<li class="from-li">
+									<label class="from-label label-select must">
+										<select v-model="sex" v-model.lazy="personType">
+											<option value="">受试者类型</option>
+										</select>
+									</label>
+								</li>
+								<li class="from-li li-between">
+									<label class="from-label label-select must">
+										<select v-model.lazy="zySel">
+											<option value="">适应专业</option>
+										</select>
+									</label>
+									<label class="from-label label-select must">
+										<select v-model.lazy="zySelB">
+											<option value="">请选择</option>
+										</select>
+									</label>
+								</li>
+								<li class="from-li">
+									<label class="from-label label-input must">
+										<input type="text" placeholder="药物适应症"  v-model.lazy.trim="ywType" />
+									</label>
+								</li>
+								<li class="from-li">
+									<label class="from-label label-input must">
+										<input type="text" placeholder="药物名称" v-model.lazy.trim="yuName" />
+									</label>
+								</li>
+								<li class="from-li">
+									<label class="from-label label-select must">
+										<select v-model="sex" v-model.lazy="zlLeve">
+											<option value="">治疗阶段</option>
+										</select>
+									</label>
+								</li>
+								<li class="li-hight">受试者要求</li>
+								
+								<li class="from-li li-between">
+									<label class="from-label label-select must">
+										<select v-model.lazy="sex">
+											<option value="">性别要求</option>
+										</select>
+									</label>
+									<label class="from-label label-select must">
+										<select v-model.lazy="marrAuto">
+											<option value="">婚姻状况</option>
+										</select>
+									</label>
+								</li>
+								<li class="from-li li-between">
+									<label class="from-label label-input must" >
+										<input type="text" placeholder="招募人数" v-model.lazy.trim="zmNum" />
+										<span class="fr ft24 cr-666">人</span>
+									</label>
+									<label class="from-label label-input must">
+										<input type="text" placeholder="补偿金" v-model.lazy.trim="bcMoney" />
+										<span class="fr ft24 cr-666">元</span>
+									</label>
+								</li>
+								<li class="li-hight">项目介绍</li>
+								
+								<li class="from-li">
+									<h3 class="label-title must">项目描述</h3>
+									<label class="from-label label-textarea">
+										<textarea placeholder="详细描述项目用药、项目过程……" v-model.lazy.trim="projectDes"></textarea>
+									</label>
+								</li>
+								<li class="from-li">
+									<h3 class="label-title must">入选标准</h3>
+									<label class="from-label label-textarea">
+										<textarea placeholder="描述受试者招募入选标准……" v-model.lazy.trim="rxBz"></textarea>
+									</label>
+								</li>
+								<li class="from-li">
+									<h3 class="label-title">排除标准</h3>
+									<label class="from-label label-textarea">
+										<textarea placeholder="描述受试者招募排除标准……" v-model.lazy.trim="pcBz"></textarea>
+									</label>
+								</li>
+								<li class="from-li">
+									<button type="button" class="from-submit" @click="submit">发布临床项目</button>
+								</li>
+							</ul>
+						</form>
+					</div>
+				</div>
+			</div>		
+			<!--mainApp-->
+			<public-bta ></public-bta>
+			<!--public-bta-->
+			<public-btb ></public-btb>
+			<!--public-btb-->
+		</div> 	
+		<!--App-->
+	</body>
+	<script type="text/javascript" src="js/public/vue.min.js"></script>
+	<script type="text/javascript" src="js/public/pub.js"></script>
+	<script type="text/javascript" src="components/public.js"></script>
+	<script type="text/javascript" src="components/publicSlot.js"></script>
+	<script type="text/javascript" src="components/banner.js"></script>
+	<script type="text/javascript" src="js/module.js"></script>
+	<script type="text/javascript" src="js/faBuLinChuang.js"></script>
+
+</html>

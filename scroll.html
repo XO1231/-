@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+
+	<head>
+		<title></title>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=0" />
+		<link rel="stylesheet" href="css/public/pub.css" />
+		<script type="text/javascript" src="js/public/pub.reset.js"></script>
+		<script type="text/javascript" src="js/public/pub.layer.min.js"></script>
+		<link rel="stylesheet" href="./css/public/swiper.min.css">
+		<link rel="stylesheet" href="css/style/index.css" />
+	</head>
+	<body>
+		<script type="text/javascript" src="js/public/pub.loading.js"></script>
+		<div id="App" class="App">
+			<div class="wrapper wrap30" id="navLists">
+				<div id="scrollXa" class="scrollNode" style="overflow: hidden">
+                    <ul class="content clear table">
+                        <li  data-url='#' class=" newtext table-cell">
+                            <div class="cell-box">首页</div>
+                        </li>
+                        <li  data-url='#' class=" newtext table-cell">
+                            <div class="cell-box">首页</div>
+                        </li>
+                        <li  data-url='#' class=" newtext table-cell">
+                            <div class="cell-box">首页</div>
+                        </li>
+                        <li  data-url='#' class=" newtext table-cell">
+                            <div class="cell-box">首页</div>
+                        </li>
+                        <li  data-url='#' class=" newtext table-cell">
+                            <div class="cell-box">首页</div>
+                        </li>
+                        <li  data-url='#' class=" newtext table-cell">
+                            <div class="cell-box">首页</div>
+                        </li>
+                        <li  data-url='#' class=" newtext table-cell">
+                            <div class="cell-box">首页</div>
+                        </li>
+                        <li  data-url='#' class=" newtext table-cell">
+                            <div class="cell-box">首页</div>
+                        </li>
+                       
+                    </ul>
+
+                </div>
+				<!-- 这里可以放一些其它的 DOM，但不会影响滚动 -->
+				<div class="swiper-img"><img src="./imgs/lists.png" alt=""></div>
+			</div>
+			
+
+		</div>
+		
+
+		<script src="./js/public/iscroll.min.js"></script>
+		<!-- <script src="./js/public/vue.min.js"></script> -->
+		<script src="./js/public/jquery.min.js"></script>
+		<!-- <script src="./js/public/swiper.min.js"></script> -->
+		<script type="text/javascript" src="js/public/pub.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                var $ = $ || jQuery;
+                var scrollXaEle = $('#scrollXa');
+                var scrollXa =  initScroll( scrollXaEle[0] );
+                // scrollXa  
+                scrollXaEle.on('click','.table-cell',function (e) {
+                    e.stopPropagation();
+                    var t = $(this);
+                    if( !t.hasClass('navactive') ){
+                        var ti = t.index();
+                        
+                        t.addClass('navactive').siblings('.navactive').removeClass('navactive');
+                        scrollXa.scrollToElement( '.navactive',500,true,false );
+                    }
+
+                  })
+                
+            });
+        
+        </script>
+		<!-- <script src="./js/index/index.js"></script> -->
+		
+	</body>

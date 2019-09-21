@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>首页</title>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=0" />
+		<meta name="format-detection" content="telephone=yes"/>
+		<link rel="stylesheet" href="css/public/pub.css" />
+		<link rel="stylesheet" href="css/banner.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<script type="text/javascript" src="js/public/pub.reset.js"></script>
+		<script type="text/javascript" src="js/public/pub.layer.min.js"></script>
+	</head>
+	<body>
+		<script type="text/javascript" src="js/public/pub.loading.js"></script>
+		<div id="App" class="App">
+			<div id="moduleTop">
+				<public-header :user="userInfo"></public-header>
+			</div>
+			<!--public-header-->
+			<div id="mainApp" class="mainApp" >
+				<banner-slot :bansrc='baseSrc + bannerSrc' >
+					<div id="banCenter" class="banCenter cr-fff text-center" data-index = "" v-pre>
+						<h1 class="node-h1 ft40 weight">临床志愿者招募</h1>
+						<span class="space inline-block br-fff"></span>
+						<h2 class="node-h2 ft24">汇聚最全临床技术  提高人类健康机率</h2>
+					</div>
+					<ul id="banBtm" class="absolute width flex cr-fff" v-pre>
+						<li class="node-li text-center">
+							<h3 class=""><i class="ft40 weight">248</i><span class="ft20">项</span></h3>
+							<p class="ft20">临床招募项目</p>
+						</li>
+						<li class="node-li text-center">
+							<h3 class=""><i class="ft40 weight">488</i><span class="ft20">人</span></h3>
+							<p class="ft20">专业临床团队</p>
+						</li>
+						<li class="node-li text-center">
+							<h3 class=""><i class="ft40 weight">28468</i><span class="ft20">位</span></h3>
+							<p class="ft20">成功受试者</p>
+						</li>
+					</ul>
+				</banner-slot>
+				<div class="wrap30 mt24">
+					<img :src="baseSrc + 'index (3).png'" class="block width" />
+				</div>
+				<ul id="inA" class="wrap30 mt24" v-pre>
+					<li class="node-li br-fff">
+						<h2 class="node-h2 paddingZ cr-fff">临床项目发布</h2>
+						<div class="node-area paddingZ">
+							<div class="node-c c-a flex flex-between">
+								<div class="node-g g-a cr-333">
+									<h3 class="node-h3 mb12 ft26 weight">发布条件</h3>
+									<p class="node-p ft20 pre-line">汇集受试者资源库，
+									提高试验项目招募效率。</p>
+								</div>
+								<div class="node-g g-b  cr-333">
+									<h3 class="node-h3 mb12 ft26 weight">发布说明</h3>
+									<p class="node-p ft20 pre-line">只有认证过后的临床招募需求组织和个人可以通过此处发布项目</p>
+								</div>
+							</div>
+						</div>
+						<div class="node-btm paddingZ flex flex-middle">
+							<button type="button" class="ft28 mr20 cr-fff text-center ">我要发布</button>
+							<p class="cr-999 ft20 pre-line">发布之后（1个工作日内）
+							审核完成
+							</p>
+						</div>
+					</li>
+				</ul>
+				<ul id="inB" class="wrap30 mt24 flex flex-between flex-wrap">
+					<li  v-for='va in inBArr'>
+						<img :src="baseSrc + va" class="block width" />
+					</li>
+				</ul>
+				<div id="inC" class="mt24 br-fff">
+					<h1 class="pubH1">临床招募项目</h1>
+					<div class="mCtn">
+						<div :class="scrollKey">
+							<ul class="node-ul table">
+								<li class="node-li table-cell border-box" v-for="va in 3">
+									<div class="cell-box"  v-pre>
+										<div class="node-h2 flex flex-middle flex-between">
+											<h3 class="node-h3 text-cut ft22 cr-m1 ">【高血压A005】微孔灌注肾动脉消融导消融导</h3>
+											<button type="button" class="cr-fff ft24">招募中</button>
+										</div>
+										<div class="node-area">
+											<h4 class="node-h4 mt20 mb12 ft28">适应症：原发性高血压</h4>
+											<p class="node-p text-cut-more ft24">【高血压A005】微孔灌注肾动脉消融导管用于治疗原发性高血压 一、临床试验项目名称  微孔灌注肾动称  微孔灌注肾动…</p>
+										</div>
+										<p class="node-btm flex flex-between ft20 cr-999">
+											<span >治疗阶段：II 期</span>
+											<span ><i class="cr-m1">121天</i>后截止报名</span>
+										</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<p class="node-btm ft28 cr-999 text-center">查看更多项目</p>
+				</div>
+				<banner-slot :bansrc='baseSrc + bannerSrcB' class='mt24'>
+					<div  class="banCenter cr-fff text-center" data-bnb = ""  v-pre>
+						<h1 class="node-h1 ft30 weight">临床志愿者招募</h1>
+						<span class="space inline-block br-fff"></span>
+						<h2 class="node-h2 ft20">汇聚最全临床技术  提高人类健康机率</h2>
+					</div>
+					<ul id="slotUl" class="slot-ul wrap30 flex flex-between flex-wrap">
+						<li v-for="va in hzBanArr">
+							<img :src="baseSrc + va" class="block" />
+						</li>
+					</ul>
+				</banner-slot>
+				<div id="inD" class="mt24 br-fff">
+					<h1 class="pubH1">临床试验</h1>
+					<ul class="wrap30 node-ul">
+						<li class="node-li border-box br-f5 flex flex-between">
+							<img :src="baseSrc+'index (17).png'" class="block ctA" />
+							<div class="ctR"  v-pre>
+								<div class="node-c c-a flex flex-between">
+									<strong class="cr-m2 ft28 weight">Q</strong>
+									<p class="ft24 text-cut weight">什么是临床试验？</p>
+								</div>
+								<div class="node-c c-b flex flex-between">
+									<strong class="cr-m2 ft28 weight">A</strong>
+									<p class="ft22 text-cut-more ">临床试验是一项医学研究，目的是确定一种新药或一项治疗方法的疗效与安全性以及存在的副作用，是为帮…</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<p class="node-btm ft28 cr-999 text-center">查看更多试验知识</p>
+				</div>
+				<div id="inMap" class="mt24 clear" >
+					<div  class="banCenter cr-fff text-center" data-bnb = "" v-pre>
+						<h1 class="node-h1 ft30 weight">招募团队遍布全国</h1>
+						<span class="space inline-block br-fff"></span>
+					</div>
+				
+					<ul class="node-ul flex flex-between wrap30" v-pre>
+						<li class="node-li text-center" >
+							<h2 class="cr-m2 ft40 weight">30+</h2>
+							<div class="ft00">
+								<span class="inline-block br-m2 space"></span>
+							</div>
+							<p class="ft24 cr-fff">辐射省和直辖市</p>
+						</li>
+					</ul>
+				
+					<div :id="mapId"></div>
+				</div>
+			</div>
+			<!--mainApp-->
+			<div id="moduleBtm">
+				<public-bta ></public-bta>
+				<!--public-bta-->
+				<public-btb ></public-btb>
+				<!--public-btb-->
+			</div>
+		</div> 	
+		<!--App-->
+	</body>
+	<script type="text/javascript" src="js/public/vue.min.js"></script>
+	<script type="text/javascript" src="js/public/pub.js"></script>
+	<script type="text/javascript" src="components/public.js"></script>
+	<script type="text/javascript" src="components/publicSlot.js"></script>
+	<script type="text/javascript" src="components/banner.js"></script>
+	<script type="text/javascript" src="js/module.js"></script>
+	<script type="text/javascript" src="js/public/iscroll.min.js"></script>
+	<script type="text/javascript" src="js/public/echarts.min.js"></script>
+	<script type="text/javascript" src="js/public/echarts.china.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	
+
+</html>

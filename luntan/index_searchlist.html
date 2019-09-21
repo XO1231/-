@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="Generator" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0, minimal-ui, viewport-fit=cover">
+		<title>搜索结果</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="layer/mobile/need/layer.css" />
+		<link rel="stylesheet" href="css/index_searchlist.css" />
+	</head>
+
+	<body>
+		<div class="search">
+			<input type="text" value="开锁" placeholder="请输入关键字"  />
+			<img src="images/close.png" class="delect" />
+		</div>
+		<ul class="toplist">
+			<li class="active">综合</li>
+			<li>人气</li>
+			<li>评价</li>
+			<li>附近</li>
+		</ul>
+		<div class="detail">
+			<div class="detail_left"><img src="images/sp_img.jpg" /></div>
+			<div class="detail_right">
+				<div class="detail_name">新沂市110开锁服务公司</div>
+				<div class="time">
+					<span class="zhi">置顶</span>
+					<div id="1" class="settime" endTime="2020-08-12 12:01:01"></div>
+				</div>
+				<div class="detail_foot">
+					<div class="map"><img src="images/map_img.png" />
+						<div class="detail_addres">大学生电子商务园</div>&nbsp;|&nbsp;
+						<div class="map_num">657m</div>
+					</div>
+					<div class="score"><img src="images/score_img.png">4.8&nbsp;&nbsp;人气：2480&nbsp;&nbsp;好评：1840</div>
+				</div>
+			</div>
+			<a href="tel:01234567" class="call"><img src="images/call.png"></a>
+		</div>
+		<div class="detail">
+			<div class="detail_left"><img src="images/sp_img.jpg" /></div>
+			<div class="detail_right">
+				<div class="detail_name">新沂市110开锁服务公司</div>
+				<div class="time">
+					<span class="zhi">置顶</span>
+					<div id="2" class="settime" endTime="2020-08-12 12:01:01"></div>
+				</div>
+				<div class="detail_foot">
+					<div class="map"><img src="images/map_img.png" />
+						<div class="detail_addres">大学生电子商务园</div>&nbsp;|&nbsp;
+						<div class="map_num">657m</div>
+					</div>
+					<div class="score"><img src="images/score_img.png">4.8&nbsp;&nbsp;人气：2480&nbsp;&nbsp;好评：1840</div>
+				</div>
+			</div>
+			<a href="tel:01234567" class="call"><img src="images/call.png"></a>
+		</div>
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				updateEndTime();
+			});
+			//倒计时函数
+			function updateEndTime() {
+				var date = new Date();
+				var time = date.getTime(); //当前时间距1970年1月1日之间的毫秒数
+
+				$(".settime").each(function(i) {
+
+					var endDate = this.getAttribute("endTime"); //结束时间字符串
+					//转换为时间日期类型
+					var endDate1 = eval('new Date(' + endDate.replace(/\d+(?=-[^-]+$)/, function(a) {
+						return parseInt(a, 10) - 1;
+					}).match(/\d+/g) + ')');
+
+					var endTime = endDate1.getTime(); //结束时间毫秒数
+
+					var lag = (endTime - time) / 1000; //当前时间和结束时间之间的秒数
+					if(lag > 0) {
+						var second = Math.floor(lag % 60); 
+						var minite = Math.floor((lag / 60) % 60);
+						var hour = Math.floor((lag / 3600) % 24);
+						var day = Math.floor((lag / 3600) / 24);
+						$(this).html('&nbsp;&nbsp;剩余'+day + "天" +'&nbsp;&nbsp;'+ hour + ":" + minite + ":" + second);
+					} else {
+						$(this).removeClass("settime");
+						alert($(this).attr("id"));
+						$(this).html("到期啦！");
+					}
+				});
+				setTimeout("updateEndTime()", 1000);
+			}
+		
+		</script>
+		<script>
+			$(function(){
+				$('.delect').click(function(){
+					$('.search input').val('')
+				})
+				$('.toplist li').click(function(){
+					$(this).addClass('active')
+					$(this).siblings('li').removeClass('active')
+				})
+			})
+		</script>
+	</body>
+
+</html>

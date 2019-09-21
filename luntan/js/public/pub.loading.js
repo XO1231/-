@@ -1,0 +1,2 @@
+/* loading.js Rely on the layer.mobile.js*/ ;
+!function(win,lay){if(lay){var closeLoading=function(timer){return setTimeout(function(){lay.closeAll()},timer||0)},loadEnd=closeLoading(2000);lay.open({type:2});win.onload=function(){clearTimeout(loadEnd);closeLoading(300)}}}(window,layer);

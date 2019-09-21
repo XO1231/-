@@ -1,0 +1,159 @@
+#mainBody{
+	padding-top: 40px;
+	padding-bottom: 100px;
+}
+#navH1{
+	line-height: 50px;
+}
+#navH1 .node-btn{
+	width:200px;
+}
+
+#navFilter{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+#navFilter .node-li .flex{
+	height: 56px;
+}
+#navFilter .node-li.border{
+	border-bottom: 1px solid #EEEEEE;
+}
+#navFilter .node-li .node-h3{
+	min-width: 85px;
+	font-size: 13px;
+}
+
+
+#navFilter .node-li .node-sku{
+	box-sizing: border-box;
+	max-width: 1000px;
+	height: 56px;
+	overflow: hidden;
+	padding: 15px 0 5px;
+	cursor: pointer;
+	/*动画特效*/
+	/*max-height: 56px;
+	transition: max-height linear 500ms;
+	-webkit-transition: max-height linear 500ms; 
+	-ms-transition: max-height linear 500ms; */
+}
+#navFilter .node-li .node-sku.cur{
+	height: auto;
+	/*动画特效*/
+	/*max-height: 300px;*/
+}
+#navFilter .node-li .node-sku .node-u{
+	margin-bottom: 10px;
+}
+#navFilter .node-li.select .node-select .node-i,
+#navFilter .node-li .node-sku .node-u{
+	padding: 0 16px;
+	height:26px;
+	line-height: 26px;
+	
+	font-size: 13px;
+}
+
+#navFilter .node-li .node-sku .node-u.cur{
+	background:rgba(138,189,68,1);
+	color: #fff;
+}
+/*动画特效*/
+/*#navFilter .node-li .slideIcon{
+	transition: all linear 300ms;
+	-webkit-transition: all linear 300ms;
+}*/
+#navFilter .node-li .slideIcon.cur{
+	transform: rotate(180deg);
+}
+
+
+#navFilter .node-li.select #resetSel span,
+#navFilter .node-li.select .node-select .node-i{
+	box-sizing: border-box;
+	border:1px solid rgba(138,189,68,1);
+	cursor: pointer;
+}
+#navFilter .node-li.select .node-select .node-i{
+	margin-right: 15px;
+}
+#navFilter .node-li.select .node-select .node-i img{
+	margin-left: 5px;
+}
+
+#navFilter .node-li.select #resetSel span{
+	height:30px;
+	line-height: 30px;
+	padding: 0 16px;
+}
+
+#mTable .wrapZ20{
+	box-sizing: border-box;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+#mTable .tb-cap{
+	line-height: 55px;
+}
+#mTable table{
+	table-layout: fixed;
+}
+#mTable thead tr{
+	height:36px;
+	background:rgba(198,202,206,1);
+}
+#mTable tbody tr{
+	height:56px;
+}
+#mTable tbody tr:nth-of-type(n+2){
+	border-top: 1px solid #EEEEEE;
+}
+#mTable tbody td{
+	box-sizing: border-box;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+#mTable tr td:first-of-type{
+	padding-left: 20px;
+}
+#mTable tr td:nth-of-type(1){
+	width: 200px;
+}
+#mTable tr td:nth-of-type(n+2){
+	text-align: center;
+}
+#mTable tr td:nth-of-type(3){
+	width: 200px;
+}
+#pageWrap{
+	padding: 40px 0 60px;
+}
+#pageBox .pageNode{
+	height:30px;
+	line-height: 30px;
+	border-radius:2px;
+	border:1px solid rgba(204,204,204,1);
+}
+#pageBox .pageNode:nth-of-type(n+2){
+	margin-left: 10px;
+}
+#pageBox .pageNode.pageNodePre,
+#pageBox .pageNode.pageNodeNext{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#pageBox .pageNode.pageNodeNum{
+	width:40px;
+	text-align: center;
+}
+#pageBox .pageNode.pageNodeNum.cur{
+	color: #fff;
+	background-color: rgba(138,189,68,1);
+	border-color: rgba(138,189,68,1);
+}
+#pageBox .pageNode.pageNodeMore{
+	border: none;
+	cursor: initial;
+}

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>首页</title>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=0" />
+		<link rel="stylesheet" href="css/public/pub.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<script type="text/javascript" src="js/public/vue.min.js"></script>
+		<script type="text/javascript" src="js/public/jquery.min.js"></script>
+		<script type="text/javascript" src="js/public/pub.js"></script>
+		<script type="text/javascript" src="components/mainModule.js"></script>
+		<script type="text/javascript" src="components/loginModule.js"></script>
+		<script type="text/javascript">
+			var NAVINDEX = 0;
+		</script>
+	</head>
+	<body>
+		<div class="page" id="page">
+			<div class="public" id="publicTop">
+				<header-top 
+					:header-top='headerTop' 
+					v-model='headerTop.searchValues'
+					@url='url($event)'
+				></header-top>
+				<!--mainModule_headerTop-->
+				<header-bottom 
+					:nav-index='navIndex'
+					@url='url($event)'	
+				></header-bottom>
+				<!--mainModule_headerBottom-->
+			</div>
+			<!--publicTop-->
+			<div id="mainBody" class="br-250">
+				<div id="banTop"  class=" relative clear br-f" data-index = "">
+					<div class="banBox clear">
+						<img src="images/index_banner.png" class="block" />
+					</div>
+					<div class="absCtA abs cr-f" >
+						<div class="node-c c-a">临床志愿者招募</div>
+						<div class="node-c c-b">
+							<span class="br-f"></span>
+						</div>
+						<div class="node-c c-c">汇聚最全临床技术  提高人类健康机率</div>
+					</div>
+					<div class="absCtB abs cr-f ">
+						<div class="node-c c-a clear">
+							<div class="node-g g-a">248</div>
+							<div class="node-g g-b">
+								<div class="node-d d-a">项</div>
+								<div class="node-d d-b">临床招募项目</div>
+							</div>
+						</div>
+						<div class="node-c c-b clear">
+							<div class="node-g g-a">488</div>
+							<div class="node-g g-b">
+								<div class="node-d d-a">人</div>
+								<div class="node-d d-b">专业临床团队</div>
+							</div>
+						</div>
+						<div class="node-c c-c clear">
+							<div class="node-g g-a">28468</div>
+							<div class="node-g g-b">
+								<div class="node-d d-a">位 </div>
+								<div class="node-d d-b">成功受试者</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--banTop-->
+				<div id="mcA" class="wrap mt60">
+					<div id="caBan">
+						<img src="images/index_banner01.png" class="block" />
+					</div>
+					<div id="caCtA" class="clear mt30">
+						<div class="node-box fl">
+							<div class="node-title br-m1 cr-f">临床项目发布</div>
+							<div class="node-ctn">
+								<div class="node-c c-a clear cr-333">
+									<div class="node-g g-a fl">
+										<div class="node-h2 ">发布条件</div>
+										<div class="node-t1">汇集受试者资源库， </br>提高试验项目招募效率。</div>
+									</div>
+									<div class="node-g g-b fr">
+										<div class="node-h2">发布说明</div>
+										<div class="node-t1">只有认证过后的临床招募需求组织和个人可以通过此处发布项目</div>
+									</div>
+								</div>
+								<div class="node-c c-b clear flex">
+									<div class="node-g g-a br-m1 cr-f point">我要发布</div>
+									<div class="node-g g-b cr-999 flex flex-middle">
+										<div class="node-d d-a ">发布之后（1个工作日内）<br/>审核完成</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="node-box fr">
+							<div class="node-title br-m2 cr-f">志愿受试者报名</div>
+							<div class="node-ctn">
+								<div class="node-c c-a clear cr-333">
+									<div class="node-g g-a fl">
+										<div class="node-h2 ">报名条件</div>
+										<div class="node-t1">是患者或健康志愿者 </br>选择合适项目点击下方我要报名</div>
+									</div>
+									<div class="node-g g-b fr">
+										<div class="node-h2">信息说明</div>
+										<div class="node-t1">填写个人基本信息，专业人员根据方案对患者进行初步筛，为您匹配适合项目</div>
+									</div>
+								</div>
+								<div class="node-c c-b clear flex">
+									<div class="node-g g-a br-m2 cr-f point">我要报名</div>
+									<div class="node-g g-b cr-999 flex flex-middle">
+										<div class="node-d d-a ">填写之后（1-2工作日）<br/>我们会与您联系，请保持电话畅通</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					
+					</div>
+					<div id="caCtB" class="mt30">
+						<img src="images/ban03.png" class="block" />
+					</div>
+					<div id="caCtc" class="mt30">
+						<div class="nav-title clear br-f">
+							<div class="node-c c-a liner fl flex flex-center flex-middle flex-box">
+								<img src="images/xmb.png" />
+								<span class="cr-f">临床招募项目</span>
+								<span class="cr-ccc">(158)</span>
+							</div>
+							<div class="node-c c-b fl  clear ">
+								<div class="node-li fl flex-box flex flex-middle point fl">
+									<img src="images/xma.png" />
+									<span class="cr-333">I 期（初治）</span>
+									<span class="cr-999">(58)</span>
+								</div>
+								<div class="node-li fl flex-box flex flex-middle point fl">
+									<img src="images/xma.png" />
+									<span class="cr-333">II 期</span>
+									<span class="cr-999">(58)</span>
+								</div>
+								<div class="node-li fl flex-box flex flex-middle point fl">
+									<img src="images/xma.png" />
+									<span class="cr-333">III 期 </span>
+									<span class="cr-999">(58)</span>
+								</div>
+								<div class="node-li fl flex-box flex flex-middle point fl">
+									<img src="images/xma.png" />
+									<span class="cr-333">IV 期</span>
+									<span class="cr-999">(58)</span>
+								</div>
+							</div>
+							<div class="node-c c-c fr flex flex-middle flex-box cr-999 point">查看更多+</div>
+						</div>
+						<div class="list-wrap clear mt20" id="bmUl" data-index = "">
+							<div class="node-li fl">
+								<div class="node-c c-a">
+									<div class="node-g g-a width text-cut cr-m1 ft18">【高血压A005】微孔灌注肾动脉消融导</div>
+									<div class="node-g g-b ">
+										<span class="liner cr-f point ft12">招募中</span>
+									</div>
+									<div class="node-g g-c cr-666">适应症：原发性高血压</div>
+									<div class="node-g g-d cr-999 ft12 text-cut-more ft12">【高血压A005】微孔灌注肾动脉消融导管用于治疗原发性高血压一、临床试验项目名称  微孔灌注肾动脉消融导管用于治疗原发性</div>
+								</div>
+								<div class="node-c c-b flex flex-middle flex-between ft12">
+									<div class="node-g g-a">治疗阶段：II 期</div>
+									<div class="node-g g-b"><span class="cr-m1">121天</span>后截止报名</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="nic cr-m1 text-center point">查看更多临床招募项目</div>
+					</div>
+					
+				</div>
+				<!--mcA-->
+				<div id="mcB" class="mt40 relative">
+					<div class="banBox">
+						<img src="images/bn023.png" class="block" />
+					</div>
+					<div class="mct width absolute top left">
+						<div class=" tpc text-center mb50 cr-f">
+							<div class="t1 ft30">我们的合作伙伴</div>
+							<div class="t2">
+								<span class="inline-block br-f"></span>
+							</div>
+							<div class="t3">遍布全球的专业临床技术研究团队是我们成功的信心</div>
+						</div>
+						<div class="art flex flex-center">
+							<img src="images/logo1.png" class="block" />
+							<img src="images/logo2.png" class="block" />
+							<img src="images/logo3.png" class="block" />
+							<img src="images/logo4.png" class="block" />
+							<img src="images/logo5.png" class="block" />
+							<img src="images/logo6.png" class="block" />
+						</div>
+						<div class="art art-b flex flex-center">
+							<img src="images/logo7.png" class="block" />
+							<img src="images/logo8.png" class="block" />
+							<img src="images/logo9.png" class="block" />
+							<img src="images/logo10.png" class="block" />
+							<img src="images/logo11.png" class="block" />
+						</div>
+					</div>
+				</div>
+				<!--mcB-->
+				<div id="mcC" class="wrap">
+					<div class="navTitle clear border-box br-f">
+						<div class="node-c c-a height border-box fl ft16 cr-m1 weight">临床试验</div>
+						<div class="node-c c-b height border-box fr point mr10 cr-999">查看更多+</div>
+					</div>
+					<div class="mct clear">
+						<div class="node-li fl clear border-box ml20 mt20">
+							<div class="node-c c-a fl mr20">
+								<img src="images/bn54.png" />
+							</div>
+							<div class="node-c c-b fl">
+								<div class="node-i i-a clear mb30">
+									<div class="node-g g-a fl br-m2 cr-f ft12 mr10">Q</div>
+									<div class="node-g g-b fl weight">什么是临床试验？</div>
+								</div>
+								<div class="node-i i-b clear mt30">
+									<div class="node-g g-a fl br-m2 cr-f ft12 mr10">A</div>
+									<div class="node-g g-b fl cr-666 text-cut-more">临床试验是一项医学研究，目的是确定一种新药或一项治疗方法的疗效与安全性以及存在的副作用，是为帮助医生找到改善、控制、治疗疾病最佳方法所进…</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--mcC-->
+				<div id="mcD" >
+					<div class="wrap clear">
+						<div class="fl" id="mapChina"></div>
+						<div class="fl mct">
+							<div class="t1 cr-f ft30 weight afterBod">招募团队遍布全国</div>
+							<div class="node-ul clear">
+								<div class="node-li fl">
+									<div class="node-c c-a cr-m2 afterBod weight">30+</div>
+									<div class="node-c c-b cr-f ft18">辐射省和直辖市</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--mcD-->
+			</div>
+			<!--mainMid-->
+			<div class="public" id="publicBtm">
+				<bottom-top @url='url($event)'></bottom-top>
+				<!--mainModule_BottomTop-->
+				<login-bottom></login-bottom>
+				<!--bottomModule-->
+				<slide-bar></slide-bar>
+				<!--slidebarmodule-->
+			</div>
+			<!--publicBtm-->
+		</div>
+		<!--page-->
+
+		
+	</body>
+	<script type="text/javascript" src="js/module.js"></script>
+	<script type="text/javascript" src="js/public/echarts.min.js"></script>
+	<script type="text/javascript" src="js/public/echarts.china.js"></script>
+	<script type="text/javascript" src="js/echarSet.js" defer="defer" async="async"></script>
+	<script type="text/javascript" src="layui.layer/layer.js" ></script>
+</html>

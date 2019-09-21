@@ -1,0 +1,42 @@
+@font-face {
+	font-family: 'PingFang SC';
+	src: url('../../fonts/PingFang-SC.ttf'), url('../../fonts/PingFang-SC.woff');
+}
+.fmpf{font-family:"PingFang SC"}
+.fmar{font-family:Arial}
+.fmyh{font-family:"Microsoft YaHei","微软雅黑";}
+.fmht{font-family:"黑体";}
+
+.fs00{font-size: 0;}
+.fs12{font-size: 12px;}
+.fs13{font-size: 13px;}
+.fs14{font-size: 14px;}
+.fs16{font-size: 16px;}
+.fs18{font-size: 18px;}
+.fs20{font-size: 20px;}
+.fs22{font-size: 22px;}
+.fs24{font-size: 24px;}
+.fs26{font-size: 26px;}
+.fs28{font-size: 28px;}
+.fs30{font-size: 30px;}
+.fs32{font-size: 32px;}
+.fs34{font-size: 34px;}
+.fs36{font-size: 36px;}
+.fs38{font-size: 38px;}
+.fs40{font-size: 40px;}
+
+.cr-p{color:transparent}
+.br-p{background-color:transparent}
+.cr-0{color:#000}
+.br-0{background-color:#000}
+.cr-f{color:#fff}
+.br-f{background-color:#fff}
+.cr-3{color:#333}
+.cr-6{color:#666}
+.cr-9{color:#999}
+.cr-e{color:#EEEEEE}
+.cr-f3{color:#f3f3f3}
+.cr-f3{background-color:#f3f3f3}
+.cr-m1{color:#51327F}
+.br-m1{background-color:#51327F}
+.br-m2{background-color:rgba(81,50,127,1);}

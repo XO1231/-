@@ -1,0 +1,91 @@
+body{
+	background: #F5F5F5;
+}
+.tablist{
+	width: 100%;
+	height: 0.6rem;
+	background: #fff;
+	padding: 0.2rem 0;
+}
+.tablist_detail{
+	width: 80%;
+	height: 0.6rem;
+	margin: 0 auto;
+	display: flex;
+	border-radius: 0.1rem;
+	overflow: hidden;
+	border: 1px solid #8ABD44;
+}
+.tablist_detail li{
+	border-right: 1px solid #8ABD44;
+	color: #999;
+	text-align: center;
+	line-height: 0.6rem;
+	width: 33.3%;
+}
+
+.tablist_detail li:nth-child(3){
+	border: none !important;
+}
+.active{
+	background: #8ABD44 !important;
+	color: #fff !important;
+}
+.detail_main{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: #fff;
+	padding: 0.2rem 0;
+	margin-top: 0.2rem;
+}
+.main_title{
+	height: 0.8rem;
+	margin: 0.2rem auto;
+	display: flex;
+	justify-content: space-between;
+}
+.node-btn{
+	width: 48%;
+	border: 1px solid #00673A;
+	color: #00673A;
+	background: #fff;
+	text-align: center;
+	height: 0.8rem;
+	line-height: 0.8rem;
+}
+.cur{
+	background: #00673A;
+	color: #fff;
+}
+
+
+#fromApp .from-label.label-select input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    line-height: 1rem;
+    font-size: .28rem;
+    color: #333;
+}
+#fromApp .from-label.label-inputs{
+	display: flex;
+	justify-content: space-between;
+}
+.unit{
+	display: block;
+	height: 100%;
+	line-height: 1rem;
+	padding-right: 0.2rem;
+	color: #666;
+}
+.label-inputs input{
+	padding-left: 0.2rem;
+}
+.zhu{
+	color: #7F8CFF;
+	line-height: 0.4rem;
+	margin-bottom: 0.2rem;
+}

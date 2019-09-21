@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>个人主页-报名项目</title>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=0" />
+		<link rel="stylesheet" href="css/public/pub.css" />
+		<link rel="stylesheet" href="css/personMain.css" />
+		<link rel="stylesheet" href="css/login.css" />
+		<script type="text/javascript" src="js/public/vue.min.js"></script>
+		<script type="text/javascript" src="js/public/jquery.min.js"></script>
+		<script type="text/javascript" src="js/public/pub.js"></script>
+		<script type="text/javascript" src="components/mainModule.js"></script>
+		<script type="text/javascript" src="components/loginModule.js"></script>
+		<script type="text/javascript" src="components/personModule.js"></script>
+		<script type="text/javascript">
+			var NAVINDEX = -1;
+			var SLIDEINDEX = 2;
+		</script>
+	</head>
+	<body>
+		<div class="page" id="page">
+			<div class="public" id="publicTop">
+				<header-top 
+					:header-top='headerTop' 
+					v-model='headerTop.searchValues'
+					@url='url($event)'
+				></header-top>
+				<!--mainModule_headerTop-->
+				<header-bottom 
+					:nav-index='navIndex'
+					@url='url($event)'	
+				></header-bottom>
+				<!--mainModule_headerBottom-->
+			</div>
+			<!--publicTop-->
+			<div id="mainBody" data-person  class="br-250">
+				<div class="wrap clear " >
+					<div id="slideModule" class="fl">
+						<person-slide :slide-index='slideIndex'></person-slide>
+					</div>
+					<div id="psRight"   data-account  class="formRight fr br-f border-box">
+						<div id="accA" class="acA" v-if='navIndex==0'>
+							<h1 class="node-h1 ft24 cr-333 mb50">帐号信息</h1>
+							<div class="mcA">
+								<p class="node-p mb30">
+									<span class="c-a inline-block cr-999">用户名</span>
+									<span class="cr-333">小爱***</span>
+								</p>
+								<p class="node-p mb30">
+									<span class="c-a inline-block cr-999">邮箱</span>
+									<span class="cr-333">1099007788@qq.com</span>
+								</p>
+								<div class="clear btnWrap">
+									<button type="button" class="cr-m1 text-center border-box fl"
+										@click="routerSel(1,0)"	
+									>修改邮箱</button>
+									<button type="button" class="cr-m1 text-center border-box fr"
+										@click="routerSel(1,1)"		
+									>修改密码</button>
+								</div>
+							</div>
+						</div>
+						<!--acA-->
+						<div id="accB" class="accB" v-if="navIndex==1">
+							<div class="navTit relative text-center">
+								<button type="button" class="height flex flex-middle absolute left top"
+									@click="routerSel(0,0)"		
+								>
+									<img src="images/icon-back02.png" />
+								</button>
+								<span class="ft24 cr-333">{{ editTit }}</span>
+							</div>
+							<form id="accForm" class="border-box ">
+								<div class="formCtn" v-if="navIndex && editType==0">
+									<label class="formLabel">
+										<input type="text" placeholder="请输入密码进行认证" v-model.trim.lazy="editEmail.userPass" maxlength="18" />
+									</label>
+									<label class="formLabel">
+										<input type="text" placeholder="请输入新邮箱" v-model.trim.lazy="editEmail.newEmail" maxlength="18" />
+									</label>
+									<label class="formLabel inset">
+										<input type="text" placeholder="请输入邮箱验证码" v-model.trim="editEmail.emailYzm" maxlength="6" />
+										<button type="button" class="sendYzmBtn fr" @click="sendYzmFun">{{ yzmContent }}</button>
+									</label>
+								</div>
+								<div class="formCtn" v-if="navIndex && editType==1">
+									<label class="formLabel">
+										<input type="text" placeholder="请输入旧密码" v-model.trim.lazy="editPass.originPass" maxlength="18" />
+									</label>
+									<label class="formLabel">
+										<input type="text" placeholder="请输入新密码" v-model.trim.lazy="editPass.newPass" maxlength="18" />
+									</label>
+									<label class="formLabel">
+										<input type="text" placeholder="请再次输入新密码" v-model.trim.lazy="editPass.newPassAga" maxlength="18" />
+									</label>
+								</div>
+								<div class="formSubmit point" @click="editSubmit">确认修改</div>
+							</form>
+						</div>
+						<!--acB-->
+					</div>
+				</div>
+			</div>
+			<!--mainMid-->
+			<div class="public" id="publicBtm">
+				<bottom-top @url='url($event)'></bottom-top>
+				<!--mainModule_BottomTop-->
+				<login-bottom></login-bottom>
+				<!--bottomModule-->
+				<slide-bar></slide-bar>
+				<!--slidebarmodule-->
+			</div>
+			<!--publicBtm-->
+		</div>
+		<!--page-->
+		
+		
+	</body>
+	
+	<script type="text/javascript" src="js/module.js"></script>
+	<script type="text/javascript" src="js/personSlide.js"></script>
+	<script type="text/javascript" src="js/personAccount.js"></script>
+	<script type="text/javascript" src="js/public/city.min.js"></script>
+	<script type="text/javascript" src="layui.layer/layer.js" ></script>
+	
+	
+</html>

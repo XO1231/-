@@ -1,0 +1,583 @@
+/* 发帖规则 */
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+#App {
+    width: 100%;
+    position: relative;
+}
+
+/* 本页面公用的一些 */
+
+.flex-c {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.flex-b {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+.flex-d{
+    justify-content: space-around;
+}
+.flex-f {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center
+}
+
+.fiex-d {
+    flex-direction: column;
+}
+
+.fiex-w {
+    flex-wrap: wrap
+}
+
+.wp {
+    padding: 0 0.4rem;
+    box-sizing: border-box;
+}
+
+.wp20 {
+    padding: 0 0.2rem;
+    box-sizing: border-box;
+}
+
+.wp30 {
+    padding: 0 0.3rem;
+    box-sizing: border-box;
+}
+
+/* 论坛详细 */
+#tabDetail {
+    box-sizing: border-box;
+    width: 100%;
+    padding: .2rem 0;
+    /* height: 6.08rem; */
+    background: rgba(255, 255, 255, 1);
+    font-family: 'PingFang SC';
+    position: absolute; 
+    left: 0;
+    top: .8rem;
+ 
+   
+}
+#scrollWrap{
+    overflow: hidden;
+}
+#tabDetail .navactive {
+    color: rgba(239, 156, 56, 1);
+}
+#tabDetail li {
+    margin-top: 0.2rem;
+    list-style: none;
+    width: 22%;
+    text-align: center;
+    height: 0.72rem;
+    background: rgba(248, 248, 248, 1);
+    border-radius: 0.1rem;
+    line-height: 0.72rem;
+}
+
+#tabDetail ul {
+    width: 100%;
+    color: rgba(102, 102, 102, 1);
+}
+
+#tabDetail .lim {
+    margin-right: 0.22rem;
+}
+.detail-bg{
+    width: 100%;
+    height: calc(100% - 7.16rem);
+    background-color: #000000;
+    opacity: 0.45;
+}
+/* 弹出层 */
+
+.wrapper-mask {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 99999999;
+}
+
+#bg {
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.45;
+}
+
+.maskr {
+    width: 5.9rem;
+    height: 4.38rem;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 0.08rem 0.32rem -0.08rem rgba(0, 0, 0, 0.12);
+    border-radius: 0.2rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.maskr h1 {
+    text-align: center;
+    width: 1.28rem;
+    height: 0.44rem;
+    font-size: 0.32rem;
+    font-family: 'PingFang SC';
+    font-weight: 500;
+    color: rgba(51, 51, 51, 1);
+    line-height: 0.44rem;
+    margin-bottom: 0.42rem;
+}
+
+.maskr P {
+    font-size: 0.28rem;
+    font-family: 'PingFang SC';
+    font-weight: 500;
+    color: rgba(102, 102, 102, 1);
+    line-height: 0.40rem;
+    margin-bottom: 0.8rem;
+    line-height: 0.4rem;
+    width: 5.1rem;
+    height: 1.2rem;
+}
+
+.maskr button {
+    width: 5.1rem;
+    height: 0.9rem;
+    background: rgba(239, 156, 56, 1);
+    border-radius: 0.2rem;
+    font-size: 0.32rem;
+    font-family: 'PingFang SC';
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+}
+
+/* 评论框 */
+.inputS {
+    width: 100%;
+    height: 1.08rem;
+    background: rgba(245, 245, 245, 1);
+    border-radius: 0rem;
+    padding-left: 0.2rem;
+    position: absolute;
+    left: 50%;
+    bottom: 35%;
+    transform: translateX(-50%) ;
+    font-family: 'PingFang SC';
+}
+
+.inputS input {
+    width: 5rem;
+    height: 0.88rem;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 0.1rem;
+    padding-left: 0.2rem;
+    font-size: 0.3rem;
+    font-weight: 500;
+    color: rgba(153, 153, 153, 1);
+}
+.inputS button{
+    width:1.5rem;
+    height: 0.88rem;
+    background-color: #EF9C38;
+    color:#fff;
+    margin-left:0.2rem;
+    border-radius: 0.2rem;
+    font-size: 0.3rem;
+    font-weight: 500;
+}
+/* 积分 */
+.sc {
+    width: 6.3rem;
+    height: 6.04rem;
+}
+
+.maskr span {
+    color: #EF9C38;
+}
+
+.maskr #ruleT {
+    width: 4.24rem;
+    height: 0.8rem;
+    font-size: 0.28rem;
+    font-family: 'PingFang SC';
+    font-weight: 500;
+    color: rgba(51, 51, 51, 1);
+    line-height: 0.4rem;
+    text-align: center;
+    margin-top: 0.48rem;
+}
+
+.wrapper-mask img {
+    display: block;
+}
+
+.maskr #score {
+    width: 2.1rem;
+    height: 2.1rem;
+}
+
+.maskr #wx {
+    width: 1rem;
+    height: 1rem;
+    margin-top: 0.7rem;
+    margin-bottom: 0.3rem;
+}
+
+#qx {
+    width: 0.6rem;
+    height: 0.6rem;
+    position: absolute;
+    left: 50%;
+    bottom: 18%;
+    transform: translateX(-50%);
+}
+
+/* 打赏 */
+
+.award {
+    width: 6.3rem;
+    height: 5.66rem;
+}
+
+.award h1 {
+    font-size: 0.32rem;
+    font-family: 'PingFang SC';
+    font-weight: 500;
+    color: rgba(51, 51, 51, 1);
+    margin-top: 0.28rem;
+}
+
+.money-wrap {
+    width: 100%;
+    /* margin-top:0.6rem; */
+}
+
+.money-wrap li {
+    width: 30%;
+    height: 0.72rem;
+    border-radius: 0.1rem;
+    border: 0.02rem solid rgba(239, 156, 56, 1);
+    margin-bottom: 0.22rem;
+    line-height: 0.72rem;
+    text-align: center;
+    font-size: 0.36rem;
+    font-family: 'PingFang SC';
+    font-weight: bold;
+    color: rgba(51, 51, 51, 1);
+}
+
+.money-wrap #int input {
+    width: 1.12rem;
+    color: rgba(153, 153, 153, 1);
+    line-height: 0.4rem;
+    text-align: center;
+    margin-right: 0.1rem;
+}
+
+.money-wrap #int span {
+    display: block;
+}
+
+#yuan {
+    color: #333333;
+    font-size: 0.28rem;
+    font-family: 'PingFang SC';
+    font-weight: 500;
+    color: rgba(51, 51, 51, 1);
+}
+
+.money-wrap #int {
+    font-size: 0.28rem;
+    font-family: 'PingFang SC';
+    font-weight: 500;
+    color: #333333;
+}
+
+.award .balance li {
+    width: 0.48rem;
+    height: 0.48rem;
+    background-size: contain;
+}
+
+.award .balance li:nth-child(3) {
+    width: 1.12rem;
+    height: 0.4rem;
+}
+
+.award .pack li {
+    width: 0.48rem;
+    height: 0.48rem;
+    background-size: contain;
+}
+
+.award .pack li:nth-child(3) {
+    width: 1.12rem;
+    height: 0.4rem;
+}
+
+.balance .mli1 {
+    background-image: url('../../imgs/circle.png');
+    margin-right: 0.06rem;
+}
+
+.balance .mli2 {
+    width: 0.6rem;
+    height: 0.6rem;
+    background-image: url(../../imgs/balance.png);
+    margin-right: 0.06rem;
+}
+
+.pack .mli1 {
+    background-image: url(../../imgs/circle.png);
+    margin-right: 0.06rem;
+}
+
+.pack .mli2 {
+    width: 0.6rem;
+    height: 0.6rem;
+    margin-right: 0.06rem;
+    background-image: url(../../imgs/wx.png);
+}
+
+.money-icon {
+    width: 100%;
+    margin-top: 0.52rem;
+}
+
+.aw-btn {
+    width: 100%;
+    height: 1rem;
+    border-top: 0.02rem solid #EEEEEE;
+    margin-top: 0.4rem;
+}
+
+.aw-btn button {
+    width: 50%;
+    display: block;
+    text-align: center;
+    height: 0.4rem;
+    font-size: 0.32rem;
+    font-family: 'PingFang SC';
+    font-weight: 500;
+    color: rgba(102, 102, 102, 1);
+    line-height: 0.4rem;
+    background-color: transparent;
+}
+
+.aw-btn .award-a {
+    color: rgba(239, 156, 56, 1);
+}
+
+.aw-btn span:nth-child(1) {
+    border-right: 0.02rem solid #F5F5F5;
+}
+
+.money-wrap .money-ac {
+    background-color: #EF9C38;
+    color: #FFFFFF;
+}
+
+.award .balance .pa-ac {
+    background-image: url(../../imgs/choose.png);
+}
+
+.award .pack .pa-ac {
+    background-image: url(../../imgs/choose.png);
+}
+
+/* 红包 */
+
+.hb {
+    width: 5.22rem;
+    height: 6.8rem;
+    background: transparent;
+    background-image: url(../../imgs/hb.png);
+    background-size: contain;
+    font-family: 'PingFang SC';
+}
+
+.hb h1 {
+    width: 1.6rem;
+    height: 0.44rem;
+    font-size: 0.32rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    line-height: 0.44rem;
+}
+
+.hb .p1 {
+    text-align: center;
+    height: 0.44rem;
+    font-size: 0.32rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+    line-height: 0.44rem;
+}
+
+.hb .p2 {
+    width: 2.16rem;
+    height: 0.5rem;
+    font-size: 0.36rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    line-height: 0.5rem;
+    margin-top: -0.58rem;
+}
+
+.hb #hb-btn {
+    width: 3.62rem;
+    height: 0.8rem;
+    background: rgba(246, 77, 25, 1);
+    border-radius: 0.44rem;
+}
+
+.hb img {
+    margin-bottom: 0.7rem;
+    display: block;
+    width: 1.22rem;
+    height: 1.22rem;
+    border-radius: 1.22rem;
+    border: 0.02rem solid rgba(255, 255, 255, 1);
+}
+
+/* 红包开启 */
+.hide {
+    display: none;
+}
+
+.hb2 {
+    width: 5.22rem;
+    height: 6.8rem;
+    background: transparent;
+    background-image: url(../../imgs/hb2.png);
+    background-size: contain;
+    font-family: 'PingFang SC';
+}
+#qx1{
+    width: 0.6rem;
+    height: 0.6rem;
+    position: absolute;
+    left: 50%;
+    bottom: 16%;
+    transform: translateX(-50%);
+}
+#qx2 {
+    width: 0.6rem;
+    height: 0.6rem;
+    position: absolute;
+    left: 50%;
+    bottom: 16%;
+    transform: translateX(-50%);
+}
+.hb2 .p-money {
+    text-align: center;
+    height: 1.06rem;
+    font-size: 0.76rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+    line-height: 1.06rem;
+    margin-top: -0.3rem;
+}
+
+.hb2 .p6 {
+    width: 1.92rem;
+    height: 0.44rem;
+    font-size: 0.32rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+    line-height: 0.44rem;
+    margin-top: 1rem;
+}
+
+.hb2 img {
+    width: 0.62rem;
+    height: 0.62rem;
+    border-radius: 0.62rem;
+    border: 0.02rem solid rgba(255, 255, 255, 1);
+    display: block;
+}
+
+.hb2 .p7 {
+    font-size: 0.24rem;
+    color: rgba(255, 255, 255, 1);
+    width: 3.26rem;
+    height: 0.62rem;
+    line-height: 0.62rem;
+    text-align: center;
+    background-image: url(../../imgs/hb-s.png);
+    background-size: contain;
+}
+
+.hb2 .p3 {
+    text-align: center;
+    height: 0.44rem;
+    font-size: 032rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+    line-height: 0.44rem;
+}
+
+.hb2 .p4 {
+    text-align: center;
+    height: 0.4rem;
+    font-size: 0.28rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+    line-height: 0.4rem;
+}
+#bg2 {
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.45;
+}
+
+/* 取消领取红包 */
+.slice {
+    width: 5.42rem;
+    height: 3.2rem;
+}
+
+.slice img {
+    display: block;
+    margin-top: 0.32rem;
+    width: 0.8rem;
+    height: 0.8rem;
+}
+
+.slice p {
+    margin-top: 0.28rem;
+    text-align: center;
+    height: 0.4rem;
+    font-size: 0.32rem;
+    font-family: 'PingFang SC';
+    font-weight: 500;
+    color: rgba(51, 51, 51, 1);
+    line-height: 0.4rem;
+}
+.slice .aw-btn {
+    margin-top: -0.28rem;
+}
+.aw-btn .btnn {
+    background-color: transparent;
+    color: #666666;
+}
+.aw-btn .bactive{
+    background-color: transparent;
+    color: #EF9C38;
+}

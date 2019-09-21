@@ -1,0 +1,10 @@
+@import 'pub.reset.css';
+@import 'pub.base.css';
+@import 'pub.color.css';
+body{ color:rgba(51,51,51,1); }
+.wrap{ width: 1200px; }
+#mainBody{
+	box-sizing: border-box;
+	min-height: calc(100vh - 130px - 200px);
+}
+

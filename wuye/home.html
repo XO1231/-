@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title></title>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=0" />
+		<link rel="stylesheet" href="css/public/pub.css" />
+		<link rel="stylesheet" href="css/register.css" />
+		<link rel="stylesheet" href="css/home.css" />
+	</head>
+
+	<body>
+		<div id="Page">
+			<div id="header">
+				<div class="head_top">
+					<div class="wrap head_mid">
+						<div class="head_top_left"><img src="images/logo.png" /></div>
+						<div class="head_top_right"><img src="images/code.png" /></div>
+					</div>
+				</div>
+				
+				<div class="nav">
+					<div class="wrap nav_mid">
+						<ul class="nav_ul">
+							<li class="active" onclick="url('index')">首页</li>
+							<li class="" onclick="url('')">行业动态</li>
+							<li class="" onclick="url('')">物业论坛</li>
+							<li class="" onclick="url('')">首席房产</li>
+							<li class="" onclick="url('')">装修直通车</li>
+							<li class="" onclick="url('')">便民信息</li>
+							<li class="" onclick="url('')">关于我们</li>
+						</ul>
+						<div class="search">
+							<input type="text" placeholder="网站搜索" />
+							<span class="search_btn"><img src="images/search.png"/></span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+				<h1 class="node-back cr-6 wrap mt15 mb15" data-url = "index">首页>个人中心</h1>
+			
+			<div id="info" class="wrap">
+				<ul id='infoTab'>
+					<div class="person">个人中心</div>
+					<li class="active">个人信息</li>
+					<li>会员中心</li>
+					<li>充值服务币</li>
+				</ul>
+
+				<div>
+					<!-- 个人信息 -->
+					<section class="info-content main selected">
+						<h2>个人信息</h2>
+						<form class="layui-form" action="">
+							<img src="./images/VIP2.png">
+							<div>
+								<label class="web-name">昵称&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" placeholder="鱿小鱼"> <button
+                                class="btn save" type="button">保存</button></label>
+								<label>手机号 <input type="text" placeholder="151****2345">
+                            <button class="btn changet" type="button" id="changeT" data-url="./tel.html">修改手机号</button></label>
+							</div>
+						</form>
+						<button class="changep btn" type="button" data-url="./passw">修改密码</button>
+					</section>
+					<!-- 会员中心 -->
+					<section class="info-member main ">
+						<h2 id="memCen">会员中心</h2>
+						<div class="membg bg ">
+							<div class="membg-info">
+								<h3>物业会员</h3>
+								<p>开通会员，免费发布房产资讯</p>
+							</div>
+							<img src="./images/VIP2.png" alt="">
+						</div>
+						<ul class="money-wrap">
+							<li class="mac">一个月<span>￥15</span></li>
+							<li>半年<span>￥69</span></li>
+							<li>一年<span>￥99</span></li>
+							<button class="buy" data-url="./zhifu.html">购买会员</button>
+						</ul>
+						<table class="layui-table">
+
+							<thead>
+								<tr class="buy-record">
+									<td>购买记录</td>
+									<td></td>
+									<td></td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>2016-11-29</td>
+									<td>一个月</td>
+									<td>￥15</td>
+								</tr>
+								<tr>
+
+									<td>2016-11-28</td>
+									<td>半年</td>
+									<td>￥69</td>
+								</tr>
+								<tr>
+
+									<td>2016-11-28</td>
+									<td>半年</td>
+									<td>￥69</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<!-- 充值服务 -->
+					<section class="main ">
+						<h2 id="coins">充值服务币</h2>
+						<div class="membg bg ">
+							<div class="membg-info coin">
+								<h3>充值服务币</h3>
+								<p>充值服务币，查看房产资讯发布人的具体位置和联系方式</p>
+							</div>
+							<img src="./images/coin.png" alt="">
+						</div>
+						<ul class="money-wrap">
+							<li class="mac">20枚/<span>￥15</span></li>
+							<li>50枚/<span>￥69</span></li>
+							<li>100枚/<span>￥99</span></li>
+							<button class="buy">购买服务币</button>
+						</ul>
+						<table class="layui-table layc" lay-skin="line">
+							<thead>
+								<tr class="buy-record">
+									<td>购买记录</td>
+									<td></td>
+									<td></td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>2016-11-29</td>
+									<td>一个月</td>
+									<td>￥15</td>
+								</tr>
+								<tr>
+
+									<td>2016-11-28</td>
+									<td>半年</td>
+									<td>￥69</td>
+								</tr>
+								<tr>
+
+									<td>2016-11-28</td>
+									<td>半年</td>
+									<td>￥69</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+				</div>
+			</div>
+			<div id="foot">
+				<div class="wrap foot_mid">
+					<ul class="foot_ul">
+						<li onclick="url('')">首页</li>
+						<li onclick="url('')">行业动态</li>
+						<li onclick="url('')">行业展示</li>
+						<li onclick="url('')">物业论坛</li>
+						<li onclick="url('')">房产资讯</li>
+						<li onclick="url('')">物业商城</li>
+						<li onclick="url('')">便民信息</li>
+						<li onclick="url('')">关于我们</li>
+					</ul>
+				</div>
+				<p class="foot_name" style="margin-top: 20px;">新沂市物业管理服务网</p>
+				<p class="foot_name">地址：新沂市马陵山镇大学生电子商务科技园1024室&nbsp;&nbsp;&nbsp;&nbsp;电话：400-0000-0000</p>
+				<p class="foot_name">Copyright; 2019 新沂物业管理 版权所有 京ICP备12345678号-1</p>
+			</div>
+
+		</div>
+		<script type="text/javascript" src="js/public/jquery.min.js"></script>
+		<script type="text/javascript" src="js/public/pub.js"></script>
+		<script type="text/javascript" src="layui.layer/layer.js"></script>
+		<script>
+			$(function() {
+				var mac =$('.money-wrap');
+				$('#infoTab').on('click', 'li', function(e) {
+					e.stopPropagation();
+					$(this).addClass("active").siblings('.active').removeClass("active");
+					var idx = $(this).index() - 1;
+					$(".main").eq(idx).addClass("selected").siblings(".selected").removeClass("selected");
+				});
+				mac.on('click', 'li', function(e) {
+					e.stopPropagation();
+					$(this).addClass("mac").siblings('.mac').removeClass("mac");
+				});
+			});
+		</script>
+	</body>
+
+</html>

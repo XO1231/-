@@ -1,0 +1,126 @@
+#fromApp .from-li:nth-of-type(n+2) {
+	margin-top: .2rem;
+}
+
+#fromApp .from-li.li-between {
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+}
+
+#fromApp .from-li.li-between .from-label {
+	width: 3.3rem;
+}
+
+#fromApp .from-label {
+	box-sizing: border-box;
+	height: 1rem;
+	border: 0.02rem solid rgba(218, 222, 231, 1);
+}
+
+#fromApp .label-title.must,
+#fromApp .from-label.must {
+	position: relative;
+}
+
+#fromApp .label-title.must::before {
+	left: 0;
+	top: 0;
+}
+
+#fromApp .from-label.must::before {
+	top: 50%;
+	left: -.18rem;
+	margin-top: -.21rem;
+}
+
+#fromApp .label-title.must::before,
+#fromApp .from-label.must::before {
+	display: block;
+	content: "*";
+	width: 0.16rem;
+	height: 0.42rem;
+	font-size: 0.32rem;
+	font-family: MicrosoftYaHei;
+	color: rgba(228, 21, 21, 1);
+	line-height: 0.42rem;
+	position: absolute;
+}
+
+#fromApp .from-label.label-input {
+	line-height: 1rem;
+	padding: 0 .2rem;
+}
+
+#fromApp .from-label.label-input input {
+	font-size: .28rem;
+	max-width: 70%;
+}
+
+#fromApp .from-label.label-textarea {
+	height: 3.4rem;
+	font-size: .24rem;
+	padding: .2rem 0;
+}
+
+#fromApp .from-label.label-textarea textarea {
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+#fromApp .from-label.label-textarea textarea,
+#fromApp .from-label.label-select select {
+	padding: 0 .2rem;
+}
+
+#fromApp .from-label .placeholder,
+#fromApp .from-label input::-webkit-input-placeholder,
+#fromApp .from-label textarea::-webkit-input-placeholder {
+	color: rgba(153, 153, 153, 1);
+}
+
+#fromApp .from-label.label-select select {
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	border: none;
+	outline: none;
+	line-height: 1rem;
+	font-size: .28rem;
+	color: #333;
+}
+
+#fromApp .label-title {
+	box-sizing: border-box;
+	font-size: 0.28rem;
+	line-height: 0.38rem;
+	margin-bottom: .08rem;
+	padding-left: .2rem;
+}
+
+#fromApp .from-submit {
+	display: block;
+	width: 100%;
+	height: 1rem;
+	line-height: 1rem;
+	text-align: center;
+	font-size: 0.3rem;
+	color: #FFFFFF;
+	background: rgba(0, 103, 58, 1);
+	margin-top: .6rem;
+}
+
+#fromApp .li-hight {
+	box-sizing: border-box;
+	padding-left: 0.2rem;
+	margin-top: .4rem;
+	border-left: 0.04rem solid rgba(0, 103, 58, 1);
+	;
+	height: 0.38rem;
+	font-size: 0.26rem;
+	font-family: MicrosoftYaHei;
+	color: rgba(0, 103, 58, 1);
+	line-height: 0.38rem;
+}

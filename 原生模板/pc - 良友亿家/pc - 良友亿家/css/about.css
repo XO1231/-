@@ -1,0 +1,32 @@
+#banTop[data-about] .absCtA {
+	top: 0px;
+}
+
+#xmCa,
+#xmCb {
+	padding: 50px;
+}
+
+#xmCa .logo {
+	width: 200px;
+	height: 200px;
+}
+
+#xmCa .slideCtn {
+	width: calc( 100% - 200px - 20px);
+}
+
+#xmCa .slideCtn .node-p {
+	line-height: 26px;
+}
+
+#xmCa .slideCtn .node-icon {
+	height: 26px;
+	line-height: 26px;
+	padding: 0 10px;
+}
+
+#xmCb .node-p {
+	line-height: 24px;
+	white-space: pre-line;
+}

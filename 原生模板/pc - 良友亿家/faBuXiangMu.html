@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>发布临床项目</title>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=0" />
+		<link rel="stylesheet" href="css/public/pub.css" />
+		<link rel="stylesheet" href="css/faBuXiangMu.css" />
+		<script type="text/javascript" src="js/public/vue.min.js"></script>
+		<script type="text/javascript" src="js/public/jquery.min.js"></script>
+		<script type="text/javascript" src="js/public/pub.js"></script>
+		<script type="text/javascript" src="components/mainModule.js"></script>
+		<script type="text/javascript" src="components/loginModule.js"></script>
+		<script type="text/javascript" src="components/navModule.js"></script>
+		<script type="text/javascript">
+			var NAVINDEX = 5;
+		</script>
+	
+	</head>
+	<body>
+		<div class="page" id="page">
+			<div class="public" id="publicTop">
+				<header-top 
+					:header-top='headerTop' 
+					v-model='headerTop.searchValues'
+					@url='url($event)'
+				></header-top>
+				<!--mainModule_headerTop-->
+				<header-bottom 
+					:nav-index='navIndex'
+					@url='url($event)'	
+				></header-bottom>
+				<!--mainModule_headerBottom-->
+			</div>
+			<!--publicTop-->
+			<div id="mainBody" class="br-250">
+				<div class="wrap">
+					<nav-title :nav-title="navTitle"></nav-title>
+					<form id="formXa"  data-xiangmu class="node-from border-box formXa clear border-box br-f">
+						<h2 class="from-h2 mt30 mb40 text-center">
+							<span class="ft20 cr-333 relative inline-block">发布临床项目</span>
+						</h2>
+						<div class="from-box clear">
+							<h3 class="form-h3 fl  ft20 cr-m1 border-box">项目信息</h3>
+							<div class="form-ctn mb40 fr">
+								<div class="node-li">
+									<label class="node-label flex flex-middle  must width h40 node-input">
+										<input type="text" placeholder="项目名称"  class="" v-model.lazy.trim="proName" />
+									</label>
+								</div>
+								<div class="node-li mt10">
+									<label class="node-label flex flex-middle  must width h40 node-input">
+										<input type="text" placeholder="所属公司"  class="" v-model.lazy.trim="company" />
+									</label>
+								</div>
+								<div class="node-li mt10 clear">
+									<label class="node-select fl must w160 h40">
+										<select class="" tabindex="-1" v-model.lazy.trim="perType">
+											<option value="" disabled selected class="hide">受试者类型</option>
+											<option value="男">男</option>
+											<option value="女">女</option>
+										</select>
+									</label>
+									<label class="node-select fl must w160 h40 ml25">
+										<select class="" tabindex="-1" v-model.lazy.trim="perZy">
+											<option value="" disabled selected class="hide">适应专业</option>
+											<option value="男">男</option>
+											<option value="女">女</option>
+										</select>
+									</label>
+									<label class="node-select fr  w286 h40">
+										<select class="" tabindex="-1" v-model.lazy="perZy_child">
+											<option value="" disabled selected class="hide">请选择</option>
+											<option value="男">男</option>
+											<option value="女">女</option>
+										</select>
+									</label>
+								</div>
+								<div class="node-li mt10">
+									<label class="node-label flex flex-middle  must width h40 node-input">
+										<input type="text" placeholder="药物适应症"  class=""  v-model.lazy.trim="medType"/>
+									</label>
+								</div>
+								<div class="node-li mt10">
+									<label class="node-label flex flex-middle  must width h40 node-input">
+										<input type="text" placeholder="药物名称"  class="" v-model.lazy.trim="medName" />
+									</label>
+								</div>
+								<div class="node-li mt10">
+									<label class="node-select  must w160 h40 ">
+										<select class="" tabindex="-1" v-model.lazy="medStage">
+											<option value="" disabled selected class="hide">治疗阶段</option>
+											<option value="男">男</option>
+											<option value="女">女</option>
+										</select>
+									</label>
+								</div>
+								
+							</div>
+						</div>
+						<div class="from-box clear">
+							<h3 class="form-h3 fl  ft20 cr-m1 border-box">受试者要求</h3>
+							<div class="form-ctn mb40 fr">
+								<div class="node-li clear">
+									<label class="node-select fl must w308 h40">
+										<select class="" tabindex="-1" v-model.lazy="sex">
+											<option value="" disabled selected class="hide">性别要求</option>
+											<option value="男">男</option>
+											<option value="女">女</option>
+										</select>
+									</label>
+									<label class="node-select fr must w308 h40 ">
+										<select class="" tabindex="-1" v-model.lazy="marrAuto">
+											<option value="" disabled selected class="hide">婚姻状况</option>
+											<option value="0">已婚</option>
+											<option value="1">未婚</option>
+										</select>
+									</label>
+									
+								</div>
+								<div class="node-li clear mt10">
+									<label class="node-input node-label flex flex-middle flex-between fl must w308 h40">
+										<input type="text" placeholder="招募人数"  class="" v-model.lazy.trim="recNum" />
+										<div class="input-nic cr-666">人</div>
+									</label>
+									<label class="node-input node-label flex flex-middle flex-between fr must w308 h40 ">
+										<input type="text" placeholder="补偿金"  class="" v-model.lazy.trim="bcMoney" />
+										<div class="input-nic cr-666">元</div>
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="from-box clear">
+							<h3 class="form-h3 fl  ft20 cr-m1 border-box">项目介绍</h3>
+							<div class="form-ctn mb40 fr">
+								<div class="node-li">
+									<h4 class="form-h4 must cr-333 h40 flex flex-middle">项目描述</h4>
+									<textarea class="block width node-area border-box h140" placeholder="详细描述项目用药、项目过程…" v-model.lazy.trim="proDes"></textarea>
+								</div>
+								<div class="node-li mt10">
+									<h4 class="form-h4 must cr-333 h40 flex flex-middle">入选标准</h4>
+									<textarea class="block width node-area border-box h140" placeholder="描述受试者招募入选标准…" v-model.lazy.trim="selBz"></textarea>
+								</div>
+								<div class="node-li mt10">
+									<h4 class="form-h4 must cr-333 h40 flex flex-middle">排除标准</h4>
+									<textarea class="block width node-area border-box h140" placeholder="描述受试者招募排除标准…" v-model.lazy.trim="excBz"></textarea>
+								</div>
+							</div>
+						</div>
+						<div class="form-box clear">
+							<h3 class="form-h3 fl  ft20 cr-m1 border-box">其他信息</h3>
+							<div class="form-ctn mb40 fr">
+								<div class="node-li clear">
+									<div class="node-i fl">
+										<h4 class="form-h4 must cr-333 h40 flex flex-middle">项目起止日期</h4>
+										<label class="node-select plugin flex flex-middle flex-between  w360 h40 ">
+											<input type="text" placeholder="开始日期 - 结束日期"  class="width" readonly="readonly"  id="rangeDate" />
+										</label>
+									</div>
+									<div class="node-i fr">
+										<h4 class="form-h4 must cr-333 h40 flex flex-middle">报名截止日期</h4>
+										<label class="node-select plugin flex flex-middle flex-between  w196 h40 ">
+											<input type="text" placeholder="选择日期"  class="" readonly="readonly" id="finishDate"  />
+										</label>
+									</div>
+								</div>
+								<div class="node-li flex flex-between mt10">
+									<label class="node-input node-label flex flex-middle   must w196 h40">
+										<input type="text" placeholder="联系人"  class="" v-model.lazy.trim="phoneName" />
+									</label>
+									<label class="node-input node-label flex flex-middle   must w196 h40">
+										<input type="text" placeholder="手机号"  class="" v-model.lazy.trim="phone" />
+									</label>
+									<label class="node-input node-label flex flex-middle   must w196 h40">
+										<input type="text" placeholder="座机号"  class="" v-model.lazy.trim="telephone" />
+									</label>
+								</div>
+								<div class="node-li mt10">
+									<div class="node-title clear">
+										<h4 class="form-h4 must cr-333 h40 flex flex-middle fl">项目开展机构</h4>
+										<button type="button" class="node-btn cr-m1 h40 flex flex-middle fl ml40"
+											@click.stop="addPro"	
+										>继续添加</button>
+									</div>
+									<div id="projectWrap">
+										<div class="node-i mb10 clear" v-for='(va,ia) in projectName' >
+											<label class="node-input node-label flex flex-middle w286 h40 fl">
+												<input type="text" placeholder="机构名称"  class="" v-model.lazy.trim="va.name" />
+											</label>
+											<div class="addWrap fr clear" :id="va.id">
+												<label class="node-select flex flex-middle fl  w160 h40 ">
+													<select class="prov" tabindex="-1" ></select>
+												</label>
+												<label class="node-select flex flex-middle fr  w160 h40 ml20">
+													<select class="city" tabindex="-1" >
+														<option value=""   class="hide" >请选择</option>
+													</select>
+												</label>
+											</div>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-box  flex flex-center mt60">
+							<button type="button" class="form-submit br-m1 cr-f ft16" @click="submit">发布项目</button>
+						</div>
+					</form>
+				</div>
+			</div>
+			<!--mainMid-->
+			<div class="public" id="publicBtm">
+				<bottom-top @url='url($event)'></bottom-top>
+				<!--mainModule_BottomTop-->
+				<login-bottom></login-bottom>
+				<!--bottomModule-->
+				<slide-bar></slide-bar>
+				<!--slidebarmodule-->
+			</div>
+			<!--publicBtm-->
+		</div>
+		<!--page-->
+		
+		
+		
+	</body>
+	
+	<script type="text/javascript" src="js/module.js"></script>
+	<script type="text/javascript" src="js/public/city.min.js"></script>
+	<script type="text/javascript" src="js/public/jquery.cityselect.js"></script>
+	<script type="text/javascript" src="layui.laydate/laydate.js"></script>
+	<script type="text/javascript" src="js/faBuXiangMu.js" ></script>
+	<script type="text/javascript" src="layui.layer/layer.js" ></script>
+	
+</html>

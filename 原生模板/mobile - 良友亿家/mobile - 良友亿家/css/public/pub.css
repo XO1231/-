@@ -1,0 +1,28 @@
+@import 'pub.reset.css';
+@import 'pub.base.css';
+@import 'pub.color.css';
+@import 'pub.layer.css';
+#App{
+	width: 100%;
+	min-height: 100vh;
+	position: relative;
+	background-color: #F5F5F5;
+}
+
+#mainApp{
+	min-height: calc(100vh - .88rem - 3.3rem - .8rem );
+}
+#mainApp[data-login]{
+	min-height: calc(100vh - .88rem - .8rem );
+}
+#mainApp.pad100{
+	padding-bottom: 1rem;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity .3s;
+}
+.fade-enter, 
+.fade-leave-to{
+  opacity: 0;
+}

@@ -1,0 +1,75 @@
+.cr-p {
+	color: transparent;
+}
+
+.br-p {
+	background-color: transparent;
+}
+
+.cr-0 {
+	color: #000;
+}
+
+.br-0 {
+	background-color: #000;
+}
+
+.cr-f {
+	color: #fff;
+}
+
+.br-f {
+	background-color: #fff;
+}
+
+.cr-f3 {
+	color: #f3f3f3;
+}
+
+.cr-f3 {
+	background-color: #f3f3f3;
+}
+
+.cr-333 {
+	color: #333333;
+}
+
+.cr-666 {
+	color: #666666;
+}
+
+.cr-999 {
+	color: #999999;
+}
+
+.cr-ccc {
+	color: #CCCCCC;
+}
+
+.br-250 {
+	background-color: rgba(250, 250, 250, 1);
+}
+
+.cr-m1 {
+	color: rgba(0, 103, 58, 1);
+}
+
+.br-m1 {
+	background-color: rgba(0, 103, 58, 1);
+}
+
+.cr-m2 {
+	color: rgba(138, 189, 68, 1);
+}
+
+.br-m2 {
+	background-color: rgba(138, 189, 68, 1);
+}
+
+.br-m3 {
+	background-color: rgba(127, 140, 255, 1);
+}
+
+.br-m4 {
+	background-color: #b4b4b4;
+}

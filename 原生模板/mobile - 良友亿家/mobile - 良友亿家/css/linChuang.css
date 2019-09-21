@@ -1,0 +1,236 @@
+#lcA {
+	padding: 0.2rem;
+	box-shadow: 0px 0.04rem 0.16rem -0.04rem rgba(0, 0, 0, 0.16);
+	border-radius: 0.2rem;
+	margin-top: -0.7rem;
+	position: relative;
+	z-index: 115;
+}
+
+#lcA .node-h1 {
+	line-height: 0.72rem;
+}
+
+#lcA .ctA .node-h1 {
+	font-family: MicrosoftYaHei-Bold;
+}
+
+#lcA .ctB .node-h1 {
+	text-indent: 0.2rem;
+	margin-bottom: 0.22rem;
+}
+
+#lcA .node-p {
+	font-family: MicrosoftYaHei;
+	line-height: 0.4rem;
+}
+#lcA .node-ul{
+	padding-bottom: .1rem;
+}
+#lcA .node-ul .ctB:nth-of-type(1) .node-h1 {
+	background: rgba(138, 189, 68, 1);
+}
+
+#lcA .node-ul .ctB:nth-of-type(2) .node-h1 {
+	background: rgba(0, 103, 58, 1);
+}
+
+#lcA .node-ul .ctB {
+	margin-top: 0.35rem;
+}
+
+#lcB,
+#lcC {
+	padding: 0.4rem 0;
+}
+
+#lcB .node-h2 {
+	margin-top: 0.1rem;
+	margin-bottom: 0.4rem;
+}
+
+#lcB .node-h2 span::before,
+#lcB .node-h2 span::after {
+	display: block;
+	content: "";
+	width: 2rem;
+	height: 1px;
+	background: rgba(204, 204, 204, 1);
+	position: absolute;
+	top: 50%;
+}
+
+#lcB .node-h2 span::before {
+	left: -2.2rem;
+}
+
+#lcB .node-h2 span::after {
+	right: -2.2rem;
+}
+
+#lcB .node-ul .node-li {
+	padding: 0.2rem;
+	height: 2.2rem;
+	background: rgba(245, 245, 245, 1);
+}
+
+#lcB .node-ul .node-li .flex {
+	background-repeat: no-repeat;
+	background-size: 1.8rem auto;
+}
+
+#lcB .node-ul .node-li .node-p {
+	width: 4.5rem;
+	line-height: 0.4rem;
+}
+
+#lcB .node-ul .node-li:nth-of-type(n+2) {
+	margin-top: 0.2rem;
+}
+
+#lcB .node-ul .node-li:nth-of-type(odd) {
+	border-radius: 2rem 0px 0px 2rem;
+	background-position: left center;
+}
+
+#lcB .node-ul .node-li:nth-of-type(odd) .flex {
+	background-position: left center;
+	justify-content: flex-end;
+}
+
+#lcB .node-ul .node-li:nth-of-type(even) {
+	border-radius: 0 2rem 2rem 0;
+}
+
+#lcB .node-ul .node-li:nth-of-type(even) .flex {
+	background-position: right center;
+	justify-content: flex-start;
+}
+
+#lcB .node-ul .node-li:nth-of-type(1) .flex {
+	background-image: url("../images/syv10 (3).png")
+}
+
+#lcB .node-ul .node-li:nth-of-type(2) .flex {
+	background-image: url("../images/syv10 (1).png")
+}
+
+#lcB .node-ul .node-li:nth-of-type(3) .flex {
+	background-image: url("../images/syv10 (2).png")
+}
+
+#lcB .node-ul .node-li:nth-of-type(4) .flex {
+	background-image: url("../images/syv10 (30).png")
+}
+
+#syCA {
+	margin-top: 0.4rem;
+}
+
+#syCA .node-li:nth-of-type(n+2) {
+	margin-top: 0.2rem;
+}
+
+#syCA .node-li .wrapZ {
+	width: calc(100% - .2rem);
+	width: -webkit-calc(100% - .2rem);
+}
+
+#syCA .node-li .node-h2 {
+	background-size: 0.48rem auto;
+	background-position: 0.2rem center;
+	background-repeat: no-repeat;
+	border: 1px solid rgba(238, 238, 238, 1);
+	background-color: #fff;
+}
+
+#syCA .node-li .node-h2 .wrapZ {
+	text-indent: 0.88rem;
+	height: 1rem;
+	line-height: 1rem;
+	background: url('../images/syv10 (11).png') no-repeat right center;
+	background-size: 0.48rem auto;
+}
+
+#syCA .node-li .node-h2 .iconHandle {
+	width: 0.48rem;
+	padding-left: 0.3rem;
+}
+
+#syCA .node-li.cur .node-h2 {
+	background-color: rgba(0, 103, 58, 1);
+}
+
+#syCA .node-li.cur .node-h2 .node-text {
+	color: #fff;
+}
+
+#syCA .node-li.cur .node-h2 .wrapZ {
+	background-image: url('../images/syv10 (12).png');
+}
+
+#syCA .node-li .node-ctn {
+	display: none;
+	overflow: hidden;
+}
+
+#syCA .node-li .node-ctn h3,
+#syCA .node-li .node-ctn p {
+	line-height: 0.4rem;
+}
+
+#syCA .node-li .node-ctn .node-i:nth-of-type(n+2) {
+	margin-top: 0.25rem;
+}
+
+#syCA .node-li.cur .node-ctn {
+	padding: 0.2rem;
+}
+
+#syCA .li-a .node-h2 {
+	background-image: url("../images/syv10 (4).png");
+}
+
+#syCA .li-a.cur .node-h2 {
+	background-image: url("../images/syv10 (23).png");
+}
+
+#syCA .li-b .node-h2 {
+	background-image: url("../images/syv10 (24).png");
+}
+
+#syCA .li-b.cur .node-h2 {
+	background-image: url("../images/syv10 (5).png");
+}
+
+#syCA .li-c .node-h2 {
+	background-image: url("../images/syv10 (25).png");
+}
+
+#syCA .li-c.cur .node-h2 {
+	background-image: url("../images/syv10 (6).png");
+}
+
+#syCA .li-d .node-h2 {
+	background-image: url("../images/syv10 (26).png");
+}
+
+#syCA .li-d.cur .node-h2 {
+	background-image: url("../images/syv10 (7).png");
+}
+
+#syCA .li-e .node-h2 {
+	background-image: url("../images/syv10 (27).png");
+}
+
+#syCA .li-e.cur .node-h2 {
+	background-image: url("../images/syv10 (9).png");
+}
+
+#syCA .li-f .node-h2 {
+	background-image: url("../images/syv10 (28).png");
+}
+
+#syCA .li-f.cur .node-h2 {
+	background-image: url("../images/syv10 (10).png");
+}

@@ -1,0 +1,101 @@
+#page {
+	background: rgba(250, 250, 250, 1);
+}
+#mainModule{
+	min-height: calc(100vh - 80px - 40px);
+}
+#mainForm {
+	box-sizing: border-box;
+	width: 360px;
+	min-height: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+}
+
+#mainForm .formTitle {
+	text-align: center;
+	font-size: 24px;
+	font-family: MicrosoftYaHei;
+	color: rgba(51, 51, 51, 1);
+	margin: 40px 0 60px;
+}
+
+#mainForm .formNav {
+	margin-bottom: 40px;
+}
+
+#mainForm .formNav .navBtn {
+	box-sizing: border-box;
+	width: 50%;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 16px;
+	color: rgba(153, 153, 153, 1);
+	border: 1px solid rgba(238, 238, 238, 1);
+}
+
+#mainForm .formNav .navBtn.navMax {
+	width: 100%;
+}
+
+#mainForm .formNav .navBtn:nth-of-type(n+2) {
+	border-left-color: transparent;
+}
+
+#mainForm .formNav .navBtn.cur {
+	color: rgba(138, 189, 68, 1);
+	border-color: rgba(138, 189, 68, 1);
+}
+.formCtn .formLabel{
+	box-sizing: border-box;
+	padding: 0 15px;
+	height: 50px;
+	line-height: 50px;
+	background: rgba(255, 255, 255, 1);
+	border-radius: 2px;
+	border: 1px solid rgba(238, 238, 238, 1);
+}
+.formCtn .formLabel input{
+	width: 65%;
+}
+.formCtn .formLabel input::-webkit-input-placeholder {
+	color: rgba(153, 153, 153, 1);
+}
+
+.formCtn .formLabel:hover {
+	border-color: rgba(138, 189, 68, 1);
+}
+
+.formCtn .formLabel:nth-of-type(n+2) {
+	margin-top: 20px;
+}
+.formCtn .formLabel.inset{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.formCtn .formLabel .sendYzmBtn{
+	padding-left: 15px;
+	border-left: 1px solid rgba(0,103,58,1);
+	font-size:13px;
+	font-family:MicrosoftYaHei;
+	color:rgba(0,103,58,1);
+}
+
+#mainForm .formUrl {
+	font-size: 14px;
+	font-family: MicrosoftYaHei;
+	color: rgba(102, 102, 102, 1);
+	margin-top: 10px;
+}
+
+.formSubmit {
+	margin-top: 50px;
+	font-size: 14px;
+	line-height: 50px;
+	text-align: center;
+	background: rgba(0, 103, 58, 1);
+	color: #fff;
+}

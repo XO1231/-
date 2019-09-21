@@ -1,0 +1,183 @@
+@charset "utf-8";
+html {
+	/* 禁用iPhone中Safari的字号自动调整 */
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	/* 解决IOS默认滑动很卡的情况 */
+	-webkit-overflow-scrolling: touch;
+}
+
+body {
+	max-width: 750px;
+	overflow-x: hidden;
+	font-family: "PingFang SC", Arial, "Microsoft YaHei",'微软雅黑', "SF Pro Display", Roboto, Noto, "Hiragino Sans GB", sans-serif;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	font-size: .24rem;
+	color: #333;
+}
+
+body,
+div,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+select,
+p,
+dl,
+dt,
+dd,
+a,
+img,
+button,
+form,
+table,
+th,
+tr,
+td,
+tbody,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	/* 取消链接高亮 */
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	margin: 0;
+	padding: 0;
+	touch-action: pan-y; 
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+form,
+label,
+input,
+button,
+textarea,
+select{
+	font-size: inherit;
+	font-family: inherit;
+	color: inherit;
+	background-color: transparent;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+textarea,
+label {
+	display: block;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+em,
+i,
+strong,
+b,
+address,
+cite,
+dfn,
+var {
+	font-style: normal;
+	font-weight: normal;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+/* 移动端点击a链接出现蓝色背景问题解决 */ 
+a,
+a:link,
+a:active,
+a:visited,
+a:hover {
+	text-decoration: none;
+	background: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-tap-highlight-color: transparent;
+}
+
+img,
+input,
+textarea {
+	max-width: 100%;
+}
+
+input,
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+textarea {
+	resize: none;
+}
+textarea::-webkit-input-placeholder,
+input::-webkit-input-placeholder{
+	color: #999999;
+}
+
+textarea::-moz-placeholder,
+input::-moz-placeholder,
+textarea::-ms-input-placeholder,
+input::-ms-input-placeholder{
+	color: #999999;
+}
+
+input,
+textarea,
+button {
+	outline: none;
+	border: none;
+	background-color: transparent;
+}
+
+input,
+button {
+	cursor: pointer;
+	-webkit-appearance: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+[data-url],
+[data-back] {
+	cursor: pointer;
+}

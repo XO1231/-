@@ -1,0 +1,36 @@
+@charset "utf-8";
+@import 'pub.reset.css';
+@import 'pub.base.css';
+@import 'pub.font.css';
+@import 'pub.layer.css';
+#App{
+	width: 100%;
+	min-height: 100vh;
+	position: relative;
+}
+
+/*navigator start*/
+
+#navigator{
+	height: .88rem;
+	line-height: .88rem;
+	text-align: center;
+	position: relative;
+}
+#navigator .navBackIcon{
+	display: flex;
+	align-items: center;
+	width: 0.48rem;
+	height: 100%;
+	padding-right: 0.3rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#navigator .navTitle{
+	font-size:0.36rem;
+	font-weight:bold;
+	color:rgba(0,0,0,1);
+}
+
+/*navigator end*/

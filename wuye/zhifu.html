@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=0" />
+    <link rel="stylesheet" href="css/public/pub.css" />
+    <link rel="stylesheet" href="css/register.css" />
+    <link rel="stylesheet" href="css/home.css" />
+</head>
+
+<body>
+    <div id="Page">
+        <div id="header">
+            <div class="head_top">
+                <div class="wrap head_mid">
+                    <div class="head_top_left"><img src="images/logo.png" /></div>
+                    <div class="head_top_right"><img src="images/code.png" /></div>
+                </div>
+            </div>
+            <div class="nav">
+                <div class="wrap nav_mid">
+                    <ul class="nav_ul">
+                        <li onclick="url('index')">首页</li>
+                        <li class="" onclick="url('')">行业动态</li>
+                        <li class="" onclick="url('')">物业论坛</li>
+                        <li class="" onclick="url('')">首席房产</li>
+                        <li class="" onclick="url('')">装修直通车</li>
+                        <li class="" onclick="url('')">便民信息</li>
+                        <li class="" onclick="url('')">关于我们</li>
+                    </ul>
+                    <div class="search">
+                        <input type="text" placeholder="网站搜索" />
+                        <span class="search_btn"><img src="images/search.png" /></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="info" class="wrap">
+            <ul id='infoTab'>
+                <li class="person">个人中心</li>
+                <li>个人信息</li>
+                <li class="active">会员中心</li>
+                <li>充值服务币</li>
+            </ul>
+            <section class="info-content main selected">
+                <div id="back" data-back><img src="./images/go2.png" alt="">
+                    <p>返回</p>
+                </div>
+                <div id="zf" class="">
+                    <h6 class="zf-title ">选择支付方式</h6>
+                    <div class="flex-c">
+                        <div class="hr"></div>
+                    </div>
+                    <div class="zf-wrapper flex-c flex-a">
+                        <div class="flex-c flex-a zz">
+                            <div class="zf1">
+                                <div class="zf-cirle zactive" ></div>
+                                <img src="./images/zf.png" alt="" class="zfb">
+                                <h4>支付宝</h4>
+                            </div>
+                            <div class="zf2">
+                                <div class="zf-cirle" id="z2"></div>
+                                <img src="./images/wx.png" alt="" class="wx">
+                                <h4>微信钱包</h4>
+                            </div>
+                        </div>
+                        <button class="flex-c">立即支付</button>
+                    </div>
+            </section>
+        </div>
+        <div id="foot">
+            <div class="wrap foot_mid">
+                <ul class="foot_ul">
+                    <li onclick="url('')">首页</li>
+                    <li onclick="url('')">行业动态</li>
+                    <li onclick="url('')">行业展示</li>
+                    <li onclick="url('')">物业论坛</li>
+                    <li onclick="url('')">房产资讯</li>
+                    <li onclick="url('')">物业商城</li>
+                    <li onclick="url('')">便民信息</li>
+                    <li onclick="url('')">关于我们</li>
+                </ul>
+            </div>
+            <p class="foot_name" style="margin-top: 20px;">新沂市物业管理服务网</p>
+            <p class="foot_name">地址：新沂市马陵山镇大学生电子商务科技园1024室&nbsp;&nbsp;&nbsp;&nbsp;电话：400-0000-0000</p>
+            <p class="foot_name">Copyright; 2019 新沂物业管理 版权所有 京ICP备12345678号-1</p>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="js/public/jquery.min.js"></script>
+<script type="text/javascript" src="js/public/pub.js"></script>
+<script type="text/javascript" src="layui.layer/layer.js"></script>
+<script>
+    $(function () {
+        let a = $('.zf-wrapper');
+        let z2 =$('#z2')
+        a.on('click', '.zf-cirle', function (e) {
+            e.stopPropagation();
+            a.find('.zactive').removeClass('zactive');
+            $(this).addClass('zactive'); 
+        })
+
+    })
+</script>
+
+</html>

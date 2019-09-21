@@ -1,0 +1,28 @@
+#pubH1{
+	line-height: 0.7rem;
+}
+#fromWrap{
+	padding-bottom: .6rem;
+}
+#fromWrap .node-h2 {
+	margin-top: 0.4rem;
+}
+
+#fromWrap .node-h2 span::before,
+#fromWrap .node-h2 span::after {
+	display: block;
+	content: "";
+	width: 2rem;
+	height: 1px;
+	background: rgba(204, 204, 204, 1);
+	position: absolute;
+	top: 50%;
+}
+
+#fromWrap .node-h2 span::before {
+	left: -2.2rem;
+}
+
+#fromWrap .node-h2 span::after {
+	right: -2.2rem;
+}

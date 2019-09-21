@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>招募报名表</title>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=0" />
+		<meta name="format-detection" content="telephone=yes"/>
+		<link rel="stylesheet" href="css/public/pub.css" />
+		<link rel="stylesheet" href="css/banner.css" />
+		<link rel="stylesheet" href="css/baoMing.css" />
+		<link rel="stylesheet" href="css/from.css" />
+		<script type="text/javascript" src="js/public/pub.reset.js"></script>
+		<script type="text/javascript" src="js/public/pub.layer.min.js"></script>
+	</head>
+	<body>
+		<script type="text/javascript" src="js/public/pub.loading.js"></script>
+		<div id="App" class="App">
+			<public-header :user="userInfo"></public-header>
+			<!--public-header-->
+			<div id="mainApp" class="mainApp fm-yh pad100">
+				<banner-slot :bansrc='baseSrc + bannerSrc' >
+					<div id="banCenter" class="banCenter cr-fff text-center" data-index = "" v-pre="">
+						<h1 class="node-h1 ft40 weight">招募报名表</h1>
+						<span class="space inline-block br-fff"></span>
+					</div>
+				</banner-slot>
+				<ul id="bmA" class=" flex flex-between wrap30 border-box br-fff relative" >
+					<li class="node-li li-text text-center">
+						<img :src="baseSrc +'bm (4).png'"  />
+						<p class="node-p ft28">提交信息</p>
+					</li>
+					<li class="node-li li-icon">
+						<img :src="baseSrc +'bm (3).png'" />
+					</li>
+					<li class="node-li li-text text-center">
+						<img :src="baseSrc +'bm (1).png'"  />
+						<p class="node-p ft28">电话回访</p>
+					</li>
+					<li class="node-li li-icon">
+						<img :src="baseSrc +'bm (3).png'" />
+					</li>
+					<li class="node-li li-text text-center">
+						<img :src="baseSrc +'bm (2).png'"  />
+						<p class="node-p ft28">匹配项目</p>
+					</li>
+				</ul>
+				<div id="fromWrap" class="br-fff mt24">
+					<div class="wrap30">
+						<div class="nav flex flex-between ft28">
+							<button type="button" @click="selType(0)" :class="{cur: navType == 0}">我是健康志愿者</button>
+							<button type="button" @click="selType(1)" :class="{cur: navType == 1}">我是患者</button>
+						</div>
+						<form id="fromApp">
+							<ul class="from-ul">
+								<li class="from-li">
+									<label class="from-label label-input must">
+										<input type="text" placeholder="受试者姓名" v-model.lazy.trim="name"  />
+									</label>
+								</li>
+								<li class="from-li">
+									<label class="from-label label-input must">
+										<input type="text" placeholder="年龄" v-model.lazy.trim="age" />
+									</label>
+								</li>
+								<li class="from-li">
+									<label class="from-label label-select must">
+										<select v-model="sex">
+											<option value="">性别</option>
+										</select>
+									</label>
+								</li>
+								<li class="from-li">
+									<label class="from-label label-input must">
+										<input type="text" placeholder="手机号"  v-model.lazy.trim="phone" />
+									</label>
+								</li>
+								<li class="from-li">
+									<label class="from-label label-input ">
+										<input type="text" placeholder="报名疾病名称"  />
+									</label>
+								</li>
+								<li class="from-li li-between">
+									<label class="from-label label-select ">
+										<select>
+											<option value="">所在地区</option>
+										</select>
+									</label>
+									<label class="from-label label-select ">
+										<select>
+											<option value="">请选择</option>
+										</select>
+									</label>
+								</li>
+								<li class="from-li">
+									<label class="from-label label-select">
+										<select>
+											<option value="">报名招募项目</option>
+										</select>
+									</label>
+								</li>
+								<li class="from-li">
+									<h3 class="label-title">个人情况</h3>
+									<label class="from-label label-textarea">
+										<textarea placeholder="请简单描述您的身体情况及生活习惯情况…"></textarea>
+									</label>
+								</li>
+								<li class="from-li">
+									<button type="button" class="from-submit" @click="submit">我要报名</button>
+								</li>
+							</ul>
+						</form>
+					</div>
+				</div>
+			</div>		
+			<!--mainApp-->
+			<public-bta ></public-bta>
+			<!--public-bta-->
+			<public-btb ></public-btb>
+			<!--public-btb-->
+		</div> 	
+		<!--App-->
+	</body>
+	<script type="text/javascript" src="js/public/vue.min.js"></script>
+	<script type="text/javascript" src="js/public/pub.js"></script>
+	<script type="text/javascript" src="components/public.js"></script>
+	<script type="text/javascript" src="components/publicSlot.js"></script>
+	<script type="text/javascript" src="components/banner.js"></script>
+	<script type="text/javascript" src="js/module.js"></script>
+	<script type="text/javascript" src="js/baoMing.js"></script>
+
+</html>

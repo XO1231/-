@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>个人主页-个人信息</title>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=0" />
+		<meta name="format-detection" content="telephone=yes"/>
+		<link rel="stylesheet" href="css/public/pub.css" />
+		<link rel="stylesheet" href="css/banner.css" />
+		<link rel="stylesheet" href="css/from.css" />
+		<link rel="stylesheet" href="css/gerenxinxi.css" />
+		<script type="text/javascript" src="js/public/pub.reset.js"></script>
+		<script type="text/javascript" src="js/public/pub.layer.min.js"></script>
+	</head>
+	<body>
+		<script type="text/javascript" src="js/public/pub.loading.js"></script>
+		<div id="App" class="App">
+			<div id="moduleTop">
+				<public-header :user="userInfo"></public-header>
+			</div>
+			<div id="mainApp" class="mainApp" >
+				<div class="tablist">
+					<ul class="tablist_detail">
+						<li class="tab active" data-url="gerenxinxin">个人信息</li>
+						<li class="tab" data-url="baomingxiangmu">报名项目</li>
+						<li class="tab" data-url="zhanghaoxinxi">账号信息</li>
+					</ul>
+				</div>
+				<div class="detail_main">
+					<form id="fromApp" class="wrap30 formXa" >			
+						<div class="main_title wrap30">
+							<button type="button" class="node-btn fl" :class="{ 'cur': peopleType==0 }"
+									@click="selPeoType(0)"	
+								>我是健康志愿者</button>
+							<button type="button" class="node-btn fl ml30" :class="{ 'cur': peopleType==1 }"
+								@click="selPeoType(1)"		
+							>我是患者</button>
+						</div>
+						<div class="" data-type = "zy" v-show="!peopleType">
+							<ul class="form-ul">
+								<li class="from-li">
+									<label class="from-label label-input must">
+										<input type="text" placeholder="姓名" v-model.lazy.trim="zhiyuan.name"/>
+									</label>
+								</li>
+								<li class="from-li">
+									<label class="from-label label-input must">
+										<input type="text" placeholder="年龄" v-model.lazy.trim="zhiyuan.old"/>
+									</label>
+								</li>
+								<li class="from-li">
+									<label class="from-label label-select must">
+										<select v-model.lazy="zhiyuan.sex">
+											<option value="">性别</option>
+											<option value="">男</option>
+											<option value="">女</option>
+										</select>
+									</label>
+								</li>
+								<li class="from-li">
+									<label class="from-label label-select must">
+										<select v-model.lazy="zhiyuan.marr">
+											<option value="">婚姻</option>
+											<option value="">是</option>
+											<option value="">否</option>
+										</select>
+									</label>
+								</li>
+								<li class="from-li li-between">
+									<label class="from-label label-select label-inputs must">
+										<input type="text" placeholder="身高" v-model.trim="zhiyuan.height" />
+										<span class="unit">cm</span>
+									</label>
+									<label class="from-label label-select label-inputs must" >
+										<input type="text" placeholder="体重" v-model.trim="zhiyuan.weight"/>
+										<span class="unit">kg</span>
+									</label>
+									
+								</li>
+								<li class="zhu">
+									<p v-show="!bmiFun.auto">填写你的身高和体重，系统自动计算你的BMI值及身体状态，此处BMI标准为中国标准。</p>
+									<p v-show="bmiFun.auto">你的BMI值：{{ bmiFun.bmi }}，身体状态：{{ bmiFun.type }}</p>
+								</li>
+								<li class="from-li">
+									<label class="from-label label-select must">
+										<select v-model.lazy="zhiyuan.smoke">
+											<option value="">是否抽烟</option>
+											<option value="">是</option>
+											<option value="">否</option>
+										</select>
+									</label>
+								</li>
+								<li class="from-li">
+									<label class="from-label label-select must">
+										<select v-model.lazy.trim="zhiyuan.data">
+											<option value="">最后一次受训日期</option>
+											<option value="">是</option>
+											<option value="">否</option>
+										</select>
+									</label>
+								</li>
+								<li class="from-li">
+									<label class="from-label label-input must">
+										<input type="text" placeholder="手机号"v-model.lazy.trim="zhiyuan.phone" />
+									</label>
+								</li>
+								<li class="from-li">
+									<label class="from-label label-input must">
+										<input type="text" placeholder="微信号/QQ号" v-model.lazy.trim="zhiyuan.qq"/>
+									</label>
+								</li>
+								<li class="from-li li-between">
+									<label class="from-label label-select ">
+										<select>
+											<option value="">所在地区</option>
+										</select>
+									</label>
+									<label class="from-label label-select ">
+										<select>
+											<option value="">请选择</option>
+										</select>
+									</label>
+								</li>
+								<li class="from-li">
+									<h3 class="label-title">个人情况</h3>
+									<label class="from-label label-textarea">
+										<textarea placeholder="请简单描述您的身体情况及生活习惯情况…"></textarea>
+									</label>
+								</li>
+								<li class="from-li">
+									<button type="button" class="from-submit" @click="submit">我要报名</button>
+								</li>
+							</ul>
+
+						
+						</div>
+						<div class="" data-type = "zy" v-show="peopleType">
+							<ul class="form-ul">
+								<li class="from-li">
+									<label class="from-label label-input must">
+										<input type="text" placeholder="姓名" v-model.lazy.trim="huanzhe.name"/>
+									</label>
+								</li>
+								<li class="from-li">
+									<label class="from-label label-input must">
+										<input type="text" placeholder="年龄" v-model.lazy.trim="huanzhe.old"/>
+									</label>
+								</li>
+								<li class="from-li">
+									<label class="from-label label-select must">
+										<select v-model.lazy="huanzhe.sex">
+											<option value="">性别</option>
+											<option value="">男</option>
+											<option value="">女</option>
+										</select>
+									</label>
+								</li>
+								<li class="from-li">
+									<label class="from-label label-select must">
+										<select v-model.lazy="huanzhe.marr">
+											<option value="">婚姻</option>
+											<option value="">是</option>
+											<option value="">否</option>
+										</select>
+									</label>
+								</li>
+								<li class="from-li">
+									<label class="from-label label-input must">
+										<input type="text" placeholder="手机号"v-model.lazy.trim="huanzhe.phone" />
+									</label>
+								</li>
+								<li class="from-li">
+									<label class="from-label label-input must">
+										<input type="text" placeholder="疾病名称"v-model.lazy.trim="huanzhe.jbname" />
+									</label>
+								</li>
+								<li class="from-li">
+									<label class="from-label label-input must">
+										<input type="text" placeholder="现就诊医院名称"v-model.lazy.trim="huanzhe.hospital" />
+									</label>
+								</li>
+								<li class="from-li">
+									<label class="from-label label-select must">
+										<select v-model.lazy="huanzhe.marr">
+											<option value="">ECOG评分(患者体力状况)</option>
+											<option value="">是</option>
+											<option value="">否</option>
+										</select>
+									</label>
+								</li>
+								<li class="from-li li-between">
+									<label class="from-label label-select ">
+										<select>
+											<option value="">所在地区</option>
+										</select>
+									</label>
+									<label class="from-label label-select ">
+										<select>
+											<option value="">请选择</option>
+										</select>
+									</label>
+								</li>
+								<li class="from-li">
+									<h3 class="label-title">个人情况</h3>
+									<label class="from-label label-textarea">
+										<textarea placeholder="请简单描述您的身体情况及生活习惯情况…"></textarea>
+									</label>
+								</li>
+								<li class="from-li">
+									<button type="button" class="from-submit" @click="submit2">我要报名</button>
+								</li>
+							</ul>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div id="moduleBtm">
+				<public-bta ></public-bta>
+				<!--public-bta-->
+				<public-btb ></public-btb>
+				<!--public-btb-->
+			</div>
+		</div> <!--App-->
+	</body>
+	<script type="text/javascript" src="js/public/vue.min.js"></script>
+	<script type="text/javascript" src="js/public/pub.js"></script>
+	<script type="text/javascript" src="components/public.js"></script>
+	<script type="text/javascript" src="components/publicSlot.js"></script>
+	<script type="text/javascript" src="js/module.js"></script>
+	<script type="text/javascript" src="js/public/jquery.min.js" ></script>
+	<script type="text/javascript" src="components/banner.js" ></script>
+	<script type="text/javascript" src="js/gerenxinxi.js" ></script>
+</html>

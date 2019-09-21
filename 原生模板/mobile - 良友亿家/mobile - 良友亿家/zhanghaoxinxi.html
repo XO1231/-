@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>个人主页-账号信息</title>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=0" />
+		<meta name="format-detection" content="telephone=yes"/>
+		<link rel="stylesheet" href="css/public/pub.css" />
+		<link rel="stylesheet" href="css/banner.css" />
+		<link rel="stylesheet" href="css/from.css" />
+		<link rel="stylesheet" href="css/zhanghaoxinxi.css" />
+		<script type="text/javascript" src="js/public/pub.reset.js"></script>
+		<script type="text/javascript" src="js/public/pub.layer.min.js"></script>
+	</head>
+	<body>
+		<script type="text/javascript" src="js/public/pub.loading.js"></script>
+		<div id="App" class="App">
+			<div id="moduleTop">
+				<public-header :user="userInfo"></public-header>
+			</div>
+			<div id="mainApp" class="mainApp" >
+				<div class="clear"></div>
+				<div class="tablist">
+					<ul class="tablist_detail">
+						<li class="tab" data-url="gerenxinxin.html">个人信息</li>
+						<li class="tab" data-url="baomingxiangmu.html">报名项目</li>
+						<li class="tab active" data-url="zhanghaoxinxi.html">账号信息</li>
+					</ul>
+				</div>
+				<div class="clear"></div>
+				<div class="detail">
+					<div class="name"><div class="name_title">用户名</div>&nbsp;&nbsp;小爱***</div>
+					<div class="name"><div class="name_title">手机号</div>&nbsp;&nbsp;13220889321</div>
+					<div class="btn">
+						<div class="btn_left" data-url = "xiugaishouji.html">修改手机号</div>
+						<div class="btn_right" data-url="xiugaimima.html">修改密码</div>
+					</div>
+				</div>
+			</div>
+			<div id="moduleBtm">
+				<public-bta ></public-bta>
+				<!--public-bta-->
+				<public-btb ></public-btb>
+				<!--public-btb-->
+			</div>
+		</div>
+		<script type="text/javascript" src="js/public/vue.min.js"></script>
+		<script type="text/javascript" src="js/public/pub.js"></script>
+		<script type="text/javascript" src="components/public.js"></script>
+		<script type="text/javascript" src="components/publicSlot.js"></script>
+		<script type="text/javascript" src="js/module.js"></script>
+		<script type="text/javascript" src="js/public/jquery.min.js" ></script>
+		<script type="text/javascript" src="components/banner.js" ></script>
+		<script type="text/javascript" src="js/zhanghaoxinxi.js" ></script>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>发布临床项目</title>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=0" />
+		<meta name="format-detection" content="telephone=yes"/>
+		<link rel="stylesheet" href="css/public/pub.css" />
+		<link rel="stylesheet" href="css/banner.css" />
+		<link rel="stylesheet" href="css/zhiYuan.css" />
+		<link rel="stylesheet" href="css/faBu.css" />
+		<script type="text/javascript" src="js/public/pub.reset.js"></script>
+		<script type="text/javascript" src="js/public/pub.layer.min.js"></script>
+	</head>
+	<body>
+		<script type="text/javascript" src="js/public/pub.loading.js"></script>
+		<div id="App" class="App">
+			<public-header :user="userInfo"></public-header>
+			<!--public-header-->
+			<div id="mainApp" class="mainApp fm-yh pad100" v-once >
+				<banner-slot :bansrc='baseSrc + bannerSrc' >
+					<div id="banCenter" class="banCenter cr-fff text-center" data-index = "" v-pre="">
+						<h1 class="node-h1 ft40 ">受试者信息</h1>
+						<button class="btn inline-block cr-fff ft28" data-url = "faBuLinChuang">发布临床项目</button>
+					</div>
+				</banner-slot>
+				<div id="fbA" class="br-fff mt24" v-pre="">
+					<div class="wrap30 flex flex-middle flex-between ft24">
+						<div class="node-li">
+							<button type="button" class="mr20 cur">健康志愿者</button>
+							<button type="button" class="">患者</button>
+						</div>
+						<div class="node-li space"></div>
+						<div class="node-li">
+							<button type="button" class="mr20 cur">男</button>
+							<button type="button" class="">女</button>
+						</div>
+					</div>
+				</div>
+				<div id="navSel" class="br-fff relative  " >
+					<ul class="wrap30 flex flex-between" id="navUl">
+						<li class="node-li flex flex-middle" >
+							<div class="stC">
+								<span class="text ft28">婚姻</span>
+								<img :src="baseSrc+'zy (2).png'" class="" />
+							</div>
+							<ul class="skuCtn absolute width border-box flex flex-wrap ft26 cr-666 br-fff" v-pre="">
+								<li class="node-sku text-center cur">不限</li>
+								<li class="node-sku text-center">I期</li>
+								<li class="node-sku text-center">II期</li>
+								<li class="node-sku text-center">III期</li>
+								<li class="node-sku text-center">IV期</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<ul id="fbB" class="fm-pc wrap30" v-pre>
+					<li class="node-li border-box br-fff mt24 clear">
+						<div class="node-c c-a flex flex-between">
+							<div class="node-g g-a">
+								<strong class="ft28 weight mr20">叶先生</strong>
+								<button type="button" class="ft24 cr-fff br-m2">男</button>
+								<button type="button" class="ft24 cr-fff br-m3">已婚</button>
+								<button type="button" class="ft24 cr-fff br-m4">35岁</button>
+							</div>
+							<p class="node-g g-b ft28 cr-666">山东济南</p>
+						</div>
+						<p class="node-c c-b ft24">
+							<span class="cr-666">已报项目：</span>湖北省人类精子库招募捐精志愿者
+						</p>
+						<div class="node-c c-c flex flex-middle flex-between">
+							<strong class="ft28 weight">健康志愿者</strong>
+							<p class="ft24">
+								<span class="cr-666">报名疾病：</span>心脏病
+							</p>
+						</div>
+					</li>
+				</ul>
+			</div>		
+			<!--mainApp-->
+			<public-bta ></public-bta>
+			<!--public-bta-->
+			<public-btb ></public-btb>
+			<!--public-btb-->
+		</div> 	
+		<!--App-->
+	</body>
+	<script type="text/javascript" src="js/public/vue.min.js"></script>
+	<script type="text/javascript" src="js/public/jquery.min.js"></script>
+	<script type="text/javascript" src="js/public/pub.js"></script>
+	<script type="text/javascript" src="components/public.js"></script>
+	<script type="text/javascript" src="components/publicSlot.js"></script>
+	<script type="text/javascript" src="components/banner.js"></script>
+	<script type="text/javascript" src="js/module.js"></script>
+	<script type="text/javascript" src="js/faBu.js"></script>
+
+</html>

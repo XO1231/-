@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>发布帖子</title>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=0" />
+		<link rel="stylesheet" href="css/public/pub.css" />
+		<link rel="stylesheet" href="css/fabutiezi.css" />
+		<script type="text/javascript" src="js/public/pub.reset.js"></script>
+		<script type="text/javascript" src="js/public/pub.layer.min.js"></script>
+	</head>
+	<body>
+		<script type="text/javascript" src="js/public/pub.loading.js"></script>
+		<div id="App" class="App">
+			<div id="navigator" class="wrap30">
+				<div class="navBackIcon">
+					<img src="images/tiz (5).png" />
+				</div>
+				<span class="navTitle">发布帖子</span>
+			</div>
+			<!--navigator-->
+			
+			<div id="tzCta" class="wrap30">
+				<textarea class="fs30" placeholder="这一刻想说…"></textarea>
+			</div>
+			<!--tzCta-->
+			<div id="tzInA" class="wrap30 flex flex-between fs24">
+				<p id="linkArea" class="cr-m3 text-cut">http://www.lmjwt123.com</p>
+				<p id="packetArea" class="packetArea ">
+					<!--<span>随机红包：<span class="cr-m2">¥20/20个</span></span>-->
+				</p>
+			</div>
+			<!--tzInA-->
+			<ul id="tzCtb" class="flex">
+				<li class="node-li">
+					<label for="fileNodeImg">
+						<img class="node-img" src="images/tiz (12).png"/>
+						<p class="node-p">图片</p>
+						<input id="fileNodeImg" class="hide" type="file" multiple="multiple" accept="image/*" />
+					</label>
+				</li>
+				<li class="node-li">
+					<label for="fileNodeVideo">
+						<img class="node-img" src="images/tiz (6).png"/>
+						<p class="node-p">视频</p>
+						<input id="fileNodeVideo" class="hide" type="file"  accept="video/*" />
+					</label>
+				</li>
+				<li class="node-li" id="fileUrl">
+					<img class="node-img" src="images/tiz (10).png"/>
+					<p class="node-p">链接</p>
+				</li>
+				<li class="node-li" id="filePacket">
+					<img class="node-img" src="images/tiz (11).png"/>
+					<p class="node-p">红包</p>
+				</li>
+			</ul>
+			<!--tzCtb-->
+			<div id="tzCtC" class="wrap30">
+				<div class="cTop flex flex-between">
+					<div class="cTopLeft flex-node">
+						<span class="mr10 fs30 weight">标签</span>
+						<img src="images/tiz (7).png"/>
+						<span class="fs24 cr-6">部分标签收费</span>
+					</div>
+					<div id="topBar" class="cTopRight flex flex-center flex-middle fs28" data-money="10">
+						<div class="icon"></div>
+						置顶
+					</div>
+				</div>
+				<ul id="srotNavA" class="node-ul flex flex-wrap">
+					<li class="node-li li-cell cur" data-money="">本地头条</li>
+					<li class="node-li li-cell" data-money="2">本地头条</li>
+					<li class="node-li li-cell" data-money="">本地头条</li>
+					<li class="node-li li-cell" data-money="">本地头条</li>
+					<li class="node-li li-cell" data-money="3">本地头条</li>
+					<li class="node-li li-cell" data-money="">本地头条</li>
+					<li class="node-li li-cell" data-money="">本地头条</li>
+					<li class="node-li li-cell" data-money="4">本地头条</li>
+					<li class="node-li li-cell" data-money="">本地头条</li>
+					<li class="node-li li-cell" data-money="">本地头条</li>
+					<li class="node-li li-cell" data-money="3">本地头条</li>
+					<li class="node-li li-cell" data-money="">本地头条</li>
+					<li id="moreSort" class="node-li li-more">
+						<span class="icon-text">更多</span>
+						<img src="images/tiz (3).png"/>
+					</li>
+				</ul>
+				
+			</div>
+			<p id="tzCtD" class="wrap30 mt20">
+				发帖：标签¥<span id="labelMon">0</span>+置顶¥<span id="sTopMon">0</span>，共计<em class="cr-m2">¥<span id="allMon">0</span></em>
+			</p>
+			<ul id="imgFileInsert" class="wrap30 flex">
+				
+				<li id="fileImgHanA" class="node-li li-file">
+					<label>
+						<img src="images/tiz (8).png" />
+						<input id="fileNodeImgB" type="file" class="hide" />
+					</label>
+				</li>
+			</ul>
+			<!--imgFileInsert-->
+			<ul id="videoFileInsert" class="wrap30 mt20">
+				
+			</ul>
+			<!--videoFileInsert-->
+			<div id="recomView" class="wrap30">
+				<img class="width block" src="images/tiz (4).png" />
+			</div>
+			<!--recomView-->
+			<div id="submitWrap">
+				<button id="submitHan" type="button" class="block wrap30 br-m1 cr-f fs32">支付并发布</button>
+			</div>
+			<!--submitWrap-->
+			<div id="urlLay" class="layNode" style="display: none;">
+				<div class="layMask"></div>
+				<!--layerMask-->
+				<div class="layMain">
+					<h2 class="layTitle">填写链接</h2>
+					<div class="layCtn">
+						<input id="urlInput" type="text" value="" placeholder="请输入链接" />
+					</div>
+					<div class="layHandel">
+						<button type="button" class="layCancel">取消</button>
+						<button type="button" class="layConfim">确定</button>
+					</div>
+				</div>
+				<!--layMain-->
+			</div>
+			<!--urlLay layNode-->
+			<div id="packetLay" class="layNode" style="display: none;">
+				<div class="layMask"></div>
+				<!--layerMask-->
+				<div class="layMain">
+					<h2 class="layTitle">设置红包</h2>
+					<div class="layCtn">
+						<label class="node-list list-label">
+							<span class="list-nic flex-node">总金额</span>
+							<div class="label-rig flex-node">
+								<input type="text" id="packetMoney" value="" placeholder="填写金额"/>
+								<span class="input-icon">元</span>
+							</div>
+						</label>
+						<label class="node-list list-label">
+							<span class="list-nic flex-node">红包数</span>
+							<div class="label-rig flex-node">
+								<input type="text" id="packetCount" value="" placeholder="填写红包数"/>
+								<span class="input-icon">个</span>
+							</div>
+						</label>
+						<div class="node-list list-check">
+							<span class="list-nic">普通红包</span>
+							<div class="checkNode">
+								<span class="checkIcon"></span>
+							</div>
+							<span class="list-nic">随机红包</span>
+						</div>
+						<p class="node-area mt20 cr-9">说明：总金额在1-1000元，平均单个红包金额在0.2-100之间；用户回复帖子可领取红包，删帖余额自动退回，平台将收取10%服务费。</p>
+					</div>
+					<div class="layHandel">
+						<button type="button" class="layCancel">取消</button>
+						<button type="button" class="layConfim">确定</button>
+					</div>
+				</div>
+				<!--layMain-->
+			</div>
+			<!--packetLay layNode-->
+			
+		</div> <!--App-->
+	</body>
+	<script type="text/javascript" src="js/public/jquery.min.js"></script>
+	<script type="text/javascript" src="js/public/axios.min.js"></script>
+	<script type="text/javascript" src="js/public/pub.js"></script>
+	<script type="text/javascript" src="js/fabutiezi.js"></script>
+</html>
